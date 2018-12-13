@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Facebook-intelliJ:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Facebook-intelliJ/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Facebook-intelliJ" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
