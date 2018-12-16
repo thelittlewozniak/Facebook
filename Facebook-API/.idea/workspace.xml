@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/pojo/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/pojo/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/pojo/Like.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,25 +23,67 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="850">
               <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/Friend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/Like.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,6 +105,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/model/pojo/Comment.java" />
+        <option value="$PROJECT_DIR$/src/model/pojo/Friend.java" />
+        <option value="$PROJECT_DIR$/src/model/pojo/Like.java" />
       </list>
     </option>
   </component>
@@ -97,6 +143,12 @@
               <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -107,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544921315415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544921380750" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -133,12 +185,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544921057357</updated>
-      <workItem from="1544921061226" duration="247000" />
+      <workItem from="1544921061226" duration="319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247000" />
+    <option name="totallyTimeSpent" value="319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -188,6 +240,44 @@
           <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/Like.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
           </folding>
         </state>
       </provider>
