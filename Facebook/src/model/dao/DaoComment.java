@@ -10,9 +10,7 @@ public class DaoComment extends Dao<Comment> {
     }
 
     @Override
-    public boolean create(Comment obj) {
-        return false;
-    }
+    public boolean create(Comment obj) { return false; }
 
     @Override
     public boolean delete(Comment obj) {
