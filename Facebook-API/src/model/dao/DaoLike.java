@@ -3,6 +3,7 @@ package model.dao;
 import model.pojo.Like;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class DaoLike extends Dao<Like> {
     public DaoLike(Connection conn) {
@@ -26,6 +27,11 @@ public class DaoLike extends Dao<Like> {
 
     @Override
     public Like find(int id) {
+        return null;
+    }
+
+    @Override
+    public List<Like> getAll() {
         return null;
     }
 }

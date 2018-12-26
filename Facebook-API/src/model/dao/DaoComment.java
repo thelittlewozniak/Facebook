@@ -3,6 +3,7 @@ package model.dao;
 import model.pojo.Comment;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class DaoComment extends Dao<Comment> {
     public DaoComment(Connection conn) {
@@ -24,6 +25,11 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public Comment find(int id) {
+        return null;
+    }
+
+    @Override
+    public List<Comment> getAll() {
         return null;
     }
 }

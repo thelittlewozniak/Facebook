@@ -9,6 +9,10 @@ public class User {
 
     private String lastname;
 
+    private String email;
+
+    private String password;
+
     private String address;
 
     private Date birthday;
@@ -32,111 +36,125 @@ public class User {
     private List<Work> works;
 
 
-    private String getFirstname() {
+    public String getFirstname() {
         return this.firstname;
     }
 
-    private void setFirstname(String firstname) {
+    public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
 
-    private String getLastname() {
+    public String getLastname() {
         return this.lastname;
     }
 
-    private void setLastname(String lastname) {
+    public void setLastname(String lastname) {
         this.lastname = lastname;
     }
 
-    private String getAddress() {
+    public String getAddress() {
         return this.address;
     }
 
-    private void setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    private Date getBirthday() {
+    public Date getBirthday() {
         return this.birthday;
     }
 
-    private void setBirthday(Date birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
-    private Date getRegisterDate() {
+    public Date getRegisterDate() {
         return this.registerDate;
     }
 
-    private void setRegisterDate(Date registerDate) {
+    public void setRegisterDate(Date registerDate) {
         this.registerDate = registerDate;
     }
 
-    private Boolean getRelationship() {
+    public Boolean getRelationship() {
         return this.relationship;
     }
 
-    private void setRelationship(Boolean relationship) {
+    public void setRelationship(Boolean relationship) {
         this.relationship = relationship;
     }
 
-    private Integer getPhoneNumber() {
+    public Integer getPhoneNumber() {
         return this.phoneNumber;
     }
 
-    private void setPhoneNumber(Integer phoneNumber) {
+    public void setPhoneNumber(Integer phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    private Boolean getGender() {
+    public Boolean getGender() {
         return this.gender;
     }
 
-    private void setGender(Boolean gender) {
+    public void setGender(Boolean gender) {
         this.gender = gender;
     }
 
-    private Boolean getInterestedIn() {
+    public Boolean getInterestedIn() {
         return this.interestedIn;
     }
 
-    private void setInterestedIn(Boolean interestedIn) {
+    public void setInterestedIn(Boolean interestedIn) {
         this.interestedIn = interestedIn;
     }
 
-    private List<Friend> getFriendList() {
+    public List<Friend> getFriendList() {
         return this.FriendList;
     }
 
-    private void setFriendList(List<Friend> FriendList) {
+    public void setFriendList(List<Friend> FriendList) {
         this.FriendList = FriendList;
     }
 
-    private List<Post> getPosts() {
+    public List<Post> getPosts() {
         return this.posts;
     }
 
-    private void setPosts(List<Post> posts) {
+    public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
 
-    private List<Schooling> getSchoolings() {
+    public List<Schooling> getSchoolings() {
         return this.schoolings;
     }
 
-    private void setSchoolings(List<Schooling> schoolings) {
+    public void setSchoolings(List<Schooling> schoolings) {
         this.schoolings = schoolings;
     }
 
-    private List<Work> getWorks() {
+    public List<Work> getWorks() {
         return this.works;
     }
 
-    private void setWorks(List<Work> works) {
+    public void setWorks(List<Work> works) {
         this.works = works;
     }
 
+    public String getEmail(){
+        return email;
+    }
 
+    public void setEmail(String email){
+        this.email=email;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password=password;
+    }
     //                          Operations
 
     public boolean makeAPost() {

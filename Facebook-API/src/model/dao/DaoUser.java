@@ -3,6 +3,7 @@ package model.dao;
 import model.pojo.User;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class DaoUser extends Dao<User> {
     public DaoUser(Connection conn) {
@@ -26,6 +27,11 @@ public class DaoUser extends Dao<User> {
 
     @Override
     public User find(int id) {
+        return null;
+    }
+
+    @Override
+    public List<User> getAll() {
         return null;
     }
 }
