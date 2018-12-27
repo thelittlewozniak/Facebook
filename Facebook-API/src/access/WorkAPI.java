@@ -76,12 +76,12 @@ public class WorkAPI extends RestApplication {
         return response;
     }
     @DELETE
-    @Path("DeletePost")
+    @Path("DeleteWork")
     @Produces(MediaType.APPLICATION_JSON)
     public Response deletePost(@QueryParam("id")int id){
         Connection conn=GetConnection.getInstance().getConnection();
-        Post p=new DaoPost(conn).find(id);
-        Boolean test=new DaoPost(conn).delete(p);
+        Work w=new DaoWork(conn).find(id);
+        Boolean test=new DaoWork(conn).delete(w);
         Response response=null;
         if(test)
             response=Response.status(Response.Status.OK).entity(test).build();
