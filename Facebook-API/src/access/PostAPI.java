@@ -22,7 +22,7 @@ public class PostAPI extends RestApplication{
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("GetPost")
-    public Response GetPost(@QueryParam("id") int id) {
+    public Response getPost(@QueryParam("id") int id) {
         Response response=null;
         Connection conn=GetConnection.getInstance().getConnection();
         Post p=new DaoPost(conn).find(id);
@@ -35,7 +35,7 @@ public class PostAPI extends RestApplication{
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Path("MakeAPost")
-    public Response MakePost(){
+    public Response makePost(){
         return  null;
     }
 }
