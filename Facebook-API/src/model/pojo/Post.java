@@ -15,8 +15,6 @@ public class Post {
 
     private List<Like> likes;
 
-    private User user;
-
 
     private String getData() {
         return this.data;
