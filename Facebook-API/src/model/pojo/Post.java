@@ -15,47 +15,51 @@ public class Post {
 
     private List<Like> likes;
 
+    private User user;
 
-    private String getData() {
+    public String getData() {
         return this.data;
     }
 
-    private void setData(String data) {
+    public void setData(String data) {
         this.data = data;
     }
 
-    private String getType() {
+    public String getType() {
         return this.type;
     }
 
-    private void setType(String type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    private Date getPostDate() {
+    public Date getPostDate() {
         return this.postDate;
     }
 
-    private void setPostDate(Date postDate) {
+    public void setPostDate(Date postDate) {
         this.postDate = postDate;
     }
 
-    private List<Comment> getComments() {
+    public List<Comment> getComments() {
         return this.comments;
     }
 
-    private void setComments(List<Comment> comments) {
+    public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
 
-    private List<Like> getLikes() {
+    public List<Like> getLikes() {
         return this.likes;
     }
 
-    private void setLikes(List<Like> likes) {
+    public void setLikes(List<Like> likes) {
         this.likes = likes;
     }
 
+    public User getUser(){return this.user;}
+
+    public void setUser(User user){this.user=user;}
 
     //                          Operations
 

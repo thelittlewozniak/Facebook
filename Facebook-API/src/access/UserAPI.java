@@ -67,12 +67,12 @@ public class UserAPI extends RestApplication{
         u.setPhoneNumber(Integer.parseInt(phoneNumber));
         u.setGender(Boolean.parseBoolean(gender));
         u.setInterestedIn(Boolean.parseBoolean(interestedIn));
-        //Boolean test=new DaoUser(conn).create(u);
+        Boolean test=new DaoUser(conn).create(u);
         Response response=null;
-        //if(test)
-            response=Response.status(Response.Status.OK).entity(u).build();
-        //else
-            //response=Response.status(Response.Status.BAD_REQUEST).entity(u).build();
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(u).build();
         return response;
     }
     @DELETE
