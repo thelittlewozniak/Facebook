@@ -1,18 +1,13 @@
 package access;
 
-import jdk.net.SocketFlow;
 import model.BusinessLayer.GetConnection;
 import model.dao.DaoUser;
 import model.pojo.User;
 
-import javax.print.attribute.standard.Media;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 @Path("User")
 public class UserAPI extends RestApplication{
