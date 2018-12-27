@@ -90,22 +90,32 @@ public class WorkAPI extends RestApplication {
         return response;
     }
     @PUT
-    @Path("updatePost")
+    @Path("UpdateWork")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("data") String data,@FormParam("type") String type,@FormParam("postDate") String postDate,@FormParam("user") String userId){
+    public Response updateUser(@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
         Connection conn=GetConnection.getInstance().getConnection();
-        Post p=new Post();
-        p.setData(data);
-        p.setType(type);
-        Date date=null;
-        try {
-            date=new SimpleDateFormat("dd/MM/yyyy").parse(postDate);
-        } catch (ParseException e) {
+        Work w=new Work();
+        w.setName(name);
+        w.setAddress(address);
+        w.setJobTitle(jobTitle);
+        w.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
+        Date begin=null;
+        try{
+            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+        }
+        catch (ParseException e) {
             e.printStackTrace();
         }
-        p.setPostDate(date);
-        p.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
-        Boolean test=new DaoPost(conn).update(p);
+        w.setBeginDate(begin);
+        Date end=null;
+        try{
+            end=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+        }
+        catch (ParseException e) {
+            e.printStackTrace();
+        }
+        w.setEndDate(end);
+        Boolean test=new DaoWork(conn).update(w);
         Response response=null;
         if(test)
             response=Response.status(Response.Status.OK).entity(test).build();
