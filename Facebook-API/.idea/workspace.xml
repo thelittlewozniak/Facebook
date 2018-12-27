@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="" />
+    <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/access/PostAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/PostAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/access/WorkAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/WorkAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Work.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +52,7 @@
           <entry key="eml" value="1" />
           <entry key="http" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="40" />
+          <entry key="java" value="41" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -56,7 +60,7 @@
         <counts>
           <entry key="HTTP Request" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="40" />
+          <entry key="JAVA" value="41" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -66,14 +70,14 @@
           <entry key="dummy" value="5" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="4717" />
+          <entry key="java" value="5125" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="4717" />
+          <entry key="JAVA" value="5125" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
@@ -128,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+            <state relative-caret-position="459">
+              <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,11 +153,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/access/WorkAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="495">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -192,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/model/pojo/Friend.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Like.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Schooling.java" />
-        <option value="$PROJECT_DIR$/src/model/pojo/Work.java" />
         <option value="$PROJECT_DIR$/src/model/BusinessLayer/BusineesUser.java" />
         <option value="$PROJECT_DIR$/src/model/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
@@ -215,12 +227,13 @@
         <option value="$PROJECT_DIR$/Facebook-API.iml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/access/User.java" />
-        <option value="$PROJECT_DIR$/src/access/WorkAPI.java" />
         <option value="$PROJECT_DIR$/src/access/SchoolingAPI.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/access/UserAPI.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Post.java" />
         <option value="$PROJECT_DIR$/src/access/PostAPI.java" />
+        <option value="$PROJECT_DIR$/src/model/pojo/Work.java" />
+        <option value="$PROJECT_DIR$/src/access/WorkAPI.java" />
       </list>
     </option>
   </component>
@@ -332,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545938987818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545939825019" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jsr311-api-1.1.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -478,20 +491,20 @@
       <workItem from="1545851002068" duration="281000" />
       <workItem from="1545852925940" duration="8145000" />
       <workItem from="1545918116328" duration="152000" />
-      <workItem from="1545918277465" duration="15211000" />
+      <workItem from="1545918277465" duration="16219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35082000" />
+    <option name="totallyTimeSpent" value="36090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4899225" visible="true" weight="0.26640493" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4883721" visible="true" weight="0.26584408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.51007754" side_tool="true" visible="true" weight="0.26640493" />
+      <window_info id="Web" order="2" sideWeight="0.5116279" side_tool="true" visible="true" weight="0.26584408" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -507,7 +520,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50476724" side_tool="true" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50476724" side_tool="true" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32952183" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4969153" weight="0.32952183" />
@@ -558,13 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -726,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/Post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -743,10 +739,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/access/WorkAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="495">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -15,50 +15,52 @@ public class Work {
 
     private String jobTitle;
 
-
     private User user;
 
 
-    private String getName() {
+    public String getName() {
         return this.name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private String getAddress() {
+    public String getAddress() {
         return this.address;
     }
 
-    private void setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    private Date getBeginDate() {
+    public Date getBeginDate() {
         return this.beginDate;
     }
 
-    private void setBeginDate(Date beginDate) {
+    public void setBeginDate(Date beginDate) {
         this.beginDate = beginDate;
     }
 
-    private Date getEndDate() {
+    public Date getEndDate() {
         return this.endDate;
     }
 
-    private void setEndDate(Date endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 
-    private String getJobTitle() {
+    public String getJobTitle() {
         return this.jobTitle;
     }
 
-    private void setJobTitle(String jobTitle) {
+    public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
 
+    public User getUser(){ return this.user; }
+
+    public void setUser(User user){this.user=user;}
 
     //                          Operations
 

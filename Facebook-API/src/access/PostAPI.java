@@ -4,7 +4,6 @@ import model.BusinessLayer.GetConnection;
 import model.dao.DaoPost;
 import model.dao.DaoUser;
 import model.pojo.Post;
-import model.pojo.User;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
