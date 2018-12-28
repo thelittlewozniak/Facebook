@@ -80,4 +80,32 @@ public class LikeAPI extends RestApplication {
             response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
         return response;
     }
+    @PUT
+    @Path("UpdateLike")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateLike(@FormParam("id") String idLike,@FormParam("dateLiked") String dateLike,@FormParam("user") String userId,@FormParam("post") String postId,@FormParam("comment") String commentid){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Like l=new Like();
+        l.setId(Integer.parseInt(idLike));
+        l.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
+        Date date=null;
+        try {
+            date=new SimpleDateFormat("dd/MM/yyyy").parse(dateLike);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        l.setDateLiked(date);
+        if(postId.equals("null")){
+            l.setComment(new DaoComment(conn).find(Integer.parseInt(commentid)));
+        }
+        else
+            l.setPost(new DaoPost(conn).find(Integer.parseInt(postId)));
+        Boolean test=new DaoLike(conn).update(l);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(null).build();
+        return response;
+    }
 }

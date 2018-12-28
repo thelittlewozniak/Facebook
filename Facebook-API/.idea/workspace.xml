@@ -68,14 +68,14 @@
           <entry key="dummy" value="5" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="7641" />
+          <entry key="java" value="7721" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="7641" />
+          <entry key="JAVA" value="7721" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
@@ -139,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="75" column="5" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
+            <state relative-caret-position="447">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,8 +151,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/access/LikeAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="223">
+              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -327,7 +327,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545994611678" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545994812255" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jsr311-api-1.1.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -473,12 +473,12 @@
       <workItem from="1545851002068" duration="281000" />
       <workItem from="1545852925940" duration="8145000" />
       <workItem from="1545918116328" duration="152000" />
-      <workItem from="1545918277465" duration="31252000" />
+      <workItem from="1545918277465" duration="31451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51123000" />
+    <option name="totallyTimeSpent" value="51322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
@@ -760,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="447">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -770,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/LikeAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="223">
+          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
