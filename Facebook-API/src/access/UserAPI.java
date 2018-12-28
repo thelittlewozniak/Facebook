@@ -70,7 +70,7 @@ public class UserAPI extends RestApplication{
         Boolean test=new DaoUser(conn).create(u);
         Response response=null;
         if(test)
-            response=Response.status(Response.Status.OK).entity(test).build();
+            response=Response.status(Response.Status.OK).entity(true).build();
         else
             response=Response.status(Response.Status.BAD_REQUEST).entity(u).build();
         return response;

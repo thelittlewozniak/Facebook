@@ -8,9 +8,9 @@
           <element id="module-output" name="Facebook-API" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="ojdbc6" />
           <element id="library" level="project" name="javax.ws.rs" />
           <element id="library" level="project" name="jsr311-api-1.1.1" />
+          <element id="library" level="project" name="ojdbc6" />
         </element>
       </element>
     </root>
