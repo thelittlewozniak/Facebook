@@ -63,4 +63,19 @@ public class CommentAPI extends RestApplication {
             response=Response.status(Response.Status.BAD_REQUEST).entity(test).build();
         return response;
     }
+    @DELETE
+    @Path("DeleteComment")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteComment(@QueryParam("id")int id){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Comment c=new DaoComment(conn).find(id);
+        Boolean test=new DaoComment(conn).delete(c);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
+        return response;
+    }
+
 }
