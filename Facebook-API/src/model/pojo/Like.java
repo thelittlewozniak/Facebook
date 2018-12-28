@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class Like {
 
+    private int id;
+
     private Date dateLiked;
 
     private User user;
@@ -14,22 +16,33 @@ public class Like {
     private Comment comment;
 
 
-    private Date getDateLiked() {
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
+
+    public Date getDateLiked() {
         return this.dateLiked;
     }
 
-    private void setDateLiked(Date dateLiked) {
+    public void setDateLiked(Date dateLiked) {
         this.dateLiked = dateLiked;
     }
 
-    private User getUser() {
+    public User getUser() {
         return this.user;
     }
 
-    private void setUser(User user) {
+    public void setUser(User user) {
         this.user = user;
     }
 
+    public Post getPost() { return post; }
+
+    public void setPost(Post post) { this.post = post; }
+
+    public Comment getComment() { return comment; }
+
+    public void setComment(Comment comment) { this.comment = comment; }
 
     //                          Operations
 
