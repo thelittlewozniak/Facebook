@@ -92,9 +92,10 @@ public class UserAPI extends RestApplication{
     @PUT
     @Path("UpdateUser")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("firstname") String firstname,@FormParam("lastname") String lastname,@FormParam("email") String email,@FormParam("password") String password,@FormParam("address") String address,@FormParam("birthday") String birthday,@FormParam("registerDate") String registerDate,@FormParam("relationship") String relationship,@FormParam("phoneNumber") String phoneNumber,@FormParam("gender") String gender,@FormParam("interestedIn") String interestedIn){
+    public Response updateUser(@FormParam("userid") String userid,@FormParam("firstname") String firstname,@FormParam("lastname") String lastname,@FormParam("email") String email,@FormParam("password") String password,@FormParam("address") String address,@FormParam("birthday") String birthday,@FormParam("registerDate") String registerDate,@FormParam("relationship") String relationship,@FormParam("phoneNumber") String phoneNumber,@FormParam("gender") String gender,@FormParam("interestedIn") String interestedIn){
         Connection conn=GetConnection.getInstance().getConnection();
         User u=new User();
+        u.setId(Integer.parseInt(userid));
         u.setFirstname(firstname);
         u.setLastname(lastname);
         u.setEmail(email);

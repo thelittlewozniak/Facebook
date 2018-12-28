@@ -92,9 +92,10 @@ public class WorkAPI extends RestApplication {
     @PUT
     @Path("UpdateWork")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
+    public Response updateUser(@FormParam("workid") String workid,@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
         Connection conn=GetConnection.getInstance().getConnection();
         Work w=new Work();
+        w.setId(Integer.parseInt(workid));
         w.setName(name);
         w.setAddress(address);
         w.setJobTitle(jobTitle);
