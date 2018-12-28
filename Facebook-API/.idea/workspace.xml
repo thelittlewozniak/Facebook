@@ -32,7 +32,7 @@
     <session id="86687035">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -120,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/access/UserAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="1649">
               <caret line="97" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -132,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2057">
+            <state relative-caret-position="595">
               <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -374,7 +374,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546028336538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546031337657" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ojdbc6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -520,12 +520,12 @@
       <workItem from="1545851002068" duration="281000" />
       <workItem from="1545852925940" duration="8145000" />
       <workItem from="1545918116328" duration="152000" />
-      <workItem from="1545918277465" duration="45495000" />
+      <workItem from="1545918277465" duration="46131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65366000" />
+    <option name="totallyTimeSpent" value="66002000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,7 +538,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4883721" visible="true" weight="0.26584408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -550,7 +549,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49186763" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49186763" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -810,16 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/UserAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -829,8 +818,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2057">
+        <state relative-caret-position="595">
           <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/UserAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
