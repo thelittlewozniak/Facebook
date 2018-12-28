@@ -41,7 +41,7 @@ public class LikeAPI extends RestApplication {
     }
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("CreatePost")
+    @Path("CreateLike")
     public Response createLike(@FormParam("dateLiked") String dateLike,@FormParam("user") String userId,@FormParam("post") String postId,@FormParam("comment") String commentid){
         Connection conn=GetConnection.getInstance().getConnection();
         Like l=new Like();
@@ -64,6 +64,20 @@ public class LikeAPI extends RestApplication {
             response=Response.status(Response.Status.OK).entity(test).build();
         else
             response=Response.status(Response.Status.BAD_REQUEST).entity(test).build();
+        return response;
+    }
+    @DELETE
+    @Path("DeleteLike")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteLike(@QueryParam("id")int id){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Like l=new DaoLike(conn).find(id);
+        Boolean test=new DaoLike(conn).delete(l);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
         return response;
     }
 }
