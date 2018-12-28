@@ -2,18 +2,13 @@ package access;
 
 import model.BusinessLayer.GetConnection;
 import model.dao.DaoFriend;
-import model.dao.DaoPost;
 import model.dao.DaoUser;
 import model.pojo.Friend;
-import model.pojo.Post;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Path("Friend")
 public class FriendAPI extends RestApplication {
@@ -52,6 +47,20 @@ public class FriendAPI extends RestApplication {
             response=Response.status(Response.Status.OK).entity(test).build();
         else
             response=Response.status(Response.Status.BAD_REQUEST).entity(test).build();
+        return response;
+    }
+    @DELETE
+    @Path("DeleteFriend")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteFriend(@QueryParam("id")int id){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Friend p=new DaoFriend(conn).find(id);
+        Boolean test=new DaoFriend(conn).delete(p);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
         return response;
     }
 }
