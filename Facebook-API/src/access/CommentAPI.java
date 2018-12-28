@@ -5,7 +5,6 @@ import model.dao.DaoComment;
 import model.dao.DaoPost;
 import model.dao.DaoUser;
 import model.pojo.Comment;
-import model.pojo.Post;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -75,6 +74,32 @@ public class CommentAPI extends RestApplication {
             response=Response.status(Response.Status.OK).entity(test).build();
         else
             response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
+        return response;
+    }
+    @PUT
+    @Path("UpdateComment")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateComment(@FormParam("commentId") String commentId,@FormParam("data") String data,@FormParam("type") String type,@FormParam("postDate") String postDate,@FormParam("user") String userId,@FormParam("post") String postId){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Comment c=new Comment();
+        c.setId(Integer.parseInt(commentId));
+        c.setData(data);
+        c.setType(type);
+        Date date=null;
+        try {
+            date=new SimpleDateFormat("dd/MM/yyyy").parse(postDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        c.setPostDate(date);
+        c.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
+        c.setPost(new DaoPost(conn).find(Integer.parseInt(postId)));
+        Boolean test=new DaoComment(conn).update(c);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(null).build();
         return response;
     }
 
