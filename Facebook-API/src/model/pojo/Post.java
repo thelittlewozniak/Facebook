@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Post {
 
+    private int id;
+
     private String data;
 
     private String type;
@@ -16,6 +18,11 @@ public class Post {
     private List<Like> likes;
 
     private User user;
+
+
+    public int getId() {return this.id; }
+
+    public void setId(int id) {this.id=id; }
 
     public String getData() {
         return this.data;

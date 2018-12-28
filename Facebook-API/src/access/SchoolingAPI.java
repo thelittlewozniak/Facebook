@@ -1,19 +1,18 @@
 package access;
 
 import model.BusinessLayer.GetConnection;
+import model.dao.DaoPost;
 import model.dao.DaoSchooling;
 import model.dao.DaoUser;
-import model.dao.DaoWork;
 import model.pojo.Schooling;
-import model.pojo.Work;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Path("Schooling")
 public class SchoolingAPI extends RestApplication {
@@ -28,7 +27,7 @@ public class SchoolingAPI extends RestApplication {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("GetWork")
+    @Path("GetSchooling")
     public Response getWork(@QueryParam("id") int id) {
         Response response=null;
         Connection conn= GetConnection.getInstance().getConnection();
@@ -37,6 +36,91 @@ public class SchoolingAPI extends RestApplication {
             response=Response.status(Response.Status.OK).entity(s).build();
         else
             response=Response.status(Response.Status.NO_CONTENT).entity(null).build();
+        return response;
+    }
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("CreateSchooling")
+    public Response createPost(@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Schooling school=new Schooling();
+        school.setName(name);
+        school.setAddress(address);
+        school.setType(type);
+        Date begin=null;
+        try{
+            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+        school.setBeginDate(begin);
+        Date end=null;
+        try{
+            end=new SimpleDateFormat("dd/MM/yyyy").parse(endDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+        school.setEndDate(end);
+        school.setGraduate(Boolean.parseBoolean(graduate));
+        school.setUser(new DaoUser(conn).find(Integer.parseInt(userid)));
+        Boolean test=new DaoSchooling(conn).create(school);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(test).build();
+        return response;
+    }
+    @DELETE
+    @Path("DeleteSchooling")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deletePost(@QueryParam("id")int id){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Schooling school=new DaoSchooling(conn).find(id);
+        Boolean test=new DaoSchooling(conn).delete(school);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
+        return response;
+    }
+    @PUT
+    @Path("UpdateSchooling")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateUser(@FormParam("schoolingId") String schoolingId,@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Schooling school=new Schooling();
+        school.setId(Integer.parseInt(schoolingId));
+        school.setName(name);
+        school.setAddress(address);
+        school.setType(type);
+        Date begin=null;
+        try{
+            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+        school.setBeginDate(begin);
+        Date end=null;
+        try{
+            end=new SimpleDateFormat("dd/MM/yyyy").parse(endDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+        school.setEndDate(end);
+        school.setGraduate(Boolean.parseBoolean(graduate));
+        school.setUser(new DaoUser(conn).find(Integer.parseInt(userid)));
+        Boolean test=new DaoSchooling(conn).update(school);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(null).build();
         return response;
     }
 }

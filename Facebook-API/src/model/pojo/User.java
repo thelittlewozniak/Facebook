@@ -5,6 +5,8 @@ import java.util.List;
 
 public class User {
 
+    private int id;
+
     private String firstname;
 
     private String lastname;
@@ -35,6 +37,10 @@ public class User {
 
     private List<Work> works;
 
+
+    public int getId(){return this.id; }
+
+    public void setId(int id){this.id=id; }
 
     public String getFirstname() {
         return this.firstname;
