@@ -75,7 +75,7 @@ public class PostAPI extends RestApplication{
         return response;
     }
     @PUT
-    @Path("updatePost")
+    @Path("UpdatePost")
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateUser(@FormParam("postid") String postid,@FormParam("data") String data,@FormParam("type") String type,@FormParam("postDate") String postDate,@FormParam("user") String userId){
         Connection conn=GetConnection.getInstance().getConnection();
