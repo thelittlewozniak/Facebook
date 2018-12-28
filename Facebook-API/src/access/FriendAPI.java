@@ -63,4 +63,20 @@ public class FriendAPI extends RestApplication {
             response=Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
         return response;
     }
+    @PUT
+    @Path("UpdatePost")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateUser(@FormParam("asker") String askerid,@FormParam("receiver") String receiverid,@FormParam("accepted") String accepted){
+        Connection conn=GetConnection.getInstance().getConnection();
+        Friend f=new Friend();
+        f.setAsker(new DaoUser(conn).find(Integer.parseInt(askerid)));
+        f.setReceiver(new DaoUser(conn).find(Integer.parseInt(receiverid)));
+        Boolean test=new DaoFriend(conn).update(f);
+        Response response=null;
+        if(test)
+            response=Response.status(Response.Status.OK).entity(test).build();
+        else
+            response=Response.status(Response.Status.BAD_REQUEST).entity(null).build();
+        return response;
+    }
 }
