@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
@@ -109,6 +110,44 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public List<Friend> getAll() {
-        return null;
+        CallableStatement stmt=null;
+        List<Friend> friends=new ArrayList<>();
+        ResultSet resultSet=null;
+        try{
+            stmt=connect.prepareCall("{? = call FRIENDSPACKAGE.getAll}");
+            stmt.registerOutParameter(1,OracleTypes.CURSOR);
+            stmt.execute();
+            resultSet=(ResultSet) stmt.getObject(1);
+            if(resultSet!=null){
+                while(resultSet.next()){
+                    Friend f=new Friend();
+                    f.setAsker(new DaoUser(connect).find(resultSet.getInt(1)));
+                    f.setReceiver(new DaoUser(connect).find(resultSet.getInt(2)));
+                    f.setAccepted(resultSet.getInt(3)==1);
+                    friends.add(f);
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (resultSet != null) {
+                try {
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return friends;
     }
 }
