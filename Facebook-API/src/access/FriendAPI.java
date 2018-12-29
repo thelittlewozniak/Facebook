@@ -53,9 +53,9 @@ public class FriendAPI extends RestApplication {
     @DELETE
     @Path("DeleteFriend")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deleteFriend(@QueryParam("id")int id){
+    public Response deleteFriend(@QueryParam("asker")int askerid,@QueryParam("receiver") int receiverid){
         Connection conn=GetConnection.getInstance().getConnection();
-        Friend p=new DaoFriend(conn).find(id);
+        Friend p=new DaoFriend(conn).find(askerid,receiverid);
         Boolean test=new DaoFriend(conn).delete(p);
         Response response=null;
         if(test)
@@ -65,13 +65,14 @@ public class FriendAPI extends RestApplication {
         return response;
     }
     @PUT
-    @Path("UpdatePost")
+    @Path("UpdateFriend")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("asker") String askerid,@FormParam("receiver") String receiverid,@FormParam("accepted") String accepted){
+    public Response updateFriend(@FormParam("asker") String askerid,@FormParam("receiver") String receiverid,@FormParam("accepted") String accepted){
         Connection conn=GetConnection.getInstance().getConnection();
         Friend f=new Friend();
         f.setAsker(new DaoUser(conn).find(Integer.parseInt(askerid)));
         f.setReceiver(new DaoUser(conn).find(Integer.parseInt(receiverid)));
+        f.setAccepted(Boolean.parseBoolean(accepted));
         Boolean test=new DaoFriend(conn).update(f);
         Response response=null;
         if(test)

@@ -53,12 +53,50 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean delete(Friend obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call FRIENDSPACKAGE.del(?,?)}");
+            stmt.setInt(1,obj.getAsker().getId());
+            stmt.setInt(2,obj.getReceiver().getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
     public boolean update(Friend obj) {
-        return false;
+        CallableStatement stmt = null;
+        try {
+            stmt = connect.prepareCall("{call FRIENDSWORKSPACE.upd(?,?,?)}");
+            stmt.setInt(1, obj.getAsker().getId());
+            stmt.setInt(2, obj.getReceiver().getId());
+            stmt.setInt(3,obj.getAccepted()?1:0);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
