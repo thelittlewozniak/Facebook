@@ -1,7 +1,6 @@
 package model.dao;
 
 import model.pojo.Post;
-import model.pojo.User;
 import oracle.jdbc.internal.OracleTypes;
 
 import java.sql.CallableStatement;

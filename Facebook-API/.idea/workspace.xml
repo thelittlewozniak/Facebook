@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoPost.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +52,7 @@
           <entry key="eml" value="1" />
           <entry key="http" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="59" />
+          <entry key="java" value="62" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -59,7 +60,7 @@
         <counts>
           <entry key="HTTP Request" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="62" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -69,14 +70,14 @@
           <entry key="dummy" value="5" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="9389" />
+          <entry key="java" value="9532" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="9389" />
+          <entry key="JAVA" value="9532" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
@@ -85,15 +86,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/pojo/Post.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Facebook-API.iml">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
+            <state relative-caret-position="1887">
               <caret line="113" column="9" selection-start-line="85" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,17 +122,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1003">
-              <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+            <state relative-caret-position="119">
+              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1447">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,19 +144,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLike.java">
+        <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/GetConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="1717">
+              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,22 +156,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/access/LikeAPI.java">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/pojo/Like.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="204">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -210,7 +184,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/model/BusinessLayer/BusineesUser.java" />
         <option value="$PROJECT_DIR$/src/model/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoLike.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" />
@@ -242,8 +215,9 @@
         <option value="$PROJECT_DIR$/src/access/LikeAPI.java" />
         <option value="$PROJECT_DIR$/src/access/UserAPI.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoUser.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoPost.java" />
         <option value="$PROJECT_DIR$/src/access/PostAPI.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoPost.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
       </list>
     </option>
   </component>
@@ -514,12 +488,12 @@
       <workItem from="1545918116328" duration="152000" />
       <workItem from="1545918277465" duration="46131000" />
       <workItem from="1546067683243" duration="6603000" />
-      <workItem from="1546079303169" duration="4804000" />
+      <workItem from="1546079303169" duration="6983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77409000" />
+    <option name="totallyTimeSpent" value="79588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,7 +508,7 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.2714526" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.2714526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.51472867" side_tool="true" visible="true" weight="0.2714526" />
       <window_info id="Image Layers" order="3" />
@@ -544,7 +518,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49074593" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49074593" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/access/RestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -663,6 +630,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="117" column="59" lean-forward="true" selection-start-line="117" selection-start-column="59" selection-end-line="117" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,20 +647,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,16 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="113" column="9" selection-start-line="85" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/GetConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -783,17 +732,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
+    <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+        <state relative-caret-position="1054">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1447">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+        <state relative-caret-position="204">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="113" column="9" selection-start-line="85" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
