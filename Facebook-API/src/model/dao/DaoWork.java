@@ -80,7 +80,29 @@ public class DaoWork extends Dao<Work> {
 
     @Override
     public boolean update(Work obj) {
-        return false;
+        CallableStatement stmt = null;
+        try {
+            stmt = connect.prepareCall("{call WORKPACKAGE.upd(?,?,?,?,?)}");
+            stmt.setInt(1, obj.getUser().getId());
+            stmt.setInt(2, obj.getId());
+            stmt.setDate(3, java.sql.Date.valueOf(obj.getBeginDate().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setDate(4, java.sql.Date.valueOf(obj.getEndDate().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setString(5, obj.getJobTitle());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
+
     }
 
     @Override
