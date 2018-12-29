@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.pojo.User;
 import model.pojo.Work;
 import oracle.jdbc.internal.OracleTypes;
 
@@ -8,6 +9,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoWork extends Dao<Work> {
@@ -54,7 +56,26 @@ public class DaoWork extends Dao<Work> {
 
     @Override
     public boolean delete(Work obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call WORKPACKAGE.del(?,?)}");
+            stmt.setInt(1,obj.getUser().getId());
+            stmt.setInt(2,obj.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
@@ -67,8 +88,96 @@ public class DaoWork extends Dao<Work> {
         return null;
     }
 
+    public Work find(int id,int user) {
+        CallableStatement stmt=null;
+        Work w=new Work();
+        ResultSet resultSet=null;
+        try{
+            stmt=connect.prepareCall("{? = call WORKPACKAGE.get(?,?)}");
+            stmt.registerOutParameter(1,OracleTypes.CURSOR);
+            stmt.setInt(2,user);
+            stmt.setInt(3, id);
+            stmt.execute();
+            resultSet=(ResultSet) stmt.getObject(1);
+            if(resultSet.next()){
+                w.setUser(new DaoUser(connect).find(resultSet.getInt(1)));
+                w.setId(resultSet.getInt(2));
+                w.setBeginDate(resultSet.getTimestamp(3));
+                w.setEndDate(resultSet.getTimestamp(4));
+                w.setJobTitle(resultSet.getString(5));
+                w.setName(resultSet.getString(6));
+                w.setAddress(resultSet.getString(7));
+            }
+            else{
+                return null;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (resultSet != null) {
+                try {
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return w;
+    }
+
     @Override
     public List<Work> getAll() {
-        return null;
+        CallableStatement stmt=null;
+        List<Work> works=new ArrayList<>();
+        ResultSet resultSet=null;
+        try{
+            stmt=connect.prepareCall("{? = call WORKPACKAGE.getAll}");
+            stmt.registerOutParameter(1,OracleTypes.CURSOR);
+            stmt.execute();
+            resultSet=(ResultSet) stmt.getObject(1);
+            if(resultSet!=null){
+                while(resultSet.next()){
+                    Work w=new Work();
+                    w.setUser(new DaoUser(connect).find(resultSet.getInt(1)));
+                    w.setId(resultSet.getInt(2));
+                    w.setBeginDate(resultSet.getTimestamp(3));
+                    w.setEndDate(resultSet.getTimestamp(4));
+                    w.setJobTitle(resultSet.getString(5));
+                    w.setName(resultSet.getString(6));
+                    w.setAddress(resultSet.getString(7));
+                    works.add(w);
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (resultSet != null) {
+                try {
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return works;
     }
 }

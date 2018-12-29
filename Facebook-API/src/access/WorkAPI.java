@@ -31,10 +31,10 @@ public class WorkAPI extends RestApplication {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("GetWork")
-    public Response getWork(@QueryParam("id") int id) {
+    public Response getWork(@QueryParam("company") int id,@QueryParam("user") int userid) {
         Response response=null;
         Connection conn= GetConnection.getInstance().getConnection();
-        Work w=new DaoWork(conn).find(id);
+        Work w=new DaoWork(conn).find(id,userid);
         if(w!=null)
             response=Response.status(Response.Status.OK).entity(w).build();
         else
@@ -78,9 +78,9 @@ public class WorkAPI extends RestApplication {
     @DELETE
     @Path("DeleteWork")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deletePost(@QueryParam("id")int id){
+    public Response deleteWork(@QueryParam("user")int id,@QueryParam("company") int idCompany){
         Connection conn=GetConnection.getInstance().getConnection();
-        Work w=new DaoWork(conn).find(id);
+        Work w=new DaoWork(conn).find(idCompany,id);
         Boolean test=new DaoWork(conn).delete(w);
         Response response=null;
         if(test)
@@ -92,7 +92,7 @@ public class WorkAPI extends RestApplication {
     @PUT
     @Path("UpdateWork")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("workid") String workid,@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
+    public Response updateWork(@FormParam("workid") String workid,@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
         Connection conn=GetConnection.getInstance().getConnection();
         Work w=new Work();
         w.setId(Integer.parseInt(workid));
