@@ -44,7 +44,7 @@ public class WorkAPI extends RestApplication {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Path("CreateWork")
-    public Response createPost(@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
+    public Response createWork(@FormParam("name") String name,@FormParam("address") String address,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("user") String userId,@FormParam("jobTitle" ) String jobTitle){
         Connection conn=GetConnection.getInstance().getConnection();
         Work w=new Work();
         w.setName(name);
