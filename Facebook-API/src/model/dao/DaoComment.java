@@ -55,7 +55,25 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public boolean delete(Comment obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call COMMENTPACKAGE.del(?)}");
+            stmt.setInt(1,obj.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
@@ -65,7 +83,44 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public Comment find(int id) {
-        return null;
+        CallableStatement stmt=null;
+        Comment c=new Comment();
+        ResultSet resultSet=null;
+        try{
+            stmt=connect.prepareCall("{? = call COMMENTPACKAGE.get(?)}");
+            stmt.registerOutParameter(1, OracleTypes.CURSOR);
+            stmt.setInt(2, id);
+            stmt.execute();
+            resultSet=(ResultSet) stmt.getObject(1);
+            if(resultSet.next()){
+                c.setId(resultSet.getInt(1));
+                c.setData(resultSet.getString(2));
+                c.setType(resultSet.getString(3));
+                c.setPostDate(resultSet.getTimestamp(4));
+                c.setPost(new DaoPost(connect).find(resultSet.getInt(5)));
+                c.setUser(new DaoUser(connect).find(resultSet.getInt(6)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (resultSet != null) {
+                try {
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return c;
     }
 
     @Override

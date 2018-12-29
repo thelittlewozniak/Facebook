@@ -70,14 +70,14 @@
           <entry key="dummy" value="5" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="9532" />
+          <entry key="java" value="9586" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="9532" />
+          <entry key="JAVA" value="9586" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
@@ -122,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="495">
+              <caret line="73" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="73" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+            <state relative-caret-position="342">
+              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
+            <state relative-caret-position="1003">
               <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -488,12 +488,12 @@
       <workItem from="1545918116328" duration="152000" />
       <workItem from="1545918277465" duration="46131000" />
       <workItem from="1546067683243" duration="6603000" />
-      <workItem from="1546079303169" duration="6983000" />
+      <workItem from="1546079303169" duration="8115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79588000" />
+    <option name="totallyTimeSpent" value="80720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +508,7 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.2714526" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.2714526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.51472867" side_tool="true" visible="true" weight="0.2714526" />
       <window_info id="Image Layers" order="3" />
@@ -518,7 +518,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49074593" visible="true" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49074593" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
+        <state relative-caret-position="1003">
           <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -771,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="495">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="73" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -781,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        <state relative-caret-position="342">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -112,8 +112,8 @@ public class DaoPost extends Dao<Post> {
             stmt.execute();
             resultSet=(ResultSet) stmt.getObject(1);
             if(resultSet.next()){
-                p.setId(resultSet.getInt("idpost"));
-                p.setData(resultSet.getString("data"));
+                p.setId(resultSet.getInt(1));
+                p.setData(resultSet.getString(2));
                 p.setType(resultSet.getString(3));
                 p.setPostDate(resultSet.getTimestamp(4));
                 p.setUser(new DaoUser(connect).find(resultSet.getInt(5)));
