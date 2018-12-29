@@ -76,9 +76,9 @@ public class SchoolingAPI extends RestApplication {
     @DELETE
     @Path("DeleteSchooling")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deleteSchooling(@QueryParam("id")int id){
+    public Response deleteSchooling(@QueryParam("id")int id,@QueryParam("iduser") int iduser){
         Connection conn=GetConnection.getInstance().getConnection();
-        Schooling school=new DaoSchooling(conn).find(id);
+        Schooling school=new DaoSchooling(conn).find(id,iduser);
         Boolean test=new DaoSchooling(conn).delete(school);
         Response response=null;
         if(test)
@@ -90,13 +90,10 @@ public class SchoolingAPI extends RestApplication {
     @PUT
     @Path("UpdateSchooling")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateSchooling(@FormParam("schoolingId") String schoolingId,@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
+    public Response updateSchooling(@FormParam("schoolingId") String schoolingId,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
         Connection conn=GetConnection.getInstance().getConnection();
         Schooling school=new Schooling();
         school.setId(Integer.parseInt(schoolingId));
-        school.setName(name);
-        school.setAddress(address);
-        school.setType(type);
         Date begin=null;
         try{
             begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);

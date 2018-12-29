@@ -23,10 +23,10 @@ public class FriendAPI extends RestApplication {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("GetFriend")
-    public Response getFriend(@QueryParam("id") int id) {
+    public Response getFriend(@QueryParam("asker") int idasker,@QueryParam("receiver") int idreceiver) {
         Response response=null;
         Connection conn=GetConnection.getInstance().getConnection();
-        Friend f=new DaoFriend(conn).find(id);
+        Friend f=new DaoFriend(conn).find(idasker,idreceiver);
         if(f!=null)
             response=Response.status(Response.Status.OK).entity(f).build();
         else

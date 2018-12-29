@@ -102,7 +102,6 @@ public class DaoWork extends Dao<Work> {
             }
             return true;
         }
-
     }
 
     @Override

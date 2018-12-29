@@ -57,12 +57,52 @@ public class DaoSchooling extends Dao<Schooling> {
 
     @Override
     public boolean delete(Schooling obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call SCHOOLINGPACKAGE.del(?,?)}");
+            stmt.setInt(1,obj.getUser().getId());
+            stmt.setInt(2,obj.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
     public boolean update(Schooling obj) {
-        return false;
+        CallableStatement stmt = null;
+        try {
+            stmt = connect.prepareCall("{call SCHOOLINGPACKAGE.upd(?,?,?,?,?)}");
+            stmt.setInt(1, obj.getUser().getId());
+            stmt.setInt(2, obj.getId());
+            stmt.setDate(3, java.sql.Date.valueOf(obj.getBeginDate().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setDate(4, java.sql.Date.valueOf(obj.getEndDate().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setInt(5, obj.getGraduate()?1:0);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
