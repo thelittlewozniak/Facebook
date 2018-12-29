@@ -8,6 +8,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.ZoneId;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
@@ -17,7 +18,36 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean create(Friend obj) {
-        return false;
+        CallableStatement stmt=null;
+        ResultSet resultSet=null;
+        try{
+            stmt=connect.prepareCall("{? = call FRIENDSPACKAGE.add(?,?,?)}");
+            stmt.registerOutParameter(1, OracleTypes.NUMBER);
+            stmt.setInt(2,obj.getAsker().getId());
+            stmt.setInt(3,obj.getReceiver().getId());
+            stmt.setInt(4,obj.getAccepted()?1:0);
+            stmt.execute();
+            return stmt.getInt(1)!=-1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (resultSet != null) {
+                try {
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @Override
@@ -37,23 +67,19 @@ public class DaoFriend extends Dao<Friend> {
 
     public Friend find(int idasker,int idreceiver) {
         CallableStatement stmt=null;
-        Work w=new Work();
+        Friend f=new Friend();
         ResultSet resultSet=null;
         try{
-            stmt=connect.prepareCall("{? = call WORKPACKAGE.get(?,?)}");
+            stmt=connect.prepareCall("{? = call FRIENDSPACKAGE.get(?,?)}");
             stmt.registerOutParameter(1, OracleTypes.CURSOR);
-            stmt.setInt(2,user);
-            stmt.setInt(3, id);
+            stmt.setInt(2,idasker);
+            stmt.setInt(3, idreceiver);
             stmt.execute();
             resultSet=(ResultSet) stmt.getObject(1);
             if(resultSet.next()){
-                w.setUser(new DaoUser(connect).find(resultSet.getInt(1)));
-                w.setId(resultSet.getInt(2));
-                w.setBeginDate(resultSet.getTimestamp(3));
-                w.setEndDate(resultSet.getTimestamp(4));
-                w.setJobTitle(resultSet.getString(5));
-                w.setName(resultSet.getString(6));
-                w.setAddress(resultSet.getString(7));
+                f.setAsker(new DaoUser(connect).find(resultSet.getInt(1)));
+                f.setReceiver(new DaoUser(connect).find(resultSet.getInt(2)));
+                f.setAccepted(resultSet.getInt(3)==1);
             }
             else{
                 return null;
@@ -78,7 +104,7 @@ public class DaoFriend extends Dao<Friend> {
                 }
             }
         }
-        return w;
+        return f;
     }
 
     @Override

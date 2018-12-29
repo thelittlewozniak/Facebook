@@ -41,6 +41,7 @@ public class FriendAPI extends RestApplication {
         Friend f=new Friend();
         f.setAsker(new DaoUser(conn).find(Integer.parseInt(askerid)));
         f.setReceiver(new DaoUser(conn).find(Integer.parseInt(receiverid)));
+        f.setAccepted(Boolean.parseBoolean(accepted));
         Boolean test=new DaoFriend(conn).create(f);
         Response response=null;
         if(test)
