@@ -79,7 +79,7 @@ public class DaoFriend extends Dao<Friend> {
     public boolean update(Friend obj) {
         CallableStatement stmt = null;
         try {
-            stmt = connect.prepareCall("{call FRIENDSWORKSPACE.upd(?,?,?)}");
+            stmt = connect.prepareCall("{call FRIENDSPACKAGE.upd(?,?,?)}");
             stmt.setInt(1, obj.getAsker().getId());
             stmt.setInt(2, obj.getReceiver().getId());
             stmt.setInt(3,obj.getAccepted()?1:0);

@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/access/FriendAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/FriendAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,14 +69,14 @@
           <entry key="dummy" value="5" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="11193" />
+          <entry key="java" value="11207" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="11193" />
+          <entry key="JAVA" value="11207" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="12" />
         </counts>
@@ -107,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="-219">
+              <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
               <folding>
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
@@ -129,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="342">
               <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -202,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/access/SchoolingAPI.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoWork.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
         <option value="$PROJECT_DIR$/src/access/FriendAPI.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
       </list>
     </option>
   </component>
@@ -474,12 +473,12 @@
       <workItem from="1545918116328" duration="152000" />
       <workItem from="1545918277465" duration="46131000" />
       <workItem from="1546067683243" duration="6603000" />
-      <workItem from="1546079303169" duration="27027000" />
+      <workItem from="1546079303169" duration="28586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99632000" />
+    <option name="totallyTimeSpent" value="101191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,23 +767,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
+    <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="342">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
           <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+        <state relative-caret-position="-219">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
           </folding>
         </state>
       </provider>
