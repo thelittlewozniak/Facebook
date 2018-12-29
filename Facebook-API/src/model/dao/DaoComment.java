@@ -78,7 +78,29 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public boolean update(Comment obj) {
-        return false;
+        CallableStatement stmt = null;
+        try {
+            stmt = connect.prepareCall("{call COMMENTPACKAGE.upd(?,?,?,?,?,?)}");
+            stmt.setInt(1, obj.getId());
+            stmt.setString(2,obj.getData());
+            stmt.setString(3,obj.getType());
+            stmt.setDate(4,java.sql.Date.valueOf(obj.getPostDate().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setInt(5,obj.getPost().getId());
+            stmt.setInt(6,obj.getUser().getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
