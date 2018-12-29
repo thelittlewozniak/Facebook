@@ -28,10 +28,10 @@ public class SchoolingAPI extends RestApplication {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("GetSchooling")
-    public Response getWork(@QueryParam("id") int id) {
+    public Response getSchooling(@QueryParam("id") int id,@QueryParam("iduser") int iduser) {
         Response response=null;
         Connection conn= GetConnection.getInstance().getConnection();
-        Schooling s=new DaoSchooling(conn).find(id);
+        Schooling s=new DaoSchooling(conn).find(id,iduser);
         if(s!=null)
             response=Response.status(Response.Status.OK).entity(s).build();
         else
@@ -41,7 +41,7 @@ public class SchoolingAPI extends RestApplication {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Path("CreateSchooling")
-    public Response createPost(@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
+    public Response createSchooling(@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
         Connection conn=GetConnection.getInstance().getConnection();
         Schooling school=new Schooling();
         school.setName(name);
@@ -76,7 +76,7 @@ public class SchoolingAPI extends RestApplication {
     @DELETE
     @Path("DeleteSchooling")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deletePost(@QueryParam("id")int id){
+    public Response deleteSchooling(@QueryParam("id")int id){
         Connection conn=GetConnection.getInstance().getConnection();
         Schooling school=new DaoSchooling(conn).find(id);
         Boolean test=new DaoSchooling(conn).delete(school);
@@ -90,7 +90,7 @@ public class SchoolingAPI extends RestApplication {
     @PUT
     @Path("UpdateSchooling")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateUser(@FormParam("schoolingId") String schoolingId,@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
+    public Response updateSchooling(@FormParam("schoolingId") String schoolingId,@FormParam("name") String name,@FormParam("address") String address,@FormParam("type") String type,@FormParam("beginDate") String beginDate,@FormParam("endDate") String endDate,@FormParam("graduate") String graduate,@FormParam("user") String userid){
         Connection conn=GetConnection.getInstance().getConnection();
         Schooling school=new Schooling();
         school.setId(Integer.parseInt(schoolingId));
