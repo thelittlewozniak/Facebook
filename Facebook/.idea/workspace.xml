@@ -2,36 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_ws_rs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facebook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/dao/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/css/facebook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/azureSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/BusinessLayer/BusinessUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook-intelliJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook-intelliJ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoLike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,7 +59,8 @@
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -131,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -306,16 +285,7 @@
             <path>
               <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,7 +298,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546184031949" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546201069152" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javax.ws.rs.jar/javax.ws.rs.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -521,24 +491,28 @@
       <workItem from="1544920310187" duration="743000" />
       <workItem from="1546179209442" duration="4633000" />
       <workItem from="1546184361945" duration="20000" />
+      <workItem from="1546200705568" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15999000" />
+    <option name="totallyTimeSpent" value="16334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49688148" visible="true" weight="0.2692092" />
+      <window_info id="Azure Explorer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495842" visible="true" weight="0.27201346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.5031185" side_tool="true" visible="true" weight="0.2692092" />
+      <window_info id="Web" order="2" sideWeight="0.504158" side_tool="true" visible="true" weight="0.27201346" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" />
+      <window_info anchor="bottom" id="Azure Activity Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
@@ -706,11 +680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7392.17801/CodeGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7392.17801/CodeGen.java" />
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -794,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

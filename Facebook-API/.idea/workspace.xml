@@ -7,39 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Facebook_API_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/azureSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/javax_ws_rs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/libraries/jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/Facebook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/facebook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook/.idea/azureSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/BusinessLayer/BusinessUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/Facebook-intelliJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/Facebook-intelliJ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoFriend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoLike.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoLike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoSchooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoSchooling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,18 +60,22 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
+          <entry key="css" value="3" />
           <entry key="eml" value="1" />
           <entry key="http" value="1" />
           <entry key="iml" value="3" />
           <entry key="java" value="79" />
+          <entry key="js" value="2" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="3" />
           <entry key="HTTP Request" value="1" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JAVA" value="79" />
+          <entry key="JavaScript" value="2" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="5" />
@@ -150,11 +129,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Facebook-API.iml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="8" column="27535" selection-start-line="8" selection-start-column="27535" selection-end-line="8" selection-end-column="27535" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="27535" selection-start-line="8" selection-start-column="27535" selection-end-line="8" selection-end-column="27535" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,6 +159,8 @@
         <option value="HTTP Request" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -217,6 +210,11 @@
         <option value="$PROJECT_DIR$/src/access/LikePostAPI.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoLikeComment.java" />
         <option value="$PROJECT_DIR$/src/access/LikeCommentAPI.java" />
+        <option value="$PROJECT_DIR$/web/css/facebook.css" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/web/js/jquery.js" />
+        <option value="$PROJECT_DIR$/web/js/bootstrap.css" />
+        <option value="$PROJECT_DIR$/web/js/bootstrap.js" />
       </list>
     </option>
   </component>
@@ -263,17 +261,18 @@
             <path>
               <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
@@ -305,8 +304,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546195903177" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546201069119" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -335,7 +335,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Azure Web App.Azure Web App: Facebook-API:Facebook-API">
+  <component name="RunManager" selected="GlassFish Server.Unnamed">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="access.Test" />
       <module name="Facebook-API" />
@@ -495,12 +495,12 @@
       <workItem from="1546158951311" duration="12276000" />
       <workItem from="1546184361265" duration="52000" />
       <workItem from="1546184963989" duration="1247000" />
-      <workItem from="1546187888851" duration="2935000" />
+      <workItem from="1546187888851" duration="5557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118017000" />
+    <option name="totallyTimeSpent" value="120639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,6 +513,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Azure Explorer" sideWeight="0.4992248" weight="0.32978126" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4775194" visible="true" weight="0.2843522" />
@@ -784,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -805,6 +799,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="102684" selection-start-line="8" selection-start-column="102684" selection-end-line="8" selection-end-column="102684" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/facebook.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28411" selection-start-line="4" selection-start-column="28411" selection-end-line="4" selection-end-column="28411" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27535" selection-start-line="8" selection-start-column="27535" selection-end-line="8" selection-end-column="27535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27535" selection-start-line="8" selection-start-column="27535" selection-end-line="8" selection-end-column="27535" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
