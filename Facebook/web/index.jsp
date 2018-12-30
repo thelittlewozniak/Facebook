@@ -84,14 +84,53 @@
 
             <!-- content -->
             <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Connect with friends and the world around you on Facebook.</div>
+                  <div class="panel-body">
+                    <img src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/29512165_10216053466270970_8307976904525516907_n.jpg?_nc_cat=107&_nc_ht=scontent.fbru2-1.fna&oh=df283284cb7daf7f0828c55a70403bc2&oe=5CCE1544" class="img-circle pull-left">
+                    <span class="pull">See photos and updates from friends in News Feed.</span>
+                  </div>
+                  <div class="panel-body">
+                    <img src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/65711_10200499693363719_1241543246_n.jpg?_nc_cat=102&_nc_ht=scontent.fbru2-1.fna&oh=b9fd9f8fc96586a56396e710bdfecb68&oe=5CC825C9" class="img-circle pull-left">
+                    <span>Share what's new in your life on your Timeline.</span>
 
+                  </div>
+                  <div class="panel-body">
+                    <img src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/10300965_1445273082428150_7310414669714928221_n.jpg?_nc_cat=104&_nc_ht=scontent.fbru2-1.fna&oh=67f85bccb98fb4b246410a210ebfed3a&oe=5C91BB8B" class="img-circle pull-left">
+                    <span>Find more of what you're looking for with Facebook Search.</span>
+                  </div>
+                </div>
+              </div>
               <!-- main col right -->
-              <div class="col-sm-12">
+              <div class="col-sm-6">
                 <div class="panel panel-default">
                   <div class="panel-heading"><a href="#" class="pull-right">Le Christ Cosmique</a> <h4>Facebook fait peau neuve!</h4></div>
                   <div class="panel-body">
                     et ouais les nullos, Raph le bg et moi on dev facebook!
                   </div>
+                </div>
+                <div class="well">
+                  <form class="form">
+                    <h4>Sign-up</h4>
+                    <div class="input-group text-center">
+                      <div class="input-group-lg form-group">
+                        <label class="control-label pull-left">Enter your email address:</label>
+                        <input class="form-control input-lg pull-right" placeholder="Enter your email address" type="text">
+                      </div>
+                      <div class="input-group-lg form-group">
+                        <label class="control-label pull-left">Enter your firstname:</label>
+                        <input class="form-control input-lg pull-right" placeholder="Enter your Firstname" type="text">
+                      </div>
+                      <div class="input-group-lg form-group">
+                        <label class="control-label pull-left">Enter your lastname:</label>
+                        <input class="form-control input-lg pull-right" placeholder="Enter your Lastname" type="text">
+                      </div>
+                      <input class="form-control input-lg" placeholder="Enter your birthday" type="date">
+                      <input class="form-control input-lg" placeholder="Enter your phone number" type="number">
+                      <button class="btn btn-lg btn-primary pull-right" type="button">Register you!</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div><!--/row-->
