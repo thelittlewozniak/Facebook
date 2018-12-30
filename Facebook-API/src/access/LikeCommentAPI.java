@@ -64,7 +64,7 @@ public class LikeCommentAPI extends RestApplication {
     public Response deleteLike(@QueryParam("id")int id){
         Connection conn=GetConnection.getInstance().getConnection();
         Like l=new DaoLikeComment(conn).find(id);
-        Boolean test=new DaoLikePost(conn).delete(l);
+        Boolean test=new DaoLikeComment(conn).delete(l);
         Response response=null;
         if(test)
             response=Response.status(Response.Status.OK).entity(test).build();

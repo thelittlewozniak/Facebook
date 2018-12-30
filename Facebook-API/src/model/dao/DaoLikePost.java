@@ -53,12 +53,51 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean delete(Like obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call LIKEPACKAGE.delLikePost(?)}");
+            stmt.setInt(1,obj.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override
     public boolean update(Like obj) {
-        return false;
+        CallableStatement stmt=null;
+        try{
+            stmt=connect.prepareCall("{call LIKEPACKAGE.updLikePost(?,?,?,?)}");
+            stmt.setInt(1,obj.getId());
+            stmt.setDate(2,java.sql.Date.valueOf(obj.getDateLiked().toInstant().atZone(ZoneId.of("Europe/Brussels")).toLocalDate()));
+            stmt.setInt(3,obj.getUser().getId());
+            stmt.setInt(4,obj.getPost().getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+        finally{
+            if(stmt!=null){
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
     }
 
     @Override

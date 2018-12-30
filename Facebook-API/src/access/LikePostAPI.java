@@ -78,7 +78,7 @@ public class LikePostAPI extends RestApplication {
     @PUT
     @Path("UpdateLike")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response updateLike(@FormParam("id") String idLike,@FormParam("dateLiked") String dateLike,@FormParam("user") String userId,@FormParam("post") String postId,@FormParam("comment") String commentid){
+    public Response updateLike(@FormParam("id") String idLike,@FormParam("dateLiked") String dateLike,@FormParam("user") String userId,@FormParam("post") String postId){
         Connection conn=GetConnection.getInstance().getConnection();
         Like l=new Like();
         l.setId(Integer.parseInt(idLike));
