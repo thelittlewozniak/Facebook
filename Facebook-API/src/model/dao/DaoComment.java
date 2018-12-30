@@ -158,8 +158,8 @@ public class DaoComment extends Dao<Comment> {
             if(resultSet!=null){
                 while(resultSet.next()){
                     Comment c=new Comment();
-                    c.setId(resultSet.getInt("idpost"));
-                    c.setData(resultSet.getString("data"));
+                    c.setId(resultSet.getInt(1));
+                    c.setData(resultSet.getString(2));
                     c.setType(resultSet.getString(3));
                     c.setPostDate(resultSet.getTimestamp(4));
                     c.setPost(new DaoPost(connect).find(resultSet.getInt(5)));
