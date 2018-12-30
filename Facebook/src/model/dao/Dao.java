@@ -1,6 +1,7 @@
 package model.dao;
 
 import java.sql.Connection;
+import java.util.List;
 
 public abstract class Dao<T> {
     protected Connection connect = null;
@@ -32,4 +33,6 @@ public abstract class Dao<T> {
      * @return T
      */
     public abstract T find(int id);
+
+    public abstract List<T> getAll();
 }

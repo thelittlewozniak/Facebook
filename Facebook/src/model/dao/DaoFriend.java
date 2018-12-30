@@ -3,6 +3,7 @@ package model.dao;
 import model.pojo.Friend;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
     public DaoFriend(Connection conn) {
@@ -26,6 +27,11 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public Friend find(int id) {
+        return null;
+    }
+
+    @Override
+    public List<Friend> getAll() {
         return null;
     }
 }
