@@ -62,24 +62,16 @@
             </form>
             <ul class="nav navbar-nav">
               <li>
-                <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
-              </li>
-              <li>
-                <a href="#"><span class="badge">badge</span></a>
+                <a href="#postModal" role="button" data-toggle="modal"></i>Make a Post</a>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
                 <ul class="dropdown-menu">
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
                 </ul>
               </li>
             </ul>
@@ -94,17 +86,7 @@
             <div class="row">
 
               <!-- main col right -->
-              <div class="col-sm-12"
-                <div class="well">
-                  <form class="form">
-                    <h4>Sign-up</h4>
-                    <div class="input-group text-center">
-                      <input class="form-control input-lg" placeholder="Enter your email address" type="text">
-                      <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
-                    </div>
-                  </form>
-                </div>
-
+              <div class="col-sm-12">
                 <div class="panel panel-default">
                   <div class="panel-heading"><a href="#" class="pull-right">Le Christ Cosmique</a> <h4>Facebook fait peau neuve!</h4></div>
                   <div class="panel-body">
@@ -116,7 +98,7 @@
 
             <div class="row">
               <div class="col-sm-6">
-                <a href="#">Twitter</a> <small class="text-muted">|</small> <a href="#">Facebook</a> <small class="text-muted">|</small> <a href="#">Google+</a>
+                <a href="#">Nathan Pire</a> <small class="text-muted">|</small> <a href="#">le BG</a> <small class="text-muted">|</small> <a href="#">Raphael Dispaux+</a>
               </div>
             </div>
 
@@ -126,7 +108,7 @@
               </div>
               <div class="col-sm-6">
                 <p>
-                  <a href="#" class="pull-right">ʃopyright 2013</a>
+                  <a href="#" class="pull-right">Copyright 2018-2019 RPZ</a>
                 </p>
               </div>
             </div>
@@ -141,33 +123,6 @@
     </div>
   </div>
 </div>
-
-
-<!--post modal-->
-<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">׼/button>
-          Update Status
-      </div>
-      <div class="modal-body">
-        <form class="form center-block">
-          <div class="form-group">
-            <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div>
-          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
-          <ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript" src="/js/jquery.js"></script>
 <script type="text/javascript" src="/js/bootstrap.js"></script>
 <script type="text/javascript">
