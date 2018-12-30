@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Facebook-intelliJ:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/css/facebook.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook-API/web/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/facebook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/css/facebook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,28 +76,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
+          <entry key="css" value="2" />
           <entry key="iml" value="2" />
           <entry key="java" value="32" />
-          <entry key="xml" value="2" />
+          <entry key="js" value="2" />
+          <entry key="jsp" value="1" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="32" />
-          <entry key="XML" value="2" />
+          <entry key="JSP" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1193" />
+          <entry key="jsp" value="9" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1193" />
+          <entry key="JSP" value="9" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -96,10 +114,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="54" column="9" selection-start-line="45" selection-start-column="8" selection-end-line="54" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,13 +126,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/dao/Test.java">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9221#9226#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -210,6 +238,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -241,6 +271,11 @@
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoUser.java" />
         <option value="$PROJECT_DIR$/src/model/dao/Test.java" />
+        <option value="$PROJECT_DIR$/web/js/bootstrap.js" />
+        <option value="$PROJECT_DIR$/web/js/jquery.js" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/web/css/facebook.css" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -249,6 +284,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
@@ -274,6 +316,11 @@
             <path>
               <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,6 +334,18 @@
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,11 +357,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546201069152" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546203898432" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javax.ws.rs.jar/javax.ws.rs.jar!/" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -318,7 +378,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="GlassFish Server.glassfish">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.dao.Test" />
       <module name="Facebook-intelliJ" />
@@ -397,7 +457,6 @@
       </method>
     </configuration>
     <configuration name="glassfish" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9090/Facebook_intelliJ_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Facebook-intelliJ:war exploded">
@@ -461,7 +520,11 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Facebook-intelliJ:war exploded" />
+        </option>
+      </method>
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.glassfish" />
@@ -491,27 +554,29 @@
       <workItem from="1544920310187" duration="743000" />
       <workItem from="1546179209442" duration="4633000" />
       <workItem from="1546184361945" duration="20000" />
-      <workItem from="1546200705568" duration="335000" />
+      <workItem from="1546200705568" duration="2921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16334000" />
+    <option name="totallyTimeSpent" value="18920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Azure Explorer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495842" visible="true" weight="0.27201346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49457365" visible="true" weight="0.27201346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.504158" side_tool="true" visible="true" weight="0.27201346" />
+      <window_info id="Web" order="2" sideWeight="0.50542635" side_tool="true" visible="true" weight="0.27201346" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" />
       <window_info anchor="bottom" id="Azure Activity Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -594,13 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -768,6 +826,58 @@
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27535" selection-start-line="8" selection-start-column="27535" selection-end-line="8" selection-end-column="27535" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28411" selection-start-line="4" selection-start-column="28411" selection-end-line="4" selection-end-column="28411" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="102684" selection-start-line="8" selection-start-column="102684" selection-end-line="8" selection-end-column="102684" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/facebook.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9221#9226#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
