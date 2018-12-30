@@ -7,18 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Facebook/web/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/web/css/facebook.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/web/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Facebook/web/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/facebook.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/artifacts/Facebook_intelliJ_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -285,7 +276,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546203898405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546203912188" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
