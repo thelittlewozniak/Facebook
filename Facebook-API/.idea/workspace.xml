@@ -7,22 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/access/CommentAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/CommentAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/FriendAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/FriendAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/LikeCommentAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/LikeCommentAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/LikePostAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/LikePostAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/PostAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/PostAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/SchoolingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/SchoolingAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/UserAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/access/WorkAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/access/WorkAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/BusinessLayer/GetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/GetConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Friend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Like.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Schooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Schooling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -344,7 +333,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546259334644" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546259344623" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -536,12 +525,12 @@
       <workItem from="1546184361265" duration="52000" />
       <workItem from="1546184963989" duration="1247000" />
       <workItem from="1546187888851" duration="6615000" />
-      <workItem from="1546248458836" duration="3631000" />
+      <workItem from="1546248458836" duration="4216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125328000" />
+    <option name="totallyTimeSpent" value="125913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

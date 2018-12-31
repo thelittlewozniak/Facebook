@@ -6,8 +6,8 @@ import java.sql.Connection;
 import java.util.List;
 
 public class DaoComment extends Dao<Comment> {
-    public DaoComment(Connection conn) {
-        super(conn);
+    public DaoComment() {
+        super();
     }
 
     @Override
