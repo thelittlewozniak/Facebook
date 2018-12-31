@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Facebook.iml" filepath="$PROJECT_DIR$/Facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook-intelliJ.iml" filepath="$PROJECT_DIR$/Facebook-intelliJ.iml" />
     </modules>
   </component>

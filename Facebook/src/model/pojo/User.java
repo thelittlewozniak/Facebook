@@ -1,18 +1,26 @@
 package model.pojo;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import java.util.Date;
 import java.util.List;
 
 public class User {
+
+    private int id;
     
     private String firstname;
     
     private String lastname;
+
+    private String email;
+
+    private String password;
     
     private String address;
-    
+    @JsonDeserialize(using = EditObjectMapper.class)
     private Date birthday;
-    
+    @JsonDeserialize(using = EditObjectMapper.class)
     private Date registerDate;
     
     private Boolean relationship;
@@ -30,8 +38,32 @@ public class User {
     private List<Schooling> schoolings;
     
     private List<Work> works;
-    
-    
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getFirstname() {
         return this.firstname;
     }

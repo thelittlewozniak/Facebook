@@ -10,27 +10,27 @@ public class Friend {
     private User receiver;
 
     
-    private Boolean getAccepted() {
+    public Boolean getAccepted() {
         return this.accepted;
     }
     
-    private void setAccepted(Boolean accepted) {
+    public void setAccepted(Boolean accepted) {
         this.accepted = accepted;
     }
     
-    private User getAsker() {
+    public User getAsker() {
         return this.asker;
     }
     
-    private void setAsker(User asker) {
+    public void setAsker(User asker) {
         this.asker = asker;
     }
     
-    private User getReceiver() {
+    public User getReceiver() {
         return this.receiver;
     }
     
-    private void setReceiver(User receiver) {
+    public void setReceiver(User receiver) {
         this.receiver = receiver;
     }
     
