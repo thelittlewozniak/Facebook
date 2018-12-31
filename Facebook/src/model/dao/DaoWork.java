@@ -6,8 +6,8 @@ import java.sql.Connection;
 import java.util.List;
 
 public class DaoWork extends Dao<Work> {
-    public DaoWork(Connection conn) {
-        super(conn);
+    public DaoWork() {
+        super();
     }
 
     @Override

@@ -6,8 +6,8 @@ import java.sql.Connection;
 import java.util.List;
 
 public class DaoLike extends Dao<Like> {
-    public DaoLike(Connection conn) {
-        super(conn);
+    public DaoLike() {
+        super();
     }
 
     @Override

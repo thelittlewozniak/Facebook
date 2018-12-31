@@ -6,8 +6,8 @@ import java.sql.Connection;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
-    public DaoFriend(Connection conn) {
-        super(conn);
+    public DaoFriend() {
+        super();
     }
 
     @Override
