@@ -1,7 +1,6 @@
 package access;
 
-import model.BusinessLayer.GetConnection;
-import model.dao.DaoComment;
+import model.dao.GetConnection;
 import model.dao.DaoLikePost;
 import model.dao.DaoPost;
 import model.dao.DaoUser;

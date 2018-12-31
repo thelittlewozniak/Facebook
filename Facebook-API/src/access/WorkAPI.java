@@ -1,11 +1,8 @@
 package access;
 
-import jdk.nashorn.internal.parser.DateParser;
-import model.BusinessLayer.GetConnection;
-import model.dao.DaoPost;
+import model.dao.GetConnection;
 import model.dao.DaoUser;
 import model.dao.DaoWork;
-import model.pojo.Post;
 import model.pojo.Work;
 
 import javax.ws.rs.*;

@@ -1,6 +1,6 @@
 package access;
 
-import model.BusinessLayer.GetConnection;
+import model.dao.GetConnection;
 import model.dao.DaoFriend;
 import model.dao.DaoUser;
 import model.pojo.Friend;

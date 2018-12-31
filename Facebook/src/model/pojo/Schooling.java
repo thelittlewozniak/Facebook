@@ -1,16 +1,20 @@
 package model.pojo;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import java.util.Date;
 
 public class Schooling {
+
+    private int id;
 
     private String name;
 
     private String address;
 
     private String type;
-
+    @JsonDeserialize(using = EditObjectMapper.class)
     private Date beginDate;
 
     private Date endDate;
@@ -20,54 +24,55 @@ public class Schooling {
     private User user;
 
 
-    private String getName() {
-        return this.name;
-    }
+    public int getId() { return id; }
 
-    private void setName(String name) {
-        this.name = name;
-    }
+    public void setId(int id) { this.id = id; }
 
-    private String getAddress() {
-        return this.address;
-    }
+    public String getName() { return this.name; }
 
-    private void setAddress(String address) {
+    public void setName(String name) { this.name = name; }
+
+    public String getAddress() { return this.address; }
+
+    public void setAddress(String address) {
         this.address = address;
     }
 
-    private String getType() {
+    public String getType() {
         return this.type;
     }
 
-    private void setType(String type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    private Date getBeginDate() {
+    public Date getBeginDate() {
         return this.beginDate;
     }
 
-    private void setBeginDate(Date beginDate) {
+    public void setBeginDate(Date beginDate) {
         this.beginDate = beginDate;
     }
 
-    private Date getEndDate() {
+    public Date getEndDate() {
         return this.endDate;
     }
 
-    private void setEndDate(Date endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 
-    private Boolean getGraduate() {
+    public Boolean getGraduate() {
         return this.graduate;
     }
 
-    private void setGraduate(Boolean graduate) {
+    public void setGraduate(Boolean graduate) {
         this.graduate = graduate;
     }
 
+    public User getUser(){return this.user;}
+
+    public void setUser(User user){this.user=user;}
 
     //                          Operations
 

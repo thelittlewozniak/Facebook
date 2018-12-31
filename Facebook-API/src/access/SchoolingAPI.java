@@ -1,7 +1,6 @@
 package access;
 
-import model.BusinessLayer.GetConnection;
-import model.dao.DaoPost;
+import model.dao.GetConnection;
 import model.dao.DaoSchooling;
 import model.dao.DaoUser;
 import model.pojo.Schooling;

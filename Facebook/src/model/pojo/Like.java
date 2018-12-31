@@ -1,47 +1,62 @@
 package model.pojo;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import java.util.Date;
 
 public class Like {
-    
+
+    private int id;
+    @JsonDeserialize(using = EditObjectMapper.class)
     private Date dateLiked;
-    
+
     private User user;
-    
+
     private Post post;
-    
+
     private Comment comment;
 
 
-    private Date getDateLiked() {
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
+
+    public Date getDateLiked() {
         return this.dateLiked;
     }
-    
-    private void setDateLiked(Date dateLiked) {
+
+    public void setDateLiked(Date dateLiked) {
         this.dateLiked = dateLiked;
     }
-    
-    private User getUser() {
+
+    public User getUser() {
         return this.user;
     }
-    
-    private void setUser(User user) {
+
+    public void setUser(User user) {
         this.user = user;
     }
-    
 
-    //                          Operations                                  
-    
+    public Post getPost() { return post; }
+
+    public void setPost(Post post) { this.post = post; }
+
+    public Comment getComment() { return comment; }
+
+    public void setComment(Comment comment) { this.comment = comment; }
+
+    //                          Operations
+
     public Like createAPost() {
         //TODO
         return null;
     }
-    
+
     public boolean deleteAPost() {
         //TODO
         return false;
     }
-    
-    
+
+
 }

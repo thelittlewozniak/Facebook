@@ -1,7 +1,6 @@
 package access;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import model.BusinessLayer.GetConnection;
+import model.dao.GetConnection;
 import model.dao.DaoUser;
 import model.pojo.User;
 

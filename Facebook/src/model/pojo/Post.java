@@ -1,77 +1,86 @@
 package model.pojo;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
 
 public class Post {
-    
-    private String data;
-    
-    private String type;
-    
-    private Date postDate;
-    
-    private List<Comment> comments;
-    
-    private List<Like> likes;
-    
-    private User user;
-    
 
-    private String getData() {
+    private int id;
+
+    private String data;
+
+    private String type;
+    @JsonDeserialize(using = EditObjectMapper.class)
+    private Date postDate;
+
+    private List<Comment> comments;
+
+    private List<Like> likes;
+
+    private User user;
+
+
+    public int getId() {return this.id; }
+
+    public void setId(int id) {this.id=id; }
+
+    public String getData() {
         return this.data;
     }
 
-    private void setData(String data) {
+    public void setData(String data) {
         this.data = data;
     }
-    
-    private String getType() {
+
+    public String getType() {
         return this.type;
     }
-    
-    private void setType(String type) {
+
+    public void setType(String type) {
         this.type = type;
     }
-    
-    private Date getPostDate() {
+
+    public Date getPostDate() {
         return this.postDate;
     }
-    
-    private void setPostDate(Date postDate) {
+
+    public void setPostDate(Date postDate) {
         this.postDate = postDate;
     }
-    
-    private List<Comment> getComments() {
+
+    public List<Comment> getComments() {
         return this.comments;
     }
-    
-    private void setComments(List<Comment> comments) {
+
+    public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
-    
-    private List<Like> getLikes() {
+
+    public List<Like> getLikes() {
         return this.likes;
     }
-    
-    private void setLikes(List<Like> likes) {
+
+    public void setLikes(List<Like> likes) {
         this.likes = likes;
     }
-    
 
-    //                          Operations                                  
-    
+    public User getUser(){return this.user;}
+
+    public void setUser(User user){this.user=user;}
+
+    //                          Operations
+
     public Post createAPost() {
         //TODO
         return null;
     }
-    
+
     public boolean deleteAPost() {
         //TODO
         return false;
     }
-    
-    
+
+
 }
