@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoWork.java" afterDir="false" />
-    </list>
+    <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoSchooling.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="727">
@@ -171,7 +168,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -296,7 +293,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546353711730" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546353713917" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -497,12 +494,12 @@
       <workItem from="1546184361945" duration="20000" />
       <workItem from="1546200705568" duration="5885000" />
       <workItem from="1546248459426" duration="14391000" />
-      <workItem from="1546348895893" duration="4798000" />
+      <workItem from="1546348895893" duration="5081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41073000" />
+    <option name="totallyTimeSpent" value="41356000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlet/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -854,6 +844,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
