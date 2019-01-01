@@ -4,11 +4,13 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
 import model.pojo.Comment;
+import model.pojo.Post;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoComment extends Dao<Comment> {
@@ -23,7 +25,8 @@ public class DaoComment extends Dao<Comment> {
         ((MultivaluedMapImpl) params).add("type",obj.getType());
         ((MultivaluedMapImpl) params).add("postDate",obj.getPostDate());
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
-        String response = webResource.path("Post/CreatePost").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
+        ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
+        String response = webResource.path("Comment/CreateComment").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
         ObjectMapper mapper =new ObjectMapper();
         Boolean done=false;
         try {
@@ -36,21 +39,61 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public boolean delete(Comment obj) {
-        return false;
+        String response = webResource.path("Comment/DeleteComment?id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
     public boolean update(Comment obj) {
-        return false;
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("data",obj.getData());
+        ((MultivaluedMapImpl) params).add("type",obj.getType());
+        ((MultivaluedMapImpl) params).add("postDate",obj.getPostDate());
+        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
+        ((MultivaluedMapImpl) params).add("commentId",obj.getId());
+        String response = webResource.path("Comment/UpdateComment").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
+
     }
 
     @Override
     public Comment find(int id) {
-        return null;
+        String response = webResource.path("Comment/GetComment?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Comment c=new Comment();
+        try {
+            c=mapper.readValue(response, new TypeReference<Comment>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return c;
     }
 
     @Override
     public List<Comment> getAll() {
-        return null;
+        String response = webResource.path("Comment/getAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        List<Comment> comments=new ArrayList<>();
+        try {
+            comments=mapper.readValue(response, new TypeReference<List<Comment>>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return comments;
     }
 }
