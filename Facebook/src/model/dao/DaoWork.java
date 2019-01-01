@@ -58,7 +58,7 @@ public class DaoWork extends Dao<Work> {
         ((MultivaluedMapImpl) params).add("endDate",obj.getEndDate());
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("jobTitle",obj.getJobTitle());
-        String response = webResource.path("User/UpdateWork").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
+        String response = webResource.path("User/UpdateWork").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
         ObjectMapper mapper =new ObjectMapper();
         Boolean done=false;
         try {
