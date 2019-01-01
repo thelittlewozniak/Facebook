@@ -3,7 +3,6 @@ package model.dao;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
-import model.pojo.User;
 import model.pojo.Work;
 
 import javax.ws.rs.core.MediaType;
