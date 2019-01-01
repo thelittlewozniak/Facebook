@@ -95,7 +95,7 @@ public class DaoUser extends Dao<User> {
 
     @Override
     public List<User> getAll() {
-        String response = webResource.path("User/getAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("User/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         List<User> users=new ArrayList<>();
         try {

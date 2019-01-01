@@ -81,7 +81,7 @@ public class DaoPost extends Dao<Post> {
 
     @Override
     public List<Post> getAll() {
-        String response = webResource.path("User/getAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("User/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         List<Post> posts=new ArrayList<>();
         try {

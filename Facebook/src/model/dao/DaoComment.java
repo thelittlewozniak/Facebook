@@ -84,7 +84,7 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public List<Comment> getAll() {
-        String response = webResource.path("Comment/getAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("Comment/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         List<Comment> comments=new ArrayList<>();
         try {
