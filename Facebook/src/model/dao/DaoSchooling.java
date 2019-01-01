@@ -2,7 +2,6 @@ package model.dao;
 
 import model.pojo.Schooling;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class DaoSchooling extends Dao<Schooling> {

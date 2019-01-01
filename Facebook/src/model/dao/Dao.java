@@ -3,7 +3,6 @@ package model.dao;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.WebResource;
 
-import java.sql.Connection;
 import java.util.List;
 
 public abstract class Dao<T> {

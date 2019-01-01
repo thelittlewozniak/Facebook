@@ -2,7 +2,6 @@ package model.dao;
 
 import model.pojo.Friend;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {

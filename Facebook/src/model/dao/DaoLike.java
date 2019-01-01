@@ -2,7 +2,6 @@ package model.dao;
 
 import model.pojo.Like;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class DaoLike extends Dao<Like> {

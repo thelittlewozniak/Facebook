@@ -2,7 +2,6 @@ package model.dao;
 
 import model.pojo.Work;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class DaoWork extends Dao<Work> {
