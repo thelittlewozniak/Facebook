@@ -9,6 +9,7 @@ import model.pojo.Work;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
@@ -69,7 +70,7 @@ public class DaoFriend extends Dao<Friend> {
     }
 
     public Friend find(int askerId, int receiverId) {
-        String response = webResource.path("Work/getWork?asker="+askerId+"&receiver="+receiverId).accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("Friend/GetFriend?asker="+askerId+"&receiver="+receiverId).accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Friend f=new Friend();
         try {
@@ -82,6 +83,14 @@ public class DaoFriend extends Dao<Friend> {
     }
     @Override
     public List<Friend> getAll() {
-        return null;
+        String response = webResource.path("Friend/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        List<Friend> friends=new ArrayList<>();
+        try {
+            friends=mapper.readValue(response, new TypeReference<List<Friend>>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return friends;
     }
 }
