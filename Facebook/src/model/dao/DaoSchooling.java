@@ -38,7 +38,15 @@ public class DaoSchooling extends Dao<Schooling> {
 
     @Override
     public boolean delete(Schooling obj) {
-        return false;
+        String response = webResource.path("Schooling/DeleteSchooling?iduser="+obj.getUser().getId()+"&id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
