@@ -43,7 +43,19 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean update(Like obj) {
-        return false;
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("dateLiked",obj.getDateLiked());
+        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
+        String response = webResource.path("LikePost/UpdateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
