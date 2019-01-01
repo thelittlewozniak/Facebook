@@ -62,7 +62,7 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        String response = webResource.path("User/GetUser?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("LikePost/GetLike?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Like l=new Like();
         try {
@@ -75,7 +75,7 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public List<Like> getAll() {
-        String response = webResource.path("User/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.path("LikePost/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         List<Like> likes=new ArrayList<>();
         try {

@@ -64,7 +64,15 @@ public class DaoLikeComment extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        return null;
+        String response = webResource.path("LikeComment/GetLike?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Like l=new Like();
+        try {
+            l=mapper.readValue(response, new TypeReference<Like>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return l;
     }
 
     @Override
