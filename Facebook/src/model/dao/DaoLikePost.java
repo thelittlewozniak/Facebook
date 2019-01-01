@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
 import model.pojo.Like;
+import model.pojo.User;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
@@ -60,7 +61,15 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        return null;
+        String response = webResource.path("User/GetUser?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Like l=new Like();
+        try {
+            l=mapper.readValue(response, new TypeReference<Like>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return l;
     }
 
     @Override
