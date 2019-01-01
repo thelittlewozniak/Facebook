@@ -21,7 +21,7 @@ public class DaoFriend extends Dao<Friend> {
         ((MultivaluedMapImpl) params).add("asker",obj.getAsker());
         ((MultivaluedMapImpl) params).add("receiver",obj.getReceiver());
         ((MultivaluedMapImpl) params).add("accepted",obj.getAccepted());
-        String response = webResource.path("Schooling/CreateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
+        String response = webResource.path("Friend/CreateFriend").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
         ObjectMapper mapper =new ObjectMapper();
         Boolean done=false;
         try {
@@ -34,7 +34,15 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean delete(Friend obj) {
-        return false;
+        String response = webResource.path("Friend/DeleteFriend?asker="+obj.getAsker().getId()+"&receiver="+obj.getReceiver().getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
