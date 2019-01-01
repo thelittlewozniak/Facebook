@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
 import model.pojo.Friend;
+import model.pojo.Work;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
@@ -67,6 +68,18 @@ public class DaoFriend extends Dao<Friend> {
         return null;
     }
 
+    public Friend find(int askerId, int receiverId) {
+        String response = webResource.path("Work/getWork?asker="+askerId+"&receiver="+receiverId).accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Friend f=new Friend();
+        try {
+            f=mapper.readValue(response, new TypeReference<Friend>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return f;
+
+    }
     @Override
     public List<Friend> getAll() {
         return null;
