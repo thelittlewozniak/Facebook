@@ -47,7 +47,19 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean update(Friend obj) {
-        return false;
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("asker",obj.getAsker());
+        ((MultivaluedMapImpl) params).add("receiver",obj.getReceiver());
+        ((MultivaluedMapImpl) params).add("accepted",obj.getAccepted());
+        String response = webResource.path("Friend/UpdateFriend").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override

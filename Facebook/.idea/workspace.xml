@@ -86,14 +86,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3555" />
+          <entry key="java" value="3576" />
           <entry key="jsp" value="808" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3555" />
+          <entry key="JAVA" value="3576" />
           <entry key="JSP" value="808" />
           <entry key="XML" value="2" />
         </counts>
@@ -139,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoWork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="49" column="20" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="68" column="20" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="68" selection-end-column="20" />
               <folding>
                 <element signature="e#2890#2891#0" expanded="true" />
                 <element signature="e#2917#2918#0" expanded="true" />
@@ -152,8 +152,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="133" selection-start-line="36" selection-start-column="133" selection-end-line="36" selection-end-column="133" />
+            <state relative-caret-position="731">
+              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -283,7 +283,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546355040370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546355238222" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -484,12 +484,12 @@
       <workItem from="1546184361945" duration="20000" />
       <workItem from="1546200705568" duration="5885000" />
       <workItem from="1546248459426" duration="14391000" />
-      <workItem from="1546348895893" duration="6120000" />
+      <workItem from="1546348895893" duration="6318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42395000" />
+    <option name="totallyTimeSpent" value="42593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,9 +504,9 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4927235" visible="true" weight="0.27818283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4927235" visible="true" weight="0.27874368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.50727654" side_tool="true" visible="true" weight="0.27818283" />
+      <window_info id="Web" order="2" sideWeight="0.50727654" side_tool="true" visible="true" weight="0.27874368" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -828,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoWork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="49" column="20" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="68" selection-end-column="20" />
           <folding>
             <element signature="e#2890#2891#0" expanded="true" />
             <element signature="e#2917#2918#0" expanded="true" />
@@ -839,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="133" selection-start-line="36" selection-start-column="133" selection-end-line="36" selection-end-column="133" />
+        <state relative-caret-position="731">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
         </state>
       </provider>
     </entry>
