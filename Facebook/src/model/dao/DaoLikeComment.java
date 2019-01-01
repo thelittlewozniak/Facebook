@@ -4,8 +4,8 @@ import model.pojo.Like;
 
 import java.util.List;
 
-public class DaoLike extends Dao<Like> {
-    public DaoLike() {
+public class DaoLikeComment extends Dao<Like> {
+    public DaoLikeComment() {
         super();
     }
 
