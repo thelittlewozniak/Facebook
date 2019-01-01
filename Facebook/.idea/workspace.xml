@@ -87,14 +87,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="3843" />
+          <entry key="java" value="3864" />
           <entry key="jsp" value="808" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3843" />
+          <entry key="JAVA" value="3864" />
           <entry key="JSP" value="808" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="2" />
@@ -141,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikePost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="42" column="20" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="42" selection-end-column="20" />
+            <state relative-caret-position="778">
+              <caret line="59" column="20" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="59" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,8 +153,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikeComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="527">
+              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -277,7 +277,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546356701149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546356743623" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -478,12 +478,12 @@
       <workItem from="1546184361945" duration="20000" />
       <workItem from="1546200705568" duration="5885000" />
       <workItem from="1546248459426" duration="14391000" />
-      <workItem from="1546348895893" duration="7775000" />
+      <workItem from="1546348895893" duration="7817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44050000" />
+    <option name="totallyTimeSpent" value="44092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikePost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="42" selection-end-column="20" />
+        <state relative-caret-position="778">
+          <caret line="59" column="20" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="59" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -847,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikeComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="527">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
         </state>
       </provider>
     </entry>
