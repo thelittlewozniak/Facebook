@@ -1,7 +1,13 @@
 package model.dao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.jersey.core.util.MultivaluedMapImpl;
 import model.pojo.Friend;
 
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedMap;
+import java.io.IOException;
 import java.util.List;
 
 public class DaoFriend extends Dao<Friend> {
@@ -11,7 +17,19 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean create(Friend obj) {
-        return false;
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("asker",obj.getAsker());
+        ((MultivaluedMapImpl) params).add("receiver",obj.getReceiver());
+        ((MultivaluedMapImpl) params).add("accepted",obj.getAccepted());
+        String response = webResource.path("Schooling/CreateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
