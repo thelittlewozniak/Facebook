@@ -30,7 +30,15 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean delete(Like obj) {
-        return false;
+        String response = webResource.path("LikePost/DeleteLike?id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        Boolean done=false;
+        try {
+            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return done;
     }
 
     @Override
