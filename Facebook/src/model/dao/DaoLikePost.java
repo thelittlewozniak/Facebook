@@ -9,6 +9,7 @@ import model.pojo.User;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoLikePost extends Dao<Like> {
@@ -74,6 +75,14 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public List<Like> getAll() {
-        return null;
+        String response = webResource.path("User/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper =new ObjectMapper();
+        List<Like> likes=new ArrayList<>();
+        try {
+            likes=mapper.readValue(response, new TypeReference<List<Like>>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return likes;
     }
 }
