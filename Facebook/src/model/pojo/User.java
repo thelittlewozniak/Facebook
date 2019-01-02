@@ -1,8 +1,11 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoFriend;
+import model.dao.DaoPost;
 import model.dao.DaoUser;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -229,6 +232,25 @@ public class User {
             }
         }
         return false;
+    }
+    public List<Post> getPostOfYourFriends(){
+        List<Friend> friends=new DaoFriend().getAll();
+        List<Post> posts=new DaoPost().getAll();
+        List<User> friendofyours=new ArrayList<>();
+        List<Post> postofyourfriend =new ArrayList<>();
+        for (int i = 0; i < friends.size(); i++) {
+            if((friends.get(i).getReceiver().getId()==this.id || friends.get(i).getReceiver().getId()==this.id) && friends.get(i).getAccepted()){
+                friendofyours.add(friends.get(i).getReceiver().getId()==this.id?friends.get(i).getAsker():friends.get(i).getReceiver());
+            }
+        }
+        for (int i = 0; i < posts.size(); i++) {
+            for (int j = 0; j < friendofyours.size(); j++) {
+                if(posts.get(i).getUser().getId()==friendofyours.get(j).getId()){
+                    postofyourfriend.add(posts.get(i));
+                }
+            }
+        }
+        return postofyourfriend;
     }
     
 }

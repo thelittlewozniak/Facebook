@@ -7,8 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Facebook/src/Controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/Servlet/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/BusinessLayer/PostBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/BusinessLayer/PostBusiness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Index/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +55,12 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikePost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1479">
               <caret line="99" column="9" selection-start-line="78" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
             </state>
           </provider>
@@ -120,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="952">
               <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
             </state>
           </provider>
@@ -129,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/GetConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="68">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,7 +174,7 @@
         <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -270,7 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -287,6 +297,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -523,11 +534,12 @@
       <workItem from="1546184963989" duration="1247000" />
       <workItem from="1546187888851" duration="6615000" />
       <workItem from="1546248458836" duration="4879000" />
+      <workItem from="1546427359527" duration="4207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126576000" />
+    <option name="totallyTimeSpent" value="130783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,9 +554,9 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.475969" visible="true" weight="0.28771734" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4744186" visible="true" weight="0.29108244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.524031" side_tool="true" visible="true" weight="0.28771734" />
+      <window_info id="Web" order="2" sideWeight="0.5255814" side_tool="true" visible="true" weight="0.29108244" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -553,7 +565,7 @@
       <window_info id="Azure Explorer" order="8" sideWeight="0.4992248" weight="0.32978126" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48906338" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48850253" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -561,7 +573,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49859786" weight="0.32952183" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5109366" side_tool="true" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5114975" side_tool="true" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4991587" weight="0.32952183" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.49971956" weight="0.32952183" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4946719" weight="0.32952183" />
@@ -765,44 +777,10 @@
     <entry file="file://$PROJECT_DIR$/web/js/jquery.js" />
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/web/css/facebook.css" />
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikePost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="99" column="9" selection-start-line="78" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikeComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/GetConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-end-line="62" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,10 +805,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikePost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="99" column="9" selection-start-line="78" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoLikeComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/GetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/access/CommentAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -847,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>

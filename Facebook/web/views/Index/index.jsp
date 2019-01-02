@@ -14,6 +14,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    User u=null;
+    if(request.getSession(false)!=null){
+        session=request.getSession();
+        u=(User)session.getAttribute("user");
+    }
+    else{
+        response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+    }
+    %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +31,11 @@
   <meta charset="utf-8">
   <title>Facebook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="/Facebook_intelliJ_war_exploded/css/bootstrap.css" rel="stylesheet">
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link href="../css/facebook.css" rel="stylesheet">
+  <link href="/Facebook_intelliJ_war_exploded/css/facebook.css" rel="stylesheet">
 </head>
 
 <body>
@@ -68,12 +78,12 @@
                 <a href="#postModal" role="button" data-toggle="modal"></i>Make a Post</a>
               </li>
             </ul>
-            <form class="navbar-form navbar-right">
+            <form class="navbar-form navbar-right" action="/Facebook_intelliJ_war_exploded/Login/" method="post">
                 <div class="input-group input-group-sm" style="max-width:271px;">
                     <input class="form-control form-horizontal" placeholder="your email..." name="email" type="email" style="max-width:110px;">
                     <input class="form-control form-horizontal" placeholder="your password..." name="password" type="password" style="max-width:110px;">
                     <div class="input-group-btn" style="max-width:51px;">
-                        <button type="submit" class="btn btn-default" data-toggle="dropdown">Login</button>
+                        <button type="submit" class="btn btn-default" data-toggle="dropdown" value="submit" name="submit">Login</button>
                     </div>
                 </div>
             </form>

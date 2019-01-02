@@ -4,15 +4,28 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>HomeServlet</servlet-name>
-        <servlet-class>Servlet.HomeServlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Index</servlet-name>
-        <jsp-file>/views/index.jsp</jsp-file>
+        <jsp-file>/views/Index/index.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>Activity</servlet-name>
+        <jsp-file>/views/Home/index.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Activity</servlet-name>
+        <url-pattern>/Activity/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
