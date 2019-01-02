@@ -1,6 +1,7 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoUser;
 
 import java.util.Date;
 import java.util.List;
@@ -205,6 +206,29 @@ public class User {
         //TODO
         return false;
     }
-    
+
+    public boolean login(String email,String password){
+        List<User> users=new DaoUser().getAll();
+        for (int i = 0; i < users.size(); i++) {
+            if(users.get(i).getEmail().equals(email)){
+                if(users.get(i).getPassword().equals(password)){
+                    this.email=users.get(i).getEmail();
+                    this.password=users.get(i).getPassword();
+                    this.id=users.get(i).getId();
+                    this.firstname=users.get(i).getFirstname();
+                    this.lastname=users.get(i).getLastname();
+                    this.address=users.get(i).getAddress();
+                    this.birthday=users.get(i).getBirthday();
+                    this.registerDate=users.get(i).getRegisterDate();
+                    this.relationship=users.get(i).getRelationship();
+                    this.phoneNumber=users.get(i).getPhoneNumber();
+                    this.gender=users.get(i).getGender();
+                    this.interestedIn=users.get(i).getInterestedIn();
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
 }

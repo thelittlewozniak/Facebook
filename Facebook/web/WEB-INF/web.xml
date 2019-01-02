@@ -7,4 +7,12 @@
         <servlet-name>HomeServlet</servlet-name>
         <servlet-class>Servlet.HomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <jsp-file>/views/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/Index/*</url-pattern>
+    </servlet-mapping>
 </web-app>
