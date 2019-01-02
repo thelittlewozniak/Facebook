@@ -25,6 +25,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
                 response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
             }
             else {
+                response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
             }
         }
     }

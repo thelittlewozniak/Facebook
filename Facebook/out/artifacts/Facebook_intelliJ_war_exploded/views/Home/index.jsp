@@ -21,7 +21,8 @@
                     <div class="full col-sm-12">
                         <!-- content -->
                         <div class="row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-6">
                                 <div class="well">
                                     <form class="form-horizontal" role="form">
                                         <h4>What's New</h4>
@@ -36,7 +37,7 @@
                                     if(u.getPostOfYourFriends()!=null){
                                         if(u.getPostOfYourFriends().size()>=1){
                                             for (int i = 0; i < u.getPostOfYourFriends().size(); i++) {
-                                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"#\" class=\"pull-right\">"+u.getPostOfYourFriends().get(i).getUser().getFirstname()+"</a> "+u.getPostOfYourFriends().get(i).getPostDate()+"</div>");
+                                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"#\" class=\"pull-right\">"+u.getPostOfYourFriends().get(i).getUser().getFirstname()+" "+u.getPostOfYourFriends().get(i).getUser().getLastname()+"</a> "+u.getPostOfYourFriends().get(i).getPostDate()+"</div>");
                                                 out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
                                                 out.println("<p>"+u.getPostOfYourFriends().get(i).getData()+"</p>");
                                                 out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\"><button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
@@ -46,11 +47,12 @@
                                 %>
                             </div>
                             <!-- main col right -->
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                                 <div class="well">
 
                                 </div>
                             </div>
+
                         </div><!--/row-->
 
 <jsp:include page="/views/layout/footer.jsp" />
