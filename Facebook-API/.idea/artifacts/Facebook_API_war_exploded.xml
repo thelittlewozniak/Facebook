@@ -13,6 +13,7 @@
           <element id="library" level="project" name="ojdbc6" />
         </element>
       </element>
+      <element id="javaee-facet-classes" facet="Facebook-API/web/Web" />
     </root>
   </artifact>
 </component>
