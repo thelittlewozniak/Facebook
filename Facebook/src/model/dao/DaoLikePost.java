@@ -8,6 +8,8 @@ import model.pojo.Like;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,8 @@ public class DaoLikePost extends Dao<Like> {
     @Override
     public boolean create(Like obj) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("dateLiked",obj.getDateLiked());
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
         String response = webResource.path("LikePost/CreateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
@@ -45,7 +48,8 @@ public class DaoLikePost extends Dao<Like> {
     @Override
     public boolean update(Like obj) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("dateLiked",obj.getDateLiked());
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
         String response = webResource.path("LikePost/UpdateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
