@@ -177,9 +177,13 @@ public class User {
 
     //                          Operations                                  
     
-    public boolean makeAPost() {
-        //TODO
-        return false;
+    public boolean makeAPost(String data,String type) {
+        Post p=new Post();
+        p.setUser(this);
+        p.setData(data);
+        p.setType(type);
+        p.setPostDate(new Date());
+        return p.createAPost();
     }
     
     public boolean makeAComment() {
@@ -263,6 +267,7 @@ public class User {
                 friendofyours.add(friends.get(i).getReceiver().getId()==this.id?friends.get(i).getAsker():friends.get(i).getReceiver());
             }
         }
+        friendofyours.add(this);
         for (int i = 0; i < posts.size(); i++) {
             for (int j = 0; j < friendofyours.size(); j++) {
                 if(posts.get(i).getUser().getId()==friendofyours.get(j).getId()){

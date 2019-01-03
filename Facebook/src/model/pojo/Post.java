@@ -1,8 +1,10 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import model.dao.DaoComment;
 import model.dao.DaoLikePost;
+import model.dao.DaoPost;
 
 import java.util.Date;
 import java.util.List;
@@ -74,9 +76,8 @@ public class Post {
 
     //                          Operations
 
-    public Post createAPost() {
-        //TODO
-        return null;
+    public boolean createAPost() {
+        return new DaoPost().create(this);
     }
     public void getAPost(){
         List<Like> ls=new DaoLikePost().getAll();

@@ -1,4 +1,4 @@
-<%--
+    <%@ page import="model.pojo.User" %><%--
   Created by IntelliJ IDEA.
   User: natha
   Date: 1/2/2019
@@ -60,15 +60,23 @@
     <a href="#postModal" role="button" data-toggle="modal"></i>Make a Post</a>
     </li>
     </ul>
-    <form class="navbar-form navbar-right" action="/Facebook_intelliJ_war_exploded/Login/" method="post">
-    <div class="input-group input-group-sm" style="max-width:311px;">
-    <input class="form-control form-horizontal" placeholder="your email..." name="email" type="email" style="max-width:130px;">
-    <input class="form-control form-horizontal" placeholder="your password..." name="password" type="password" style="max-width:130px;">
-    <div class="input-group-btn" style="max-width:51px;">
-    <button type="submit" class="btn btn-default" data-toggle="dropdown" value="submit" name="submit">Login</button>
-    </div>
-    </div>
-    </form>
+    <% if(session.getAttribute("user")!=null){
+        User u=(User)session.getAttribute("user");
+        out.println("<ul class=\"nav navbar-nav navbar-right\"><li><a href=#>"+u.getFirstname()+"</a></li></ul>");
+    }
+    else{
+        out.println("<form class=\"navbar-form navbar-right\" action=\"/Facebook_intelliJ_war_exploded/Login/\" method=\"post\">\n" +
+"    <div class=\"input-group input-group-sm\" style=\"max-width:311px;\">\n" +
+"    <input class=\"form-control form-horizontal\" placeholder=\"your email...\" name=\"email\" type=\"email\" style=\"max-width:130px;\">\n" +
+"    <input class=\"form-control form-horizontal\" placeholder=\"your password...\" name=\"password\" type=\"password\" style=\"max-width:130px;\">\n" +
+"    <div class=\"input-group-btn\" style=\"max-width:51px;\">\n" +
+"    <button type=\"submit\" class=\"btn btn-default\" data-toggle=\"dropdown\" value=\"submit\" name=\"submit\">Login</button>\n" +
+"    </div>\n" +
+"    </div>\n" +
+"    </form>");
+    }
+    %>
+
     </nav>
     </div>
 
