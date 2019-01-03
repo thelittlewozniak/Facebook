@@ -72,7 +72,9 @@ public class DaoPost extends Dao<Post> {
 
     @Override
     public Post find(int id) {
-        String response = webResource.path("Post/GetPost?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",id);
+        String response = webResource.path("Post/GetPost").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Post p=new Post();
         try {

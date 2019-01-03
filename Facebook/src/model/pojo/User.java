@@ -201,9 +201,12 @@ public class User {
         return false;
     }
     
-    public boolean makeALike() {
-        //TODO
-        return false;
+    public boolean makeALikeOnPost(int id) {
+        Like l=new Like();
+        l.setPost(new DaoPost().find(id));
+        l.setUser(this);
+        l.setDateLiked(new Date());
+        return l.createALike();
     }
     
     public boolean addAWork() {

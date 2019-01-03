@@ -16,6 +16,10 @@
         <servlet-class>Controller.PostServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>LikeAPost</servlet-name>
+        <servlet-class>Controller.LikePostServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -42,5 +46,9 @@
     <servlet-mapping>
         <servlet-name>MakeAPost</servlet-name>
         <url-pattern>/MakeAPost/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LikeAPost</servlet-name>
+        <url-pattern>/LikeAPost/*</url-pattern>
     </servlet-mapping>
 </web-app>

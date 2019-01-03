@@ -47,7 +47,7 @@
                                                     out.println("<hr><p>"+posts.get(i).getLikes().size()+" likes </p>");
                                                 else
                                                     out.println("<hr><p>0 like </p>");
-                                                out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\"><button class=\"btn btn-primary\">Like it!</button><button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
+                                                out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\"><a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id="+posts.get(i).getId()+"\">Like it!</a><button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
                                             }
                                         }
                                     }
