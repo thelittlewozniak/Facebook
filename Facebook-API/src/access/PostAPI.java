@@ -9,6 +9,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -44,9 +45,10 @@ public class PostAPI extends RestApplication{
         Post p=new Post();
         p.setData(data);
         p.setType(type);
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date date=null;
         try {
-            date=new SimpleDateFormat("dd/MM/yyyy").parse(postDate);
+            date=dateFormat.parse(postDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -83,9 +85,10 @@ public class PostAPI extends RestApplication{
         p.setId(Integer.parseInt(postid));
         p.setData(data);
         p.setType(type);
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date date=null;
         try {
-            date=new SimpleDateFormat("dd/MM/yyyy").parse(postDate);
+            date=dateFormat.parse(postDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
