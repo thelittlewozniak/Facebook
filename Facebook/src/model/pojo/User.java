@@ -5,6 +5,8 @@ import model.dao.DaoFriend;
 import model.dao.DaoPost;
 import model.dao.DaoUser;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -232,6 +234,24 @@ public class User {
             }
         }
         return false;
+    }
+    public boolean register(String email,String password,String firstname,String lastname,String address,String birthday,String relationShip,String phoneNumber,String gender,String interestedIn){
+        this.email=email;
+        this.password=password;
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.address=address;
+        try {
+            this.birthday= new SimpleDateFormat("dd/MM/yyyy").parse(birthday);
+        } catch (ParseException e) {
+            this.birthday=new Date();
+        }
+        this.registerDate=new Date();
+        this.relationship=Boolean.parseBoolean(relationShip);
+        this.phoneNumber=Integer.parseInt(phoneNumber);
+        this.gender=Boolean.parseBoolean(gender);
+        this.interestedIn=Boolean.parseBoolean(interestedIn);
+        return new DaoUser().create(this);
     }
     public List<Post> getPostOfYourFriends(){
         List<Friend> friends=new DaoFriend().getAll();

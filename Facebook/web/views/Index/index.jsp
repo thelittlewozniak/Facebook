@@ -55,7 +55,7 @@
               <!-- main col right -->
               <div class="col-sm-4">
                 <div class="well">
-                  <form class="form">
+                  <form class="form" action="/Facebook_intelliJ_war_exploded/Register/" method="post">
                     <h4>Sign-up</h4>
                     <div class="input-group text-center">
                         <div class="input-group-lg form-group">
@@ -84,7 +84,7 @@
                         </div>
                         <div class="input-group-lg form-group">
                             <label class="control-label pull-left">Enter your birthday:</label>
-                            <input class="form-control input-lg" placeholder="Enter your birthday" type="date">
+                            <input class="form-control input-lg" placeholder="Enter your birthday" type="date" name="birthday">
                         </div>
                         <div class="input-group form-group">
                             <label class="control-label pull-left">Enter your relationship state:</label><br>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="input-group-lg form-group">
                             <label class="control-label pull-left">Enter your Phone Number:</label>
-                            <input class="form-control input-lg" placeholder="Enter your phone number" type="number">
+                            <input class="form-control input-lg" placeholder="Enter your phone number" type="number" name="phonenumber">
                         </div>
                         <div class="input-group form-group">
                             <label class="control-label pull-left">Enter your gender:</label><br>
@@ -106,7 +106,7 @@
                             <label class="radio-inline" ><input name="interested" value="false" type="radio">Female</label>
                         </div>
 
-                        <button class="btn btn-lg btn-primary pull-right" type="button">Register you!</button>
+                        <button class="btn btn-lg btn-primary pull-right" type="button" name="submit" value="submit">Register you!</button>
                     </div>
                   </form>
                 </div>
