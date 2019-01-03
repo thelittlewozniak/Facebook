@@ -1,4 +1,6 @@
-<%@ page import="model.pojo.User" %><%--
+<%@ page import="model.pojo.User" %>
+<%@ page import="java.util.List" %>
+<%@ page import="model.pojo.Post" %><%--
   Created by IntelliJ IDEA.
   User: natha
   Date: 1/2/2019
@@ -35,11 +37,16 @@
                                 </div>
                                 <%
                                     if(u.getPostOfYourFriends()!=null){
-                                        if(u.getPostOfYourFriends().size()>=1){
+                                        List<Post> posts=u.getPostOfYourFriends();
+                                        if(posts.size()>=1){
                                             for (int i = 0; i < u.getPostOfYourFriends().size(); i++) {
-                                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"#\" class=\"pull-right\">"+u.getPostOfYourFriends().get(i).getUser().getFirstname()+" "+u.getPostOfYourFriends().get(i).getUser().getLastname()+"</a> "+u.getPostOfYourFriends().get(i).getPostDate()+"</div>");
+                                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"#\" class=\"pull-right\">"+posts.get(i).getUser().getFirstname()+" "+posts.get(i).getUser().getLastname()+"</a> "+posts.get(i).getPostDate()+"</div>");
                                                 out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-                                                out.println("<p>"+u.getPostOfYourFriends().get(i).getData()+"</p>");
+                                                out.println("<p>"+posts.get(i).getData()+"</p>");
+                                                if(posts.get(i).getLikes()!=null)
+                                                    out.println("<hr><p>"+posts.get(i).getLikes().size()+" likes </p>");
+                                                else
+                                                    out.println("<hr><p>0 like </p>");
                                                 out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\"><button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
                                             }
                                         }
