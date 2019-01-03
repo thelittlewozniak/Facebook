@@ -106,7 +106,7 @@
                             <label class="radio-inline" ><input name="interested" value="false" type="radio">Female</label>
                         </div>
 
-                        <button class="btn btn-lg btn-primary pull-right" type="button" name="submit" value="submit">Register you!</button>
+                        <button class="btn btn-lg btn-primary pull-right" type="submit" name="submit" value="submit">Register you!</button>
                     </div>
                   </form>
                 </div>

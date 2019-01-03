@@ -24,12 +24,12 @@
                             <div class="col-sm-3"></div>
                             <div class="col-sm-6">
                                 <div class="well">
-                                    <form class="form-horizontal" role="form">
+                                    <form class="form-horizontal" role="form" method="post" action="/Facebook_intelliJ_war_exploded/MakeAPost/">
                                         <h4>What's New</h4>
                                         <div class="form-group" style="padding:14px;">
-                                            <textarea class="form-control" placeholder="Update your status"></textarea>
+                                            <textarea class="form-control" placeholder="Update your status" name="data"></textarea>
                                         </div>
-                                        <button class="btn btn-primary pull-right" type="button">Post</button>
+                                        <button class="btn btn-primary pull-right" type="submit" name="submit" value="submit">Post</button>
                                         <ul class="list-inline"><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li></ul>
                                     </form>
                                 </div>

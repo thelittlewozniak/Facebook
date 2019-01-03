@@ -12,6 +12,10 @@
         <servlet-class>Controller.RegisterServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>MakeAPost</servlet-name>
+        <servlet-class>Controller.PostServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -35,5 +39,8 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/Register/*</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>MakeAPost</servlet-name>
+        <url-pattern>/MakeAPost/*</url-pattern>
+    </servlet-mapping>
 </web-app>
