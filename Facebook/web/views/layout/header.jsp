@@ -56,15 +56,14 @@
     <li>
     <a href="#">Home</a>
     </li>
-    <li>
-    <a href="#postModal" role="button" data-toggle="modal"></i>Make a Post</a>
-    </li>
-    </ul>
     <% if(session.getAttribute("user")!=null){
         User u=(User)session.getAttribute("user");
-        out.println("<ul class=\"nav navbar-nav navbar-right\"><li><a href=#>"+u.getFirstname()+"</a></li></ul>");
+        out.println("<li><a href=\"#postModal\" role=\"button\"></i>"+u.getFirstname()+"</a></li></ul>");
+        out.println("<ul class=\"nav navbar-nav navbar-right\"><li><a href=#>Log out</a></li></ul>");
+         out.println("</li></ul>");
     }
     else{
+        out.println("</li></ul>");
         out.println("<form class=\"navbar-form navbar-right\" action=\"/Facebook_intelliJ_war_exploded/Login/\" method=\"post\">\n" +
 "    <div class=\"input-group input-group-sm\" style=\"max-width:311px;\">\n" +
 "    <input class=\"form-control form-horizontal\" placeholder=\"your email...\" name=\"email\" type=\"email\" style=\"max-width:130px;\">\n" +

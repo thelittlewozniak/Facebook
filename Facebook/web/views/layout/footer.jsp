@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <div class="row">
     <div class="col-sm-6">
-    <a href="#">Nathan Pire</a> <small class="text-muted">|</small> <a href="#">le BG</a> <small class="text-muted">|</small> <a href="#">Raphael Dispaux</a>
+    <a href="#">Nathan Pire</a> <small class="text-muted">|</small> <a href="#">Raphael Dispaux</a>
     </div>
     </div>
 
