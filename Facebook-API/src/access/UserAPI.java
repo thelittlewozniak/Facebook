@@ -8,9 +8,11 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 @Path("User")
 public class UserAPI extends RestApplication{
@@ -48,16 +50,17 @@ public class UserAPI extends RestApplication{
         u.setEmail(email);
         u.setPassword(password);
         u.setAddress(address);
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date birth=null;
         try {
-            birth=new SimpleDateFormat("dd/MM/yyyy").parse(birthday);
+            birth=dateFormat.parse(birthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         u.setBirthday(birth);
         Date register=null;
         try {
-            register=new SimpleDateFormat("dd/MM/yyyy").parse(registerDate);
+            register=dateFormat.parse(registerDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -102,14 +105,14 @@ public class UserAPI extends RestApplication{
         u.setAddress(address);
         Date birth=null;
         try {
-            birth=new SimpleDateFormat("dd/MM/yyyy").parse(birthday);
+            birth=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").parse(birthday);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         u.setBirthday(birth);
         Date register=null;
         try {
-            register=new SimpleDateFormat("dd/MM/yyyy").parse(registerDate);
+            register=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").parse(registerDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }

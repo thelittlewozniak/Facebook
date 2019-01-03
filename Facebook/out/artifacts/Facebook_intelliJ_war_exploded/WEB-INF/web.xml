@@ -8,6 +8,10 @@
         <servlet-class>Controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -26,6 +30,10 @@
     <servlet-mapping>
         <servlet-name>Activity</servlet-name>
         <url-pattern>/Activity/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
