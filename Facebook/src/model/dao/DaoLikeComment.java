@@ -8,6 +8,8 @@ import model.pojo.Like;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +21,8 @@ public class DaoLikeComment extends Dao<Like> {
     @Override
     public boolean create(Like obj) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("dateLiked",obj.getDateLiked());
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("comment",obj.getComment().getId());
         String response = webResource.path("LikeComment/CreateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
@@ -49,7 +52,8 @@ public class DaoLikeComment extends Dao<Like> {
     @Override
     public boolean update(Like obj) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("dateLiked",obj.getDateLiked());
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
         ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("comment",obj.getComment().getId());
         String response = webResource.path("LikeComment/UpdateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
@@ -65,7 +69,9 @@ public class DaoLikeComment extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        String response = webResource.path("LikeComment/GetLike?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",id);
+        String response = webResource.queryParams(params).path("LikeComment/GetLike").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Like l=new Like();
         try {

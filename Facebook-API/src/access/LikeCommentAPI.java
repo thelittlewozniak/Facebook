@@ -8,6 +8,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,8 +44,9 @@ public class LikeCommentAPI extends RestApplication {
         Like l=new Like();
         l.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
         Date date=null;
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         try {
-            date=new SimpleDateFormat("dd/MM/yyyy").parse(dateLike);
+            date=dateFormat.parse(dateLike);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -81,8 +83,9 @@ public class LikeCommentAPI extends RestApplication {
         l.setId(Integer.parseInt(idLike));
         l.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
         Date date=null;
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         try {
-            date=new SimpleDateFormat("dd/MM/yyyy").parse(dateLike);
+            date=dateFormat.parse(dateLike);
         } catch (ParseException e) {
             e.printStackTrace();
         }
