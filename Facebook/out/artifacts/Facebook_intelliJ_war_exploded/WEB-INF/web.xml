@@ -20,6 +20,10 @@
         <servlet-class>Controller.LikePostServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>UnLikeAPost</servlet-name>
+        <servlet-class>Controller.UnLikePostServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -50,5 +54,9 @@
     <servlet-mapping>
         <servlet-name>LikeAPost</servlet-name>
         <url-pattern>/LikeAPost/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UnLikeAPost</servlet-name>
+        <url-pattern>/UnLikeAPost/*</url-pattern>
     </servlet-mapping>
 </web-app>

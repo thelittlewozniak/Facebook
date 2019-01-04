@@ -52,7 +52,7 @@
                                                 out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\">");
                                                 for (int j = 0; j < p.getLikes().size(); j++) {
                                                     if(p.getLikes().get(j).getUser().getId()==u.getId())
-                                                        out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/UnLikeAPost?id="+p.getId()+"\">UnLike it!</a>");
+                                                        out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/UnLikeAPost?id="+p.getLikes().get(j).getId()+"\">UnLike it!</a>");
                                                     else
                                                         out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id="+p.getId()+"\">Like it!</a>");
                                                 }

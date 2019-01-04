@@ -34,7 +34,9 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean delete(Like obj) {
-        String response = webResource.path("LikePost/DeleteLike?id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",obj.getId());
+        String response = webResource.queryParams(params).path("LikePost/DeleteLike").accept(MediaType.APPLICATION_JSON).delete(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Boolean done=false;
         try {
@@ -65,7 +67,9 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        String response = webResource.path("LikePost/GetLike?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",id);
+        String response = webResource.queryParams(params).path("LikePost/getLike").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Like l=new Like();
         try {

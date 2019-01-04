@@ -53,9 +53,8 @@ public class Like {
         return new DaoLikePost().create(this);
     }
 
-    public boolean deleteAPost() {
-        //TODO
-        return false;
+    public boolean deleteALike() {
+        return new DaoLikePost().delete(this);
     }
 
 

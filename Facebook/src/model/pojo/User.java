@@ -2,6 +2,7 @@ package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.DaoFriend;
+import model.dao.DaoLikePost;
 import model.dao.DaoPost;
 import model.dao.DaoUser;
 
@@ -207,6 +208,10 @@ public class User {
         l.setUser(this);
         l.setDateLiked(new Date());
         return l.createALike();
+    }
+    public boolean deleteALikeOnPost(int id){
+        Like l=new DaoLikePost().find(id);
+        return l.deleteALike();
     }
     
     public boolean addAWork() {
