@@ -1,6 +1,7 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoComment;
 
 import java.util.Date;
 import java.util.List;
@@ -51,9 +52,8 @@ public class Comment {
     public void setUser(User user) { this.user = user; }
     //                          Operations
 
-    public Comment createAComment() {
-        //TODO
-        return null;
+    public boolean createAComment() {
+        return new DaoComment().create(this);
     }
 
     public boolean deleteAComment() {

@@ -187,9 +187,13 @@ public class User {
         return p.createAPost();
     }
     
-    public boolean makeAComment() {
-        //TODO
-        return false;
+    public boolean makeAComment(String data,String type,int idpost) {
+        Comment c=new Comment();
+        c.setPost(new DaoPost().find(idpost));
+        c.setData(data);
+        c.setType(type);
+        c.setUser(this);
+        return c.createAComment();
     }
     
     public boolean acceptAFriend() {
