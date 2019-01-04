@@ -74,7 +74,7 @@ public class DaoPost extends Dao<Post> {
     public Post find(int id) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
         ((MultivaluedMapImpl) params).add("id",id);
-        String response = webResource.path("Post/GetPost").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.queryParams(params).path("Post/GetPost").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Post p=new Post();
         try {
