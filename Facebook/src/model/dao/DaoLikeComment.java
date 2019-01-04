@@ -73,7 +73,7 @@ public class DaoLikeComment extends Dao<Like> {
     public Like find(int id) {
         MultivaluedMap<String,String> params=new MultivaluedMapImpl();
         ((MultivaluedMapImpl) params).add("id",id);
-        String response = webResource.queryParams(params).path("LikeComment/GetLike").accept(MediaType.APPLICATION_JSON).get(String.class);
+        String response = webResource.queryParams(params).path("LikeComment/getLike").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Like l=new Like();
         try {

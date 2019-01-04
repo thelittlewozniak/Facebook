@@ -32,6 +32,10 @@
         <servlet-class>Controller.LikeCommentServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>UnLikeAComment</servlet-name>
+        <servlet-class>Controller.UnLikeCommentServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -74,5 +78,9 @@
     <servlet-mapping>
         <servlet-name>LikeAComment</servlet-name>
         <url-pattern>/LikeAComment/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UnLikeAComment</servlet-name>
+        <url-pattern>/UnLikeAComment/*</url-pattern>
     </servlet-mapping>
 </web-app>

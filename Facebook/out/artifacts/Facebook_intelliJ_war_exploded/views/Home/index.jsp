@@ -59,13 +59,13 @@
                                                     for (int j = 0; j < p.getComments().size(); j++) {
                                                         Comment comment=p.getComments().get(j);
                                                         comment.getAComment();
-                                                        boolean test=false;
+                                                        int test=0;
                                                         for (int k = 0; k < comment.getLikes().size(); k++) {
                                                             if(comment.getLikes().get(k).getUser().getId()==u.getId())
-                                                                test=true;
+                                                                test=comment.getLikes().get(k).getId();
                                                         }
-                                                        if(test){
-                                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+comment.getUser().getFirstname()+" "+comment.getUser().getLastname()+":"+comment.getData()+"</div><div style=\"font-size:9px\">"+comment.getPostDate()+" <a href=\"#\">UnLike it!</a></div></div></div>");
+                                                        if(test!=0){
+                                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+comment.getUser().getFirstname()+" "+comment.getUser().getLastname()+":"+comment.getData()+"</div><div style=\"font-size:9px\">"+comment.getPostDate()+" <a href=\"/Facebook_intelliJ_war_exploded/UnLikeAComment?id="+test+"\">UnLike it!</a></div></div></div>");
                                                         }
                                                         else{
                                                             out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+comment.getUser().getFirstname()+" "+comment.getUser().getLastname()+":"+comment.getData()+"</div><div style=\"font-size:9px\">"+comment.getPostDate()+" <a href=\"/Facebook_intelliJ_war_exploded/LikeAComment?id="+comment.getId()+"\">Like it!</a></div></div></div>");
