@@ -2,7 +2,9 @@ package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.DaoComment;
+import model.dao.DaoLikeComment;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -60,6 +62,14 @@ public class Comment {
         //TODO
         return false;
     }
-
+    public void getAComment(){
+        this.likes=new ArrayList<>();
+        List<Like> l=new DaoLikeComment().getAll();
+        for (int i = 0; i < l.size(); i++) {
+            if(l.get(i).getComment().getId()==this.id){
+                this.likes.add(l.get(i));
+            }
+        }
+    }
 
 }

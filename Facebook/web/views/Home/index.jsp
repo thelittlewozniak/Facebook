@@ -1,6 +1,7 @@
 <%@ page import="model.pojo.User" %>
 <%@ page import="java.util.List" %>
-<%@ page import="model.pojo.Post" %><%--
+<%@ page import="model.pojo.Post" %>
+<%@ page import="model.pojo.Comment" %><%--
   Created by IntelliJ IDEA.
   User: natha
   Date: 1/2/2019
@@ -56,7 +57,18 @@
                                                     out.println("<p class=\"pull-right\">0 comment </p><br><br>");
                                                 if (p.getComments().size()>0){
                                                     for (int j = 0; j < p.getComments().size(); j++) {
-                                                        out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+p.getComments().get(j).getUser().getFirstname()+" "+p.getComments().get(j).getUser().getLastname()+":"+p.getComments().get(j).getData()+"</div><div style=\"font-size:9px\">"+p.getComments().get(j).getPostDate()+"</div></div></div>");
+                                                        Comment comment=p.getComments().get(j);
+                                                        comment.getAComment();
+                                                        for (int k = 0; k < comment.getLikes().size(); k++) {
+                                                            if(comment.getLikes().get(k).getUser().getId()==u.getId()){
+                                                                out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+comment.getUser().getFirstname()+" "+comment.getUser().getLastname()+":"+comment.getData()+"</div><div style=\"font-size:9px\">"+comment.getPostDate()+" <a href=\"#\">UnLike it!</a></div></div></div>");
+
+                                                            }
+                                                            else{
+                                                                out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+comment.getUser().getFirstname()+" "+comment.getUser().getLastname()+":"+comment.getData()+"</div><div style=\"font-size:9px\">"+comment.getPostDate()+" <a href=\"#\">Like it!</a></div></div></div>");
+
+                                                            }
+                                                        }
                                                     }
                                                 }
                                                 out.println("<form action=\"/Facebook_intelliJ_war_exploded/MakeAComment/\" method=\"post\"><div class=\"input-group\"><div class=\"input-group-btn\">");
