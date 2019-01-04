@@ -49,7 +49,14 @@
                                                     out.println("<hr><p>"+p.getLikes().size()+" likes </p>");
                                                 else
                                                     out.println("<hr><p>0 like </p>");
-                                                out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\"><a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id="+p.getId()+"\">Like it!</a><button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
+                                                out.println("<hr><form><div class=\"input-group\"><div class=\"input-group-btn\">");
+                                                for (int j = 0; j < p.getLikes().size(); j++) {
+                                                    if(p.getLikes().get(j).getUser().getId()==u.getId())
+                                                        out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/UnLikeAPost?id="+p.getId()+"\">UnLike it!</a>");
+                                                    else
+                                                        out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id="+p.getId()+"\">Like it!</a>");
+                                                }
+                                                out.println("<button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div></div>");
                                             }
                                         }
                                     }
