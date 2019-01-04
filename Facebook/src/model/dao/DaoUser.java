@@ -30,7 +30,7 @@ public class DaoUser extends Dao<User> {
         ((MultivaluedMapImpl) params).add("birthday",dateFormat.format(obj.getBirthday()));
         ((MultivaluedMapImpl) params).add("address",obj.getAddress());
         ((MultivaluedMapImpl) params).add("lastname",obj.getLastname());
-        ((MultivaluedMapImpl) params).add("firstnam",obj.getFirstname());
+        ((MultivaluedMapImpl) params).add("firstname",obj.getFirstname());
         ((MultivaluedMapImpl) params).add("password",obj.getPassword());
         ((MultivaluedMapImpl) params).add("email",obj.getEmail());
         String response = webResource.path("User/CreateUser").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);

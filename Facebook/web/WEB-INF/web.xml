@@ -20,6 +20,10 @@
         <servlet-class>Controller.LikePostServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>MakeAComment</servlet-name>
+        <servlet-class>Controller.MakeCommentServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>UnLikeAPost</servlet-name>
         <servlet-class>Controller.UnLikePostServlet</servlet-class>
     </servlet>
@@ -58,5 +62,9 @@
     <servlet-mapping>
         <servlet-name>UnLikeAPost</servlet-name>
         <url-pattern>/UnLikeAPost/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MakeAComment</servlet-name>
+        <url-pattern>/MakeAComment/*</url-pattern>
     </servlet-mapping>
 </web-app>

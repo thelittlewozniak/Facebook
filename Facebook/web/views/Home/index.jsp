@@ -59,7 +59,7 @@
                                                         out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>"+p.getComments().get(j).getUser().getFirstname()+" "+p.getComments().get(j).getUser().getLastname()+":"+p.getComments().get(j).getData()+"</div><div style=\"font-size:9px\">"+p.getComments().get(j).getPostDate()+"</div></div></div>");
                                                     }
                                                 }
-                                                out.println("<form><div class=\"input-group\"><div class=\"input-group-btn\">");
+                                                out.println("<form action=\"/Facebook_intelliJ_war_exploded/MakeAComment/\" method=\"post\"><div class=\"input-group\"><div class=\"input-group-btn\">");
                                                 if(p.getLikes().size()>0){
                                                     for (int j = 0; j < p.getLikes().size(); j++) {
                                                         if(p.getLikes().get(j).getUser().getId()==u.getId())
@@ -70,7 +70,7 @@
                                                 }
                                                 else
                                                     out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id="+p.getId()+"\">Like it!</a>");
-                                                out.println("<button class=\"btn btn-default\">Send-it!</i></button></div><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\"></div></form></div>");
+                                                out.println("<button type=\"submit\" name=\"submit\" value=\"submit\" class=\"btn btn-default\">Send-it!</i></button></div><input type=\"hidden\" value=\""+p.getId()+"\" name=\"id\"><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\" name=\"data\"></div></form></div>");
                                                 out.println("</div>");
                                             }
                                         }

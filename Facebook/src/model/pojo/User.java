@@ -6,6 +6,7 @@ import model.dao.DaoLikePost;
 import model.dao.DaoPost;
 import model.dao.DaoUser;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -193,6 +194,7 @@ public class User {
         c.setData(data);
         c.setType(type);
         c.setUser(this);
+        c.setPostDate(new Date());
         return c.createAComment();
     }
     
