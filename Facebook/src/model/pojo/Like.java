@@ -50,14 +50,18 @@ public class Like {
 
     //                          Operations
 
-    public boolean createALike() {
+    public boolean createALikePost() {
         return new DaoLikePost().create(this);
     }
+
     public boolean createALikeOnComment(){
         return new DaoLikeComment().create(this);
     }
 
-    public boolean deleteALike() {
+    public boolean deleteALikeOnComment(){
+        return new DaoLikeComment().delete(this);
+    }
+    public boolean deleteALikePost() {
         return new DaoLikePost().delete(this);
     }
 

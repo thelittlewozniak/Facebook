@@ -38,7 +38,9 @@ public class DaoLikeComment extends Dao<Like> {
 
     @Override
     public boolean delete(Like obj) {
-        String response = webResource.path("LikeComment/DeleteLike?id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",obj.getId());
+        String response = webResource.queryParams(params).path("LikeComment/DeleteLike").accept(MediaType.APPLICATION_JSON).delete(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Boolean done=false;
         try {

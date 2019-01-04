@@ -3,7 +3,6 @@ package model.pojo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.*;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -210,12 +209,12 @@ public class User {
         l.setPost(new DaoPost().find(id));
         l.setUser(this);
         l.setDateLiked(new Date());
-        return l.createALike();
+        return l.createALikePost();
     }
 
     public boolean deleteALikeOnPost(int id){
         Like l=new DaoLikePost().find(id);
-        return l.deleteALike();
+        return l.deleteALikePost();
     }
 
     public boolean makeALikeOnComment(int id){
@@ -224,6 +223,11 @@ public class User {
         l.setUser(this);
         l.setDateLiked(new Date());
         return l.createALikeOnComment();
+    }
+
+    public boolean deleteALikeOnComment(int id){
+        Like l=new DaoLikeComment().find(id);
+        return l.deleteALikeOnComment();
     }
     
     public boolean addAWork() {
