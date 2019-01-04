@@ -1,10 +1,7 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import model.dao.DaoFriend;
-import model.dao.DaoLikePost;
-import model.dao.DaoPost;
-import model.dao.DaoUser;
+import model.dao.*;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -215,9 +212,18 @@ public class User {
         l.setDateLiked(new Date());
         return l.createALike();
     }
+
     public boolean deleteALikeOnPost(int id){
         Like l=new DaoLikePost().find(id);
         return l.deleteALike();
+    }
+
+    public boolean makeALikeOnComment(int id){
+        Like l=new Like();
+        l.setComment(new DaoComment().find(id));
+        l.setUser(this);
+        l.setDateLiked(new Date());
+        return l.createALikeOnComment();
     }
     
     public boolean addAWork() {

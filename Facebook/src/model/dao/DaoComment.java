@@ -75,7 +75,9 @@ public class DaoComment extends Dao<Comment> {
 
     @Override
     public Comment find(int id) {
-        String response = webResource.path("Comment/GetComment?id="+id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id",id);
+        String response = webResource.queryParams(params).path("Comment/GetComment").accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper =new ObjectMapper();
         Comment c=new Comment();
         try {

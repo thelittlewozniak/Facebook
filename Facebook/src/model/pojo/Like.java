@@ -2,6 +2,7 @@ package model.pojo;
 
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoLikeComment;
 import model.dao.DaoLikePost;
 
 import java.util.Date;
@@ -51,6 +52,9 @@ public class Like {
 
     public boolean createALike() {
         return new DaoLikePost().create(this);
+    }
+    public boolean createALikeOnComment(){
+        return new DaoLikeComment().create(this);
     }
 
     public boolean deleteALike() {
