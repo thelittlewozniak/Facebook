@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -511,12 +513,12 @@
       <workItem from="1546187888851" duration="6615000" />
       <workItem from="1546248458836" duration="4879000" />
       <workItem from="1546427359527" duration="19495000" />
-      <workItem from="1546597083412" duration="3468000" />
+      <workItem from="1546597083412" duration="4814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149539000" />
+    <option name="totallyTimeSpent" value="150885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
