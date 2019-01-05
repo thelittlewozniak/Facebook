@@ -36,6 +36,10 @@
         <servlet-class>Controller.UnLikeCommentServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <servlet-class>Controller.LogOutServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -90,5 +94,9 @@
     <servlet-mapping>
         <servlet-name>Search</servlet-name>
         <url-pattern>/Search/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/LogOut/*</url-pattern>
     </servlet-mapping>
 </web-app>
