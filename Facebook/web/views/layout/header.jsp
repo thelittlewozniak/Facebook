@@ -41,14 +41,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a href="http://usebootstrap.com/theme/facebook" class="navbar-brand logo">f</a>
+        <a href="/Facebook_intelliJ_war_exploded/Index" class="navbar-brand logo">f</a>
         </div>
         <nav class="collapse navbar-collapse" role="navigation">
-        <form class="navbar-form navbar-left">
+        <form class="navbar-form navbar-left" method="post" action="/Facebook_intelliJ_war_exploded/Search/">
         <div class="input-group input-group-sm" style="max-width:360px;">
-        <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+        <input class="form-control" placeholder="Search" name="keyword" id="srch-term" type="text">
         <div class="input-group-btn">
-        <button class="btn btn-default" type="submit">Search</button>
+        <button class="btn btn-default" name="submit" value="submit" type="submit">Search</button>
         </div>
         </div>
         </form>
@@ -78,4 +78,17 @@
 
         </nav>
         </div>
-
+            <div class="padding">
+            <div class="full col-sm-12">
+            <!-- content -->
+            <div class="row">
+            <div class="col-sm-3">
+            <div class="panel panel-info">
+            <div class="panel-body">
+            <div class="clearfix"></div>
+            <p>Your Profile</p>
+            <p>Your news feed</p>
+            <p>Your messages</p>
+            </div>
+            </div>
+            </div>

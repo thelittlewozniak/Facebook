@@ -43,6 +43,10 @@
         <servlet-name>Activity</servlet-name>
         <jsp-file>/views/Home/index.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <jsp-file>/views/Home/search.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -82,5 +86,9 @@
     <servlet-mapping>
         <servlet-name>UnLikeAComment</servlet-name>
         <url-pattern>/UnLikeAComment/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/Search/*</url-pattern>
     </servlet-mapping>
 </web-app>

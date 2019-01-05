@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
@@ -43,6 +43,10 @@
         <servlet-name>Activity</servlet-name>
         <jsp-file>/views/Home/index.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <jsp-file>/views/Home/search.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -82,5 +86,9 @@
     <servlet-mapping>
         <servlet-name>UnLikeAComment</servlet-name>
         <url-pattern>/UnLikeAComment/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/Search/*</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -230,6 +230,18 @@ public class User {
         return l.deleteALikeOnComment();
     }
 
+    public List<User> searchAUser(String keyword){
+        List<User> users=new DaoUser().getAll();
+        List<User> result=new ArrayList<>();
+        for (int i = 0; i < users.size(); i++) {
+            if(users.get(i).lastname.contains(keyword))
+                result.add(users.get(i));
+            else if(users.get(i).firstname.contains(keyword))
+                result.add(users.get(i));
+        }
+        return result;
+    }
+
     public boolean addAWork() {
         //TODO
         return false;

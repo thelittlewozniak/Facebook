@@ -21,7 +21,68 @@
     }
 %>
 <!-- /top nav -->
-<jsp:include page="/views/layout/header.jsp"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/Facebook_intelliJ_war_exploded/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/Facebook_intelliJ_war_exploded/css/facebook.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+            <!-- sidebar -->
+            <!-- /sidebar -->
+
+            <!-- main right col -->
+            <div class="column col-sm-12 col-xs-11" id="main">
+
+                <!-- top nav -->
+                <div class="navbar navbar-blue navbar-static-top">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="/Facebook_intelliJ_war_exploded/Index" class="navbar-brand logo">f</a>
+                    </div>
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <form class="navbar-form navbar-left" method="post" action="/Facebook_intelliJ_war_exploded/Search/">
+                            <div class="input-group input-group-sm" style="max-width:360px;">
+                                <input class="form-control" placeholder="Search" name="keyword" id="srch-term" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" name="submit" value="submit" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" action="/Facebook_intelliJ_war_exploded/Login/" method="post">
+                            <div class="input-group input-group-sm" style="max-width: 311px;">
+                                <input class="form-control form-horizontal" placeholder="your email..." name="email" type="email" style="max-width: 130px">
+                                <input class="form-control form-horizontal" placeholder="your password..." name="password" type="password" style="max-width:130px;">
+                                <div class="input-group-btn" style="max-width:51px;">
+                                    <button type="submit" class="btn btn-default" data-toggle="dropdown" value="submit" name="submit">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
 
 <div class="padding">
     <div class="full col-sm-12">

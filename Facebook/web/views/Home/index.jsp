@@ -19,11 +19,6 @@
 %>
 <!-- /top nav -->
 <jsp:include page="/views/layout/header.jsp"/>
-<div class="padding">
-    <div class="full col-sm-12">
-        <!-- content -->
-        <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="well">
                     <form class="form-horizontal" role="form" method="post"
@@ -93,13 +88,4 @@
                     }
                 %>
             </div>
-            <!-- main col right -->
-            <div class="col-sm-3">
-                <div class="well">
-
-                </div>
-            </div>
-
-        </div><!--/row-->
-
 <jsp:include page="/views/layout/footer.jsp"/>
