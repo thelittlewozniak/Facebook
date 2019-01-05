@@ -16,16 +16,17 @@ import java.util.List;
 public class DaoLikePost extends Dao<Like> {
     @Override
     public boolean create(Like obj) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
-        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
-        ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
-        String response = webResource.path("LikePost/CreateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked", dateFormat.format(obj.getDateLiked()));
+        ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
+        String response = webResource.path("LikePost/CreateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class, params);
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -34,13 +35,14 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean delete(Like obj) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("id",obj.getId());
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id", obj.getId());
         String response = webResource.queryParams(params).path("LikePost/DeleteLike").accept(MediaType.APPLICATION_JSON).delete(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -49,16 +51,17 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public boolean update(Like obj) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        ((MultivaluedMapImpl) params).add("dateLiked",dateFormat.format(obj.getDateLiked()));
-        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
-        ((MultivaluedMapImpl) params).add("post",obj.getPost().getId());
-        String response = webResource.path("LikePost/UpdateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        ((MultivaluedMapImpl) params).add("dateLiked", dateFormat.format(obj.getDateLiked()));
+        ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
+        String response = webResource.path("LikePost/UpdateLike").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class, params);
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -67,13 +70,14 @@ public class DaoLikePost extends Dao<Like> {
 
     @Override
     public Like find(int id) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("id",id);
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id", id);
         String response = webResource.queryParams(params).path("LikePost/getLike").accept(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        Like l=new Like();
+        ObjectMapper mapper = new ObjectMapper();
+        Like l = new Like();
         try {
-            l=mapper.readValue(response, new TypeReference<Like>(){});
+            l = mapper.readValue(response, new TypeReference<Like>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -83,10 +87,11 @@ public class DaoLikePost extends Dao<Like> {
     @Override
     public List<Like> getAll() {
         String response = webResource.path("LikePost/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        List<Like> likes=new ArrayList<>();
+        ObjectMapper mapper = new ObjectMapper();
+        List<Like> likes = new ArrayList<>();
         try {
-            likes=mapper.readValue(response, new TypeReference<List<Like>>(){});
+            likes = mapper.readValue(response, new TypeReference<List<Like>>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }

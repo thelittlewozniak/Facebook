@@ -13,24 +13,22 @@ import java.io.IOException;
 @WebServlet(name = "LikePostServlet")
 public class LikePostServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String id=null;
-        User user=new User();
-        HttpSession session=request.getSession();
-        if(request.getParameter("id")!=null){
-            id=request.getParameter("id");
-            if(session.getAttribute("user")!=null){
-                user=(User)session.getAttribute("user");
+        String id = null;
+        User user = new User();
+        HttpSession session = request.getSession();
+        if (request.getParameter("id") != null) {
+            id = request.getParameter("id");
+            if (session.getAttribute("user") != null) {
+                user = (User) session.getAttribute("user");
                 user.makeALikeOnPost(Integer.parseInt(id));
                 response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
-            }
-            else
+            } else
                 response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
-        }
-        else
+        } else
             response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
     }
 }

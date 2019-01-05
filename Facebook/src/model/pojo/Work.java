@@ -22,9 +22,13 @@ public class Work {
     private User user;
 
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return this.name;
@@ -66,9 +70,13 @@ public class Work {
         this.jobTitle = jobTitle;
     }
 
-    public User getUser(){ return this.user; }
+    public User getUser() {
+        return this.user;
+    }
 
-    public void setUser(User user){this.user=user;}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     //                          Operations
 

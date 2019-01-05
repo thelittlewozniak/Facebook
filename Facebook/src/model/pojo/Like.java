@@ -20,9 +20,13 @@ public class Like {
     private Comment comment;
 
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Date getDateLiked() {
         return this.dateLiked;
@@ -40,13 +44,21 @@ public class Like {
         this.user = user;
     }
 
-    public Post getPost() { return post; }
+    public Post getPost() {
+        return post;
+    }
 
-    public void setPost(Post post) { this.post = post; }
+    public void setPost(Post post) {
+        this.post = post;
+    }
 
-    public Comment getComment() { return comment; }
+    public Comment getComment() {
+        return comment;
+    }
 
-    public void setComment(Comment comment) { this.comment = comment; }
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
 
     //                          Operations
 
@@ -54,13 +66,14 @@ public class Like {
         return new DaoLikePost().create(this);
     }
 
-    public boolean createALikeOnComment(){
+    public boolean createALikeOnComment() {
         return new DaoLikeComment().create(this);
     }
 
-    public boolean deleteALikeOnComment(){
+    public boolean deleteALikeOnComment() {
         return new DaoLikeComment().delete(this);
     }
+
     public boolean deleteALikePost() {
         return new DaoLikePost().delete(this);
     }
