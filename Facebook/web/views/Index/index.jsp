@@ -191,5 +191,3 @@
                 </div>
             </div>
         </div><!--/row-->
-
-<jsp:include page="/views/layout/footer.jsp"/>

@@ -51,6 +51,10 @@
         <servlet-name>Search</servlet-name>
         <jsp-file>/views/Home/search.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <jsp-file>/views/Profile/profile.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -98,5 +102,9 @@
     <servlet-mapping>
         <servlet-name>LogOut</servlet-name>
         <url-pattern>/LogOut/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/Profile/*</url-pattern>
     </servlet-mapping>
 </web-app>

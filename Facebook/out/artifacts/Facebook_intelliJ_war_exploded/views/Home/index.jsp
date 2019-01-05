@@ -11,11 +11,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     User u = null;
-    if (session.getAttribute("user") != null) {
-        u = (User) session.getAttribute("user");
-    } else {
-        response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+    session=request.getSession();
+    if(session!=null){
+        if (session.getAttribute("user")!=null) {
+            u = (User) session.getAttribute("user");
+        } else {
+            response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+        }
     }
+    else
+        response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
 %>
 <!-- /top nav -->
 <jsp:include page="/views/layout/header.jsp"/>
