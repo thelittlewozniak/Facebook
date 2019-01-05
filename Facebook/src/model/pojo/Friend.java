@@ -1,6 +1,8 @@
 package model.pojo;
 
 
+import model.dao.DaoFriend;
+
 public class Friend {
 
     private Boolean accepted;
@@ -37,19 +39,16 @@ public class Friend {
 
     //                          Operations
 
-    public Friend createADemand() {
-        //TODO
-        return null;
+    public boolean createADemand() {
+        return new DaoFriend().create(this);
     }
 
     public boolean deleteADemand() {
-        //TODO
-        return false;
+        return new DaoFriend().delete(this);
     }
 
     public boolean acceptADemand() {
-        //TODO
-        return false;
+        return new DaoFriend().update(this);
     }
 
 

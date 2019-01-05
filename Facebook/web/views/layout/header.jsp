@@ -5,58 +5,58 @@
   Time: 4:46 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Facebook</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="/Facebook_intelliJ_war_exploded/css/bootstrap.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link href="/Facebook_intelliJ_war_exploded/css/facebook.css" rel="stylesheet">
-    </head>
+        <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="/Facebook_intelliJ_war_exploded/css/bootstrap.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="/Facebook_intelliJ_war_exploded/css/facebook.css" rel="stylesheet">
+        </head>
 
-    <body>
+        <body>
 
-    <div class="wrapper">
-    <div class="box">
-    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="wrapper">
+        <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">
 
-    <!-- sidebar -->
-    <!-- /sidebar -->
+        <!-- sidebar -->
+        <!-- /sidebar -->
 
-    <!-- main right col -->
-    <div class="column col-sm-12 col-xs-11" id="main">
+        <!-- main right col -->
+        <div class="column col-sm-12 col-xs-11" id="main">
 
-    <!-- top nav -->
-    <div class="navbar navbar-blue navbar-static-top">
-    <div class="navbar-header">
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-    <span class="sr-only">Toggle</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    </button>
-    <a href="http://usebootstrap.com/theme/facebook" class="navbar-brand logo">f</a>
-    </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-    <form class="navbar-form navbar-left">
-    <div class="input-group input-group-sm" style="max-width:360px;">
-    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-    <div class="input-group-btn">
-    <button class="btn btn-default" type="submit">Search</button>
-    </div>
-    </div>
-    </form>
-    <ul class="nav navbar-nav">
-    <li>
-    <a href="#">Home</a>
-    </li>
-    <% if(session.getAttribute("user")!=null){
+        <!-- top nav -->
+        <div class="navbar navbar-blue navbar-static-top">
+        <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="http://usebootstrap.com/theme/facebook" class="navbar-brand logo">f</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+        <form class="navbar-form navbar-left">
+        <div class="input-group input-group-sm" style="max-width:360px;">
+        <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+        <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">Search</button>
+        </div>
+        </div>
+        </form>
+        <ul class="nav navbar-nav">
+        <li>
+        <a href="#">Home</a>
+        </li>
+            <% if(session.getAttribute("user")!=null){
         User u=(User)session.getAttribute("user");
         out.println("<li><a href=\"#postModal\" role=\"button\"></i>"+u.getFirstname()+"</a></li></ul>");
         out.println("<ul class=\"nav navbar-nav navbar-right\"><li><a href=#>Log out</a></li></ul>");
@@ -76,6 +76,6 @@
     }
     %>
 
-    </nav>
-    </div>
+        </nav>
+        </div>
 

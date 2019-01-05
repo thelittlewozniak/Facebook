@@ -25,10 +25,10 @@ public class EditObjectMapper extends JsonDeserializer<Date> {
             throws IOException, JsonProcessingException {
         String str = paramJsonParser.getText().trim();
         try {
-            Date d=dateFormat.parse(str);
-            Calendar calendar=Calendar.getInstance();
+            Date d = dateFormat.parse(str);
+            Calendar calendar = Calendar.getInstance();
             calendar.setTime(d);
-            calendar.add(Calendar.HOUR_OF_DAY,1);
+            calendar.add(Calendar.HOUR_OF_DAY, 1);
             return calendar.getTime();
         } catch (ParseException e) {
             // Handle exception here

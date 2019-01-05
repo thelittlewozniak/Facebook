@@ -2,6 +2,7 @@ package model.pojo;
 
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoSchooling;
 
 import java.util.Date;
 
@@ -24,15 +25,25 @@ public class Schooling {
     private User user;
 
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getName() { return this.name; }
+    public String getName() {
+        return this.name;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getAddress() { return this.address; }
+    public String getAddress() {
+        return this.address;
+    }
 
     public void setAddress(String address) {
         this.address = address;
@@ -70,20 +81,22 @@ public class Schooling {
         this.graduate = graduate;
     }
 
-    public User getUser(){return this.user;}
+    public User getUser() {
+        return this.user;
+    }
 
-    public void setUser(User user){this.user=user;}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     //                          Operations
 
-    public Schooling CreateASchooling() {
-        //TODO
-        return null;
+    public boolean CreateASchooling() {
+        return new DaoSchooling().create(this);
     }
 
     public boolean DeleteASchooling() {
-        //TODO
-        return false;
+        return new DaoSchooling().delete(this);
     }
 
 

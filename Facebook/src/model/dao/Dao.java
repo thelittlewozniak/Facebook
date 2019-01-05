@@ -8,9 +8,10 @@ import java.util.List;
 public abstract class Dao<T> {
     protected Client client;
     WebResource webResource;
-    public Dao(){
-        client=Client.create();
-        webResource=client.resource("http://localhost:9090/Facebook_API_war_exploded/rest/");
+
+    public Dao() {
+        client = Client.create();
+        webResource = client.resource("http://localhost:9090/Facebook_API_war_exploded/rest/");
     }
 
     /**

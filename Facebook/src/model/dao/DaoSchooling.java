@@ -19,19 +19,20 @@ public class DaoSchooling extends Dao<Schooling> {
 
     @Override
     public boolean create(Schooling obj) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("name",obj.getName());
-        ((MultivaluedMapImpl) params).add("address",obj.getAddress());
-        ((MultivaluedMapImpl) params).add("beginDate",obj.getBeginDate());
-        ((MultivaluedMapImpl) params).add("endDate",obj.getEndDate());
-        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
-        ((MultivaluedMapImpl) params).add("graduate",obj.getGraduate());
-        ((MultivaluedMapImpl) params).add("type",obj.getType());
-        String response = webResource.path("Schooling/CreateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class,params);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("name", obj.getName());
+        ((MultivaluedMapImpl) params).add("address", obj.getAddress());
+        ((MultivaluedMapImpl) params).add("beginDate", obj.getBeginDate());
+        ((MultivaluedMapImpl) params).add("endDate", obj.getEndDate());
+        ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
+        ((MultivaluedMapImpl) params).add("type", obj.getType());
+        String response = webResource.path("Schooling/CreateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class, params);
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,11 +41,12 @@ public class DaoSchooling extends Dao<Schooling> {
 
     @Override
     public boolean delete(Schooling obj) {
-        String response = webResource.path("Schooling/DeleteSchooling?iduser="+obj.getUser().getId()+"&id="+obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        String response = webResource.path("Schooling/DeleteSchooling?iduser=" + obj.getUser().getId() + "&id=" + obj.getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -53,17 +55,18 @@ public class DaoSchooling extends Dao<Schooling> {
 
     @Override
     public boolean update(Schooling obj) {
-        MultivaluedMap<String,String> params=new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("schoolingId",obj.getId());
-        ((MultivaluedMapImpl) params).add("beginDate",obj.getBeginDate());
-        ((MultivaluedMapImpl) params).add("endDate",obj.getEndDate());
-        ((MultivaluedMapImpl) params).add("user",obj.getUser().getId());
-        ((MultivaluedMapImpl) params).add("graduate",obj.getGraduate());
-        String response = webResource.path("Schooling/UpdateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class,params);
-        ObjectMapper mapper =new ObjectMapper();
-        Boolean done=false;
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("schoolingId", obj.getId());
+        ((MultivaluedMapImpl) params).add("beginDate", obj.getBeginDate());
+        ((MultivaluedMapImpl) params).add("endDate", obj.getEndDate());
+        ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+        ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
+        String response = webResource.path("Schooling/UpdateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class, params);
+        ObjectMapper mapper = new ObjectMapper();
+        Boolean done = false;
         try {
-            done=mapper.readValue(response, new TypeReference<Boolean>(){});
+            done = mapper.readValue(response, new TypeReference<Boolean>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -76,24 +79,27 @@ public class DaoSchooling extends Dao<Schooling> {
     }
 
     public Schooling find(int userId, int idSchool) {
-        String response = webResource.path("Schooling/getSchooling?iduser="+userId+"&id="+idSchool).accept(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        Schooling s=new Schooling();
+        String response = webResource.path("Schooling/getSchooling?iduser=" + userId + "&id=" + idSchool).accept(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        Schooling s = new Schooling();
         try {
-            s=mapper.readValue(response, new TypeReference<Work>(){});
+            s = mapper.readValue(response, new TypeReference<Work>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
         return s;
 
     }
+
     @Override
     public List<Schooling> getAll() {
         String response = webResource.path("Schooling/GetAll").accept(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper =new ObjectMapper();
-        List<Schooling> schoolings=new ArrayList<>();
+        ObjectMapper mapper = new ObjectMapper();
+        List<Schooling> schoolings = new ArrayList<>();
         try {
-            schoolings=mapper.readValue(response, new TypeReference<List<Schooling>>(){});
+            schoolings = mapper.readValue(response, new TypeReference<List<Schooling>>() {
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }

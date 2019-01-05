@@ -1,7 +1,6 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import model.dao.DaoComment;
 import model.dao.DaoLikePost;
 import model.dao.DaoPost;
@@ -27,9 +26,13 @@ public class Post {
     private User user;
 
 
-    public int getId() {return this.id; }
+    public int getId() {
+        return this.id;
+    }
 
-    public void setId(int id) {this.id=id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getData() {
         return this.data;
@@ -71,9 +74,13 @@ public class Post {
         this.likes = likes;
     }
 
-    public User getUser(){return this.user;}
+    public User getUser() {
+        return this.user;
+    }
 
-    public void setUser(User user){this.user=user;}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     //                          Operations
 
@@ -81,25 +88,25 @@ public class Post {
         return new DaoPost().create(this);
     }
 
-    public void getAPost(){
-        List<Like> ls=new DaoLikePost().getAll();
-        this.likes=new ArrayList<>();
+    public void getAPost() {
+        List<Like> ls = new DaoLikePost().getAll();
+        this.likes = new ArrayList<>();
         for (int i = 0; i < ls.size(); i++) {
-            if(ls.get(i).getPost().getId()==this.id){
+            if (ls.get(i).getPost().getId() == this.id) {
                 this.likes.add(ls.get(i));
             }
         }
-        this.comments=new ArrayList<>();
-        List<Comment> cs=new DaoComment().getAll();
+        this.comments = new ArrayList<>();
+        List<Comment> cs = new DaoComment().getAll();
         for (int i = 0; i < cs.size(); i++) {
-            if(cs.get(i).getPost().getId()==this.id){
+            if (cs.get(i).getPost().getId() == this.id) {
                 this.comments.add(cs.get(i));
             }
         }
     }
+
     public boolean deleteAPost() {
-        //TODO
-        return false;
+        return new DaoPost().delete(this);
     }
 
 
