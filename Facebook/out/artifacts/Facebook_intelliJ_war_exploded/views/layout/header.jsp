@@ -54,7 +54,7 @@
         </form>
         <ul class="nav navbar-nav">
         <li>
-        <a href="#">Home</a>
+        <a href="/Facebook_intelliJ_war_exploded/Index">Home</a>
         </li>
             <% if(session.getAttribute("user")!=null){
         User u=(User)session.getAttribute("user");
@@ -86,9 +86,11 @@
             <div class="panel panel-info">
             <div class="panel-body">
             <div class="clearfix"></div>
-            <p>Your Profile</p>
-            <p>Your news feed</p>
-            <p>Your messages</p>
+            <ul class="list-group list-unstyled">
+                <li><a href="#">Your Profile</a></li>
+                <li><a href="/Facebook_intelliJ_war_exploded/Index/">Your news feed</a></li>
+                <li><a href="#">Your messages</a></li>
+            </ul>
             </div>
             </div>
             </div>
