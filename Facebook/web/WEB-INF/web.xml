@@ -52,6 +52,10 @@
         <servlet-class>Controller.UserEditServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AskFriend</servlet-name>
+        <servlet-class>Controller.AskFriendServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -170,5 +174,9 @@
     <servlet-mapping>
         <servlet-name>FriendRequests</servlet-name>
         <url-pattern>/FriendRequests/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AskFriend</servlet-name>
+        <url-pattern>/AskFriend/*</url-pattern>
     </servlet-mapping>
 </web-app>

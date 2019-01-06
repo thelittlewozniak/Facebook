@@ -19,8 +19,8 @@ public class DaoFriend extends Dao<Friend> {
     @Override
     public boolean create(Friend obj) {
         MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-        ((MultivaluedMapImpl) params).add("asker", obj.getAsker());
-        ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver());
+        ((MultivaluedMapImpl) params).add("asker", obj.getAsker().getId());
+        ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver().getId());
         ((MultivaluedMapImpl) params).add("accepted", obj.getAccepted());
         String response = webResource.path("Friend/CreateFriend").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").post(String.class, params);
         ObjectMapper mapper = new ObjectMapper();

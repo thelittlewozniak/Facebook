@@ -225,9 +225,12 @@ public class User {
         return c.createAComment();
     }
 
-    public boolean acceptAFriend() {
-        //TODO
-        return false;
+    public boolean acceptAFriend(int id) {
+        Friend f=new Friend();
+        f.setAsker(new DaoUser().find(id));
+        f.setReceiver(this);
+        f.setAccepted(true);
+        return f.acceptADemand();
     }
 
     public boolean addAFriend(int id) {
@@ -240,11 +243,12 @@ public class User {
 
     public List<Friend> friendRequest(){
         List<Friend> friends=new DaoFriend().getAll();
+        List<Friend> f=new ArrayList<>();
         for (int i = 0; i < friends.size(); i++) {
             if(friends.get(i).getReceiver().getId()==this.id && !friends.get(i).getAccepted())
-                friends.remove(friends.get(i));
+                f.add(friends.get(i));
         }
-        return friends;
+        return f;
     }
 
     public boolean makeALikeOnPost(int id) {
