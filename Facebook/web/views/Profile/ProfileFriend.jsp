@@ -44,7 +44,7 @@
             }
         }
         if(idAsker!=0 && idReceiver!=0) {
-            out.println("<a href=\"/Facebook_intelliJ_war_exploded/AskFriend?idasker=\" class=\"btn btn-primary pull-right\">Unfriend</a>");
+            out.println("<a href=\"/Facebook_intelliJ_war_exploded/AskFriend?idasker="+idAsker+"&idreceiver="+idReceiver+"\" class=\"btn btn-primary pull-right\">Unfriend</a>");
         }
         else
             out.println("<a href=\"/Facebook_intelliJ_war_exploded/AskFriend?id="+user.getId()+"\" class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
