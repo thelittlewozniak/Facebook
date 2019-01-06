@@ -89,7 +89,9 @@ public class DaoUser extends Dao<User> {
 
     @Override
     public User find(int id) {
-        String response = webResource.path("User/GetUser?id=" + id).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("id", id);
+        String response = webResource.path("User/GetUser").queryParams(params).accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper = new ObjectMapper();
         User u = new User();
         try {
