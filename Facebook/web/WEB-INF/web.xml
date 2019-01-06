@@ -60,6 +60,10 @@
         <servlet-class>Controller.AcceptFriendServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>DeleteFriend</servlet-name>
+        <servlet-class>Controller.DeleteFriendServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -186,5 +190,9 @@
     <servlet-mapping>
         <servlet-name>AcceptFriend</servlet-name>
         <url-pattern>/AcceptFriend/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteFriend</servlet-name>
+        <url-pattern>/DeleteFriend/*</url-pattern>
     </servlet-mapping>
 </web-app>
