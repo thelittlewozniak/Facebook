@@ -27,7 +27,7 @@
                     out.println("<h3>Details:</h3>");
                     out.println("<div class=\"panel panel-default\">");
                     out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-                    out.println("<p>Firstname:" +u.getFirstname()+"</p><hr><p>Lastname:"+ u.getLastname() + "</p><hr><p> Address:"+u.getAddress()+"</p><hr>");
+                    out.println("<p>Firstname:" +u.getFirstname()+"</p><hr><p>Lastname:"+ u.getLastname() + "</p><hr><p> Address:"+u.getAddress()+"</p><hr><p> Birthday: "+u.getBirthday()+"</p><hr><p> active since:"+u.getRegisterDate()+"</p><hr><p>Gender:"+(u.getGender()?"man":"woman")+"</p><hr><p> Relationship:"+(u.getRelationship()?"in a relationship":"single")+"</p><hr><p> Phone number:"+u.getPhoneNumber()+"</p><hr><p> Interested in:"+(u.getInterestedIn()?"men":"woman")+"</p>");
                     out.println("</div></div>");
                     u.getUser();
                     out.println("<h3>Friends List:</h3>");
@@ -40,23 +40,23 @@
                             out.println("<p>" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</p>");
                         out.println("</div></div>");
                     }
-                    out.println("<h3 class=\"pull-left\">Posts:</h3><a href=#");
+                    out.println("<h3>Posts:</h3>");
                     for (Post p:u.getPosts()) {
                         out.println("<div class=\"panel panel-default\">");
                         out.println("<div class=\"panel-body\">"+p.getPostDate()+"<div class=\"clearfix\"></div>");
                         out.println("<p>"+p.getData()+"<p>");
                         out.println("</div></div>");
                     }
-                    out.println("<h3>Works:</h3>");
-                    out.println("<div class=\"panel panel-default\">");
+                    out.println("<h3>Works:</h3><a href=# type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
+                    out.println("<br><div class=\"panel panel-default\">");
                     for (Work w:u.getWorks()) {
                         out.println("<div class=\"panel-body\">"+w.getName()+"<div class=\"clearfix\"></div>");
                         out.println("<p>"+w.getJobTitle()+"</p> <p>"+w.getBeginDate()+"</p>  <p>"+w.getEndDate()+"</p>");
                         out.println("</div>");
                     }
                     out.println("</div>");
-                    out.println("<h3>Schools:</h3>");
-                    out.println("<div class=\"panel panel-default\">");
+                    out.println("<h3>Schools:</h3><a href=# type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
+                    out.println("<br><div class=\"panel panel-default\">");
                     for (Schooling s:u.getSchoolings()) {
                         out.println("<div class=\"panel-body\">"+s.getName()+"<div class=\"clearfix\"></div>");
                         out.println("<p>"+s.getType()+"</p> <p>"+s.getBeginDate()+"</p>  <p>"+s.getEndDate()+"</p> <p>"+s.getGraduate()+"</p>");

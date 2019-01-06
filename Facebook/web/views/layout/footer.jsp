@@ -22,6 +22,13 @@
             <p><a href="https://www.facebook.com/careers/">Join us!</a></p>
             </div>
             </div>
+            <div class="panel panel-default">
+            <div class="panel-thumbnail"><img src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/406215_4424998266541_1319596107_n.jpg?_nc_cat=102&_nc_ht=scontent.fbru2-1.fna&oh=1bb7afc388608e8b180992bf598a9852&oe=5CBF6FDC" class="img-responsive"></div>
+            <div class="panel-body">
+            <p class="lead">You want to be like him?</p>
+            <p><a href="https://www.tinder.com/">Join us!</a></p>
+            </div>
+            </div>
             </div>
             </div>
 
