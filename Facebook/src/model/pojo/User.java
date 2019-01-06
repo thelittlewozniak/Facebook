@@ -298,9 +298,24 @@ public class User {
         return w.createAWork();
     }
 
-    public boolean addASchool() {
-        //TODO
-        return false;
+    public boolean addASchool(String name,String type,String address,String beginDate,String endDate,String graduate) {
+        Schooling s=new Schooling();
+        s.setName(name);
+        s.setType(type);
+        s.setAddress(address);
+        s.setGraduate(Boolean.parseBoolean(graduate));
+        try {
+            s.setBeginDate(new SimpleDateFormat("dd/MM/yyyy").parse(beginDate));
+        } catch (ParseException e) {
+            s.setBeginDate(new Date());
+        }
+        try {
+            s.setEndDate(new SimpleDateFormat("dd/MM/yyyy").parse(endDate));
+        } catch (ParseException e) {
+            s.setEndDate(new Date());
+        }
+        s.setUser(this);
+        return s.createASchooling();
     }
 
     public boolean login(String email, String password) {

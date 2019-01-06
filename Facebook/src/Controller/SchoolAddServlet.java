@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "WorkAddServlet")
-public class WorkAddServlet extends HttpServlet {
+@WebServlet(name = "SchoolAddServlet")
+public class SchoolAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,7 +21,7 @@ public class WorkAddServlet extends HttpServlet {
         HttpSession session = request.getSession();
         if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
             u=(User) session.getAttribute("user");
-            u.addAWork(request.getParameter("name"),request.getParameter("address"),request.getParameter("begindate"),request.getParameter("jobtitle"));
+            u.addASchool(request.getParameter("name"),request.getParameter("type"),request.getParameter("address"),request.getParameter("begindate"),request.getParameter("enddate"),request.getParameter("graduate"));
             response.sendRedirect("/Facebook_intelliJ_war_exploded/Profile/");
         }
         else

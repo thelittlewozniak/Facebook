@@ -91,11 +91,11 @@ public class Schooling {
 
     //                          Operations
 
-    public boolean CreateASchooling() {
+    public boolean createASchooling() {
         return new DaoSchooling().create(this);
     }
 
-    public boolean DeleteASchooling() {
+    public boolean deleteASchooling() {
         return new DaoSchooling().delete(this);
     }
 
