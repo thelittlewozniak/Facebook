@@ -9,6 +9,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -48,9 +49,10 @@ public class WorkAPI extends RestApplication {
         w.setAddress(address);
         w.setJobTitle(jobTitle);
         w.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date begin=null;
         try{
-            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+            begin=dateFormat.parse(beginDate);
         }
         catch (ParseException e) {
             e.printStackTrace();
@@ -58,7 +60,7 @@ public class WorkAPI extends RestApplication {
         w.setBeginDate(begin);
         Date end=null;
         try{
-            end=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+            end=dateFormat.parse(beginDate);
         }
         catch (ParseException e) {
             e.printStackTrace();

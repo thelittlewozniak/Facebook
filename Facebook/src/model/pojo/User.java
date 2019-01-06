@@ -199,7 +199,7 @@ public class User {
         }
         List<Work> ws=new DaoWork().getAll();
         this.works=new ArrayList<>();
-        for (Work w:works) {
+        for (Work w:ws) {
             if(w.getUser().getId()==this.id){
                 this.works.add(w);
             }

@@ -40,6 +40,10 @@
         <servlet-class>Controller.LogOutServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>WorkAdd</servlet-name>
+        <servlet-class>Controller.WorkAddServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -122,5 +126,9 @@
     <servlet-mapping>
         <servlet-name>AddAWork</servlet-name>
         <url-pattern>/AddAWork/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WorkAdd</servlet-name>
+        <url-pattern>/WorkAdd/*</url-pattern>
     </servlet-mapping>
 </web-app>
