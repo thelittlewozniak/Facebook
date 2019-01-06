@@ -44,6 +44,10 @@
         <servlet-class>Controller.WorkAddServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>SchoolAdd</servlet-name>
+        <servlet-class>Controller.SchoolAddServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -138,5 +142,9 @@
     <servlet-mapping>
         <servlet-name>AddASchool</servlet-name>
         <url-pattern>/AddASchool/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SchoolAdd</servlet-name>
+        <url-pattern>/SchoolAdd/</url-pattern>
     </servlet-mapping>
 </web-app>
