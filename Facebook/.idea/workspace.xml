@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,7 +75,7 @@
           <entry key="iml" value="2" />
           <entry key="java" value="129" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="32" />
+          <entry key="jsp" value="33" />
           <entry key="xhtml" value="1" />
           <entry key="xml" value="9" />
         </counts>
@@ -84,7 +86,7 @@
           <entry key="CSS" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="129" />
-          <entry key="JSP" value="32" />
+          <entry key="JSP" value="33" />
           <entry key="JavaScript" value="2" />
           <entry key="XHTML" value="1" />
           <entry key="XML" value="9" />
@@ -94,22 +96,31 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="java" value="11422" />
-          <entry key="jsp" value="8475" />
-          <entry key="xml" value="1301" />
+          <entry key="jsp" value="8599" />
+          <entry key="xml" value="1361" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="11422" />
-          <entry key="JSP" value="8475" />
+          <entry key="JSP" value="8599" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="XML" value="1301" />
+          <entry key="XML" value="1361" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/Home/search.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="30" column="120" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/layout/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,7 +158,7 @@
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="529">
-              <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
+              <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -161,16 +172,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+              <caret line="24" column="353" selection-start-line="24" selection-start-column="353" selection-end-line="24" selection-end-column="353" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -258,15 +269,15 @@
         <option value="$PROJECT_DIR$/web/views/Profile/EditDetails.jsp" />
         <option value="$PROJECT_DIR$/src/Controller/UserEditServlet.java" />
         <option value="$PROJECT_DIR$/web/views/Profile/profile.jsp" />
-        <option value="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" />
         <option value="$PROJECT_DIR$/web/views/layout/header.jsp" />
         <option value="$PROJECT_DIR$/src/Controller/AskFriendServlet.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoUser.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
         <option value="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" />
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" />
       </list>
     </option>
   </component>
@@ -392,7 +403,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546812911994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546813123600" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -532,12 +543,12 @@
       <workItem from="1546374181075" duration="4720000" />
       <workItem from="1546424834368" duration="41609000" />
       <workItem from="1546597016125" duration="36115000" />
-      <workItem from="1546708415170" duration="28442000" />
+      <workItem from="1546708415170" duration="28646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155320000" />
+    <option name="totallyTimeSpent" value="155524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,9 +563,9 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.190129" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4852713" visible="true" weight="0.190129" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" id="Web" order="2" sideWeight="0.51472867" side_tool="true" visible="true" weight="0.190129" />
+      <window_info id="Web" order="2" sideWeight="0.51472867" side_tool="true" visible="true" weight="0.190129" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -893,13 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Home/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="31" column="60" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="31" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/layout/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -931,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -965,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AskFriendServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -990,6 +980,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Home/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="30" column="120" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="353" selection-start-line="24" selection-start-column="353" selection-end-line="24" selection-end-column="353" />
         </state>
       </provider>
     </entry>

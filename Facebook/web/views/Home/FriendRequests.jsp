@@ -22,7 +22,7 @@
         for (int i = 0; i < u.friendRequest().size(); i++) {
             out.println("<div class=\"panel panel-default\">");
             out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-            out.println("<a>" +u.friendRequest().get(i).getAsker().getFirstname()+" "+ u.friendRequest().get(i).getAsker().getLastname() + "</a><hr><p>"+u.friendRequest().get(i).getAsker().getAddress()+"</p>");
+            out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+u.friendRequest().get(i).getAsker().getId()+"\">" +u.friendRequest().get(i).getAsker().getFirstname()+" "+ u.friendRequest().get(i).getAsker().getLastname() + "</a><a href=\"/Facebook_intelliJ_war_exploded/AcceptFriend?id="+u.friendRequest().get(i).getAsker().getId()+"\" type=\"button\" class=\"btn bnt-primary\">Accept</a><hr><p>"+u.friendRequest().get(i).getAsker().getAddress()+"</p>");
             out.println("</div></div>");
         }
     %>
