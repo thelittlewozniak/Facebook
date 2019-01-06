@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.pojo.Like;
 import model.pojo.Post;
 import oracle.jdbc.internal.OracleTypes;
 
