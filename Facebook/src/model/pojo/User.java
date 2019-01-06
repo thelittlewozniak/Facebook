@@ -238,7 +238,7 @@ public class User {
     public List<Friend> friendRequest(){
         List<Friend> friends=new DaoFriend().getAll();
         for (int i = 0; i < friends.size(); i++) {
-            if(friends.get(i).getReceiver().getId()!=this.id)
+            if(friends.get(i).getReceiver().getId()==this.id && !friends.get(i).getAccepted())
                 friends.remove(friends.get(i));
         }
         return friends;

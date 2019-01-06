@@ -35,14 +35,19 @@
     <%
         u.getUser();
         out.println("<h3>Details:</h3>");
-        for (int i = 0; i < u.getFriendList().size(); i++) {
-            Friend f=u.getFriendList().get(i);
-            if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && f.getAccepted())
-                out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
-            else if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && !f.getAccepted())
-                out.println("<a href=# class=\"btn btn-primary pull-right\">Pending</a>");
-            else if(user.getId()!=u.getId())
-                out.println("<a href=# class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+        if(u.getFriendList().size()>0){
+            for (int i = 0; i < u.getFriendList().size(); i++) {
+                Friend f=u.getFriendList().get(i);
+                if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && f.getAccepted())
+                    out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
+                else if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && !f.getAccepted())
+                    out.println("<a href=# class=\"btn btn-primary pull-right\">Pending</a>");
+                else if(user.getId()!=u.getId())
+                    out.println("<a href=# class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+            }
+        }
+        else{
+            out.println("<a href=# class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
         }
         out.println("<br><br><div class=\"panel panel-default\">");
         out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");

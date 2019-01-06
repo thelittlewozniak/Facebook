@@ -89,6 +89,7 @@
             <ul class="list-group list-unstyled">
                 <li><a href="/Facebook_intelliJ_war_exploded/Profile/">Your Profile</a></li>
                 <li><a href="/Facebook_intelliJ_war_exploded/Index/">Your news feed</a></li>
+                <li><a href="/Facebook_intelliJ_war_exploded/FriendRequests/">Your friend requests</a> </li>
             </ul>
             </div>
             </div>
