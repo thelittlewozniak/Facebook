@@ -381,5 +381,5 @@ public class User {
         }
         return postofyourfriend;
     }
-
+    public boolean updateUser(){ return new DaoUser().update(this); }
 }

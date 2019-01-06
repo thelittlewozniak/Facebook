@@ -85,10 +85,8 @@ public class Work {
         return new DaoWork().create(this);
     }
 
-    public boolean deleteAWork() {
-        //TODO
-        return false;
-    }
+    public boolean deleteAWork() { return new DaoWork().delete(this); }
 
+    public boolean updateWork(){return new DaoWork().update(this);}
 
 }

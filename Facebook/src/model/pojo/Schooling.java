@@ -99,5 +99,6 @@ public class Schooling {
         return new DaoSchooling().delete(this);
     }
 
+    public boolean updateASchooling(){return new DaoSchooling().update(this); }
 
 }
