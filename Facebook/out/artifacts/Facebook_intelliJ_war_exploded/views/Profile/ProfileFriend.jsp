@@ -13,7 +13,7 @@
     if(session!=null){
         if (session.getAttribute("user")!=null) {
             u = (User) session.getAttribute("user");
-            if (request.getAttribute("friend")!=null){
+            if (request.getParameter("id")!=null){
                 user=u.getAnotherUser(Integer.parseInt(request.getParameter("id")));
             }
             else{

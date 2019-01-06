@@ -48,7 +48,7 @@
                             for (int i = 0; i < u.getPostOfYourFriends().size(); i++) {
                                 Post p = u.getPostOfYourFriends().get(i);
                                 p.getAPost();
-                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"#\" class=\"pull-right\">" + p.getUser().getFirstname() + " " + p.getUser().getLastname() + "</a> " + p.getPostDate() + "</div>");
+                                out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+p.getUser().getId()+"\" class=\"pull-right\">" + p.getUser().getFirstname() + " " + p.getUser().getLastname() + "</a> " + p.getPostDate() + "</div>");
                                 out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
                                 out.println("<p>" + p.getData() + "</p>");
                                 out.println("<hr>");
@@ -70,9 +70,9 @@
                                                 test = comment.getLikes().get(k).getId();
                                         }
                                         if (test != 0) {
-                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>" + comment.getUser().getFirstname() + " " + comment.getUser().getLastname() + ":" + comment.getData() + "</div><div style=\"font-size:9px\">" + comment.getPostDate() + " <a href=\"/Facebook_intelliJ_war_exploded/UnLikeAComment?id=" + test + "\">UnLike it!</a></div></div></div>");
+                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div><a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+comment.getUser().getId()+"\">" + comment.getUser().getFirstname() + " " + comment.getUser().getLastname() +"</a>:" + comment.getData() + "</div><div style=\"font-size:9px\">" + comment.getPostDate() + " <a href=\"/Facebook_intelliJ_war_exploded/UnLikeAComment?id=" + test + "\">UnLike it!</a></div></div></div>");
                                         } else {
-                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div>" + comment.getUser().getFirstname() + " " + comment.getUser().getLastname() + ":" + comment.getData() + "</div><div style=\"font-size:9px\">" + comment.getPostDate() + " <a href=\"/Facebook_intelliJ_war_exploded/LikeAComment?id=" + comment.getId() + "\">Like it!</a></div></div></div>");
+                                            out.println("<div class=\"comment\"><div class=\"well\" style=\"padding:0\"><div><a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+comment.getUser().getId()+"\">" + comment.getUser().getFirstname() + " " + comment.getUser().getLastname() + "</a>:" + comment.getData() + "</div><div style=\"font-size:9px\">" + comment.getPostDate() + " <a href=\"/Facebook_intelliJ_war_exploded/LikeAComment?id=" + comment.getId() + "\">Like it!</a></div></div></div>");
                                         }
                                     }
                                 }

@@ -28,7 +28,7 @@
                                 User user = users.get(i);
                                 out.println("<div class=\"panel panel-default\">");
                                 out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-                                out.println("<p>" +user.getFirstname()+" "+ user.getLastname() + "</p><hr><p>"+user.getAddress()+"</p>");
+                                out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+user.getId()+"\">" +user.getFirstname()+" "+ user.getLastname() + "</a><hr><p>"+user.getAddress()+"</p>");
                                 out.println("</div></div>");
                             }
                         }
