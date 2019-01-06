@@ -8,10 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/WorkAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/WorkAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/profile.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,14 +96,14 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="java" value="10333" />
-          <entry key="jsp" value="7337" />
+          <entry key="jsp" value="7353" />
           <entry key="xml" value="913" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="10333" />
-          <entry key="JSP" value="7337" />
+          <entry key="JSP" value="7353" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="913" />
         </counts>
@@ -141,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="80" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="80" />
+            <state relative-caret-position="240">
+              <caret line="59" column="110" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -153,13 +151,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="49" column="98" selection-start-line="49" selection-start-column="98" selection-end-line="49" selection-end-column="98" />
+            <state relative-caret-position="328">
+              <caret line="53" column="122" selection-start-line="53" selection-start-column="122" selection-end-line="53" selection-end-column="122" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
@@ -255,9 +253,7 @@
         <option value="$PROJECT_DIR$/web/views/layout/footer.jsp" />
         <option value="$PROJECT_DIR$/src/Controller/FriendProfileServlet.java" />
         <option value="$PROJECT_DIR$/web/views/Home/search.jsp" />
-        <option value="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" />
         <option value="$PROJECT_DIR$/web/views/Home/index.jsp" />
-        <option value="$PROJECT_DIR$/web/views/Profile/profile.jsp" />
         <option value="$PROJECT_DIR$/web/views/Profile/AddAWork.jsp" />
         <option value="$PROJECT_DIR$/src/model/pojo/Work.java" />
         <option value="$PROJECT_DIR$/src/Controller/RegisterServlet.java" />
@@ -265,6 +261,8 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoWork.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
+        <option value="$PROJECT_DIR$/web/views/Profile/profile.jsp" />
+        <option value="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" />
       </list>
     </option>
   </component>
@@ -389,7 +387,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546790649699" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546790762206" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -529,12 +527,12 @@
       <workItem from="1546374181075" duration="4720000" />
       <workItem from="1546424834368" duration="41609000" />
       <workItem from="1546597016125" duration="36115000" />
-      <workItem from="1546708415170" duration="15820000" />
+      <workItem from="1546708415170" duration="15961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142698000" />
+    <option name="totallyTimeSpent" value="142839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -936,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="80" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -978,17 +969,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="49" column="98" selection-start-line="49" selection-start-column="98" selection-end-line="49" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="201" column="22" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="53" column="122" selection-start-line="53" selection-start-column="122" selection-end-line="53" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="59" column="110" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="110" />
         </state>
       </provider>
     </entry>

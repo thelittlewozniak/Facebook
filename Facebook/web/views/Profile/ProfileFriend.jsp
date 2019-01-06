@@ -57,7 +57,7 @@
         out.println("<br><div class=\"panel panel-default\">");
         for (Work w:user.getWorks()) {
             out.println("<div class=\"panel-body\">"+w.getName()+"<div class=\"clearfix\"></div>");
-            out.println("<p>"+w.getJobTitle()+"</p> <p>"+w.getBeginDate()+"</p>  <p>"+w.getEndDate()+"</p>");
+            out.println("<p>"+w.getJobTitle()+"</p> <p>"+w.getBeginDate()+"</p>  <p>"+w.getEndDate()+"</p><hr>");
             out.println("</div>");
         }
         out.println("</div>");
@@ -65,7 +65,7 @@
         out.println("<br><div class=\"panel panel-default\">");
         for (Schooling s:user.getSchoolings()) {
             out.println("<div class=\"panel-body\">"+s.getName()+"<div class=\"clearfix\"></div>");
-            out.println("<p>"+s.getType()+"</p> <p>"+s.getBeginDate()+"</p>  <p>"+s.getEndDate()+"</p> <p>"+s.getGraduate()+"</p>");
+            out.println("<p>"+s.getType()+"</p> <p>"+s.getBeginDate()+"</p>  <p>"+s.getEndDate()+"</p> <p>"+s.getGraduate()+"</p><hr>");
             out.println("</div>");
         }
         out.println("</div>");
