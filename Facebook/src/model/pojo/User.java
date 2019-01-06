@@ -235,6 +235,15 @@ public class User {
         return false;
     }
 
+    public List<Friend> friendRequest(){
+        List<Friend> friends=new DaoFriend().getAll();
+        for (int i = 0; i < friends.size(); i++) {
+            if(friends.get(i).getReceiver().getId()!=this.id)
+                friends.remove(friends.get(i));
+        }
+        return friends;
+    }
+
     public boolean makeALikeOnPost(int id) {
         Like l = new Like();
         l.setPost(new DaoPost().find(id));
