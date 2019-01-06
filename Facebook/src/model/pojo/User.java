@@ -241,6 +241,12 @@ public class User {
         return f.createADemand();
     }
 
+    public boolean deleteAFriend(int asker,int receiver){
+        Friend f=new Friend();
+        f.setAsker(new DaoUser().find(asker));
+        f.setReceiver(new DaoUser().find(receiver));
+        return f.deleteAFriend();
+    }
     public List<Friend> friendRequest(){
         List<Friend> friends=new DaoFriend().getAll();
         List<Friend> f=new ArrayList<>();

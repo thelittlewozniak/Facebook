@@ -35,14 +35,15 @@
     <%
         u.getUser();
         out.println("<h3>Details:</h3>");
-        Boolean test=false;
+        int idAsker=0,idReceiver=0;
         for (int i = 0; i < u.getFriendList().size(); i++) {
             Friend f=u.getFriendList().get(i);
             if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId())){
-                test=true;
+                idAsker=f.getAsker().getId();
+                idReceiver=f.getReceiver().getId();
             }
         }
-        if(test) {
+        if(idAsker!=0 && idReceiver!=0) {
             out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
         }
         else

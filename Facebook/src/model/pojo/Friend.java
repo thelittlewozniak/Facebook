@@ -43,7 +43,7 @@ public class Friend {
         return new DaoFriend().create(this);
     }
 
-    public boolean deleteADemand() {
+    public boolean deleteAFriend() {
         return new DaoFriend().delete(this);
     }
 
