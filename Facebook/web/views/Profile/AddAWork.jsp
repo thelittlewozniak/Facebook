@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="/views/layout/header.jsp"/>
 <div class="well">
-    <form class="form" action="/Facebook_intelliJ_war_exploded/Register/" method="post">
+    <form class="form" action="/Facebook_intelliJ_war_exploded/WorkAdd/" method="post">
         <h4>Add a work</h4>
         <div class="input-group text-center">
             <div class="input-group-lg form-group">
@@ -33,7 +33,7 @@
             </div>
 
             <button class="btn btn-lg btn-primary pull-right" type="submit" name="submit"
-                    value="submit">Register you!
+                    value="submit">Add your work!
             </button>
         </div>
     </form>
