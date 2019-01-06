@@ -2,6 +2,7 @@ package model.pojo;
 
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import model.dao.DaoWork;
 
 import java.util.Date;
 
@@ -80,9 +81,8 @@ public class Work {
 
     //                          Operations
 
-    public Work createAWork() {
-        //TODO
-        return null;
+    public boolean createAWork() {
+        return new DaoWork().create(this);
     }
 
     public boolean deleteAWork() {

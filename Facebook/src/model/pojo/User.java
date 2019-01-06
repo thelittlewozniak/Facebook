@@ -283,9 +283,19 @@ public class User {
         return null;
     }
 
-    public boolean addAWork() {
-        //TODO
-        return false;
+    public boolean addAWork(String name,String address,String beginDate,String jobTitle) {
+        Work w=new Work();
+        w.setUser(this);
+        try {
+            w.setBeginDate(new SimpleDateFormat("dd/MM/yyyy").parse(beginDate));
+        } catch (ParseException e) {
+            w.setBeginDate(new Date());
+        }
+        w.setEndDate(w.getBeginDate());
+        w.setJobTitle(jobTitle);
+        w.setName(name);
+        w.setAddress(address);
+        return w.createAWork();
     }
 
     public boolean addASchool() {
