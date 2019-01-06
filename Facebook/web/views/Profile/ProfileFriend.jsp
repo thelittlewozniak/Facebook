@@ -14,7 +14,7 @@
         if (session.getAttribute("user")!=null) {
             u = (User) session.getAttribute("user");
             if (request.getAttribute("friend")!=null){
-                user=(User) request.getAttribute("friend");
+                user=u.getAnotherUser(Integer.parseInt(request.getParameter("id")));
             }
             else{
                 response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
@@ -40,7 +40,7 @@
         for (Friend f:user.getFriendList()) {
             out.println("<div class=\"panel panel-default\">");
             out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-            if(f.getAsker().getId()==u.getId())
+            if(f.getAsker().getId()==user.getId())
                 out.println("<p>" +f.getReceiver().getFirstname()+" "+ f.getReceiver().getLastname() + "</p>");
             else
                 out.println("<p>" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</p>");

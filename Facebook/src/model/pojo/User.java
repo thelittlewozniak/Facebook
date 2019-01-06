@@ -273,6 +273,16 @@ public class User {
         return result;
     }
 
+    public User getAnotherUser(int id){
+        List<User> users=new DaoUser().getAll();
+        for (User user:users) {
+            if(user.getId()==id){
+                return user;
+            }
+        }
+        return null;
+    }
+
     public boolean addAWork() {
         //TODO
         return false;
