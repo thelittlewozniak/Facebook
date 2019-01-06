@@ -35,18 +35,18 @@
     <%
         u.getUser();
         out.println("<h3>Details:</h3>");
-        if(u.getFriendList().size()>0){
-            for (int i = 0; i < u.getFriendList().size(); i++) {
-                Friend f=u.getFriendList().get(i);
-                if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()))
-                    out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
-                else if(user.getId()!=u.getId())
-                    out.println("<a href=href=\"/Facebook_intelliJ_war_exploded/AskFriend?id="+user.getId()+"\" class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+        Boolean test=false;
+        for (int i = 0; i < u.getFriendList().size(); i++) {
+            Friend f=u.getFriendList().get(i);
+            if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId())){
+                test=true;
             }
         }
-        else{
-            out.println("<a href=\"/Facebook_intelliJ_war_exploded/AskFriend?id="+user.getId()+"\" class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+        if(test) {
+            out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
         }
+        else
+            out.println("<a href=\"/Facebook_intelliJ_war_exploded/AskFriend?id="+user.getId()+"\" class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
         out.println("<br><br><div class=\"panel panel-default\">");
         out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
         out.println("<p>Firstname:" +user.getFirstname()+"</p><hr><p>Lastname:"+ user.getLastname() + "</p><hr><p> Address:"+user.getAddress()+"</p><hr><p> Birthday: "+user.getBirthday()+"</p><hr><p> active since:"+user.getRegisterDate()+"</p><hr><p>Gender:"+(user.getGender()?"man":"woman")+"</p><hr><p> Relationship:"+(user.getRelationship()?"in a relationship":"single")+"</p><hr><p> Phone number:"+user.getPhoneNumber()+"</p><hr><p> Interested in:"+(user.getInterestedIn()?"men":"woman")+"</p>");
