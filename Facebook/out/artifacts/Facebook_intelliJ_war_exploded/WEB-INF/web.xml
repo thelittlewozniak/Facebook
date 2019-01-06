@@ -48,6 +48,10 @@
         <servlet-class>Controller.SchoolAddServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>UserEdit</servlet-name>
+        <servlet-class>Controller.UserEditServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/views/Index/index.jsp</jsp-file>
     </servlet>
@@ -154,5 +158,9 @@
     <servlet-mapping>
         <servlet-name>EditDetails</servlet-name>
         <url-pattern>/EditDetails/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserEdit</servlet-name>
+        <url-pattern>/UserEdit/*</url-pattern>
     </servlet-mapping>
 </web-app>

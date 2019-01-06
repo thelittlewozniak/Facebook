@@ -7,10 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Facebook/src/Controller/UserEditServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Profile/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -521,12 +521,12 @@
       <workItem from="1546248458836" duration="4879000" />
       <workItem from="1546427359527" duration="19495000" />
       <workItem from="1546597083412" duration="16091000" />
-      <workItem from="1546708311021" duration="13954000" />
+      <workItem from="1546708311021" duration="14067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176116000" />
+    <option name="totallyTimeSpent" value="176229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
