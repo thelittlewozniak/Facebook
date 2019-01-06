@@ -67,6 +67,10 @@
         <servlet-name>AddAWork</servlet-name>
         <jsp-file>/views/Profile/AddAWork.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>AddASchool</servlet-name>
+        <jsp-file>/views/Profile/AddASchool.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -130,5 +134,9 @@
     <servlet-mapping>
         <servlet-name>WorkAdd</servlet-name>
         <url-pattern>/WorkAdd/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddASchool</servlet-name>
+        <url-pattern>/AddASchool/*</url-pattern>
     </servlet-mapping>
 </web-app>
