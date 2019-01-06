@@ -35,9 +35,9 @@
                         out.println("<div class=\"panel panel-default\">");
                         out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
                         if(f.getAsker().getId()==u.getId())
-                            out.println("<p>" +f.getReceiver().getFirstname()+" "+ f.getReceiver().getLastname() + "</p>");
+                            out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+f.getReceiver().getId()+"\">" +f.getReceiver().getFirstname()+" "+ f.getReceiver().getLastname() + "</a>");
                         else
-                            out.println("<p>" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</p>");
+                            out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+f.getAsker().getId()+"\">" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</a>");
                         out.println("</div></div>");
                     }
                     out.println("<h3>Posts:</h3>");

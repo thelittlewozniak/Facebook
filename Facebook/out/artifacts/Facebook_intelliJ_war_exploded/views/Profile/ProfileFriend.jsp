@@ -15,6 +15,9 @@
             u = (User) session.getAttribute("user");
             if (request.getParameter("id")!=null){
                 user=u.getAnotherUser(Integer.parseInt(request.getParameter("id")));
+                if(user.getId()==u.getId()){
+                    response.sendRedirect("/Facebook_intelliJ_war_exploded/Profile/");
+                }
             }
             else{
                 response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
@@ -30,8 +33,18 @@
 <jsp:include page="/views/layout/header.jsp"/>
 <div class="col-sm-6">
     <%
+        u.getUser();
         out.println("<h3>Details:</h3>");
-        out.println("<div class=\"panel panel-default\">");
+        for (int i = 0; i < u.getFriendList().size(); i++) {
+            Friend f=u.getFriendList().get(i);
+            if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && f.getAccepted())
+                out.println("<a href=# class=\"btn btn-primary pull-right\">Unfriend</a>");
+            else if((f.getAsker().getId()==u.getId() && user.getId()==f.getReceiver().getId()) || (f.getReceiver().getId()==u.getId() && f.getAsker().getId()==user.getId()) && !f.getAccepted())
+                out.println("<a href=# class=\"btn btn-primary pull-right\">Pending</a>");
+            else if(user.getId()!=u.getId())
+                out.println("<a href=# class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+        }
+        out.println("<br><br><div class=\"panel panel-default\">");
         out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
         out.println("<p>Firstname:" +user.getFirstname()+"</p><hr><p>Lastname:"+ user.getLastname() + "</p><hr><p> Address:"+user.getAddress()+"</p><hr><p> Birthday: "+user.getBirthday()+"</p><hr><p> active since:"+user.getRegisterDate()+"</p><hr><p>Gender:"+(user.getGender()?"man":"woman")+"</p><hr><p> Relationship:"+(user.getRelationship()?"in a relationship":"single")+"</p><hr><p> Phone number:"+user.getPhoneNumber()+"</p><hr><p> Interested in:"+(user.getInterestedIn()?"men":"woman")+"</p>");
         out.println("</div></div>");
@@ -41,9 +54,9 @@
             out.println("<div class=\"panel panel-default\">");
             out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
             if(f.getAsker().getId()==user.getId())
-                out.println("<p>" +f.getReceiver().getFirstname()+" "+ f.getReceiver().getLastname() + "</p>");
+                out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+f.getReceiver().getId()+"\">" +f.getReceiver().getFirstname()+" "+ f.getReceiver().getLastname() + "</a>");
             else
-                out.println("<p>" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</p>");
+                out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+f.getAsker().getId()+"\">" +f.getAsker().getFirstname()+" "+ f.getAsker().getLastname() + "</a>");
             out.println("</div></div>");
         }
         out.println("<h3>Posts:</h3>");
