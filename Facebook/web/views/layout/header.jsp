@@ -58,7 +58,7 @@
         </li>
             <% if(session.getAttribute("user")!=null){
         User u=(User)session.getAttribute("user");
-        out.println("<li><a href=\"#postModal\" role=\"button\"></i>"+u.getFirstname()+"</a></li></ul>");
+        out.println("<li><a href=\"/Facebook_intelliJ_war_exploded/Profile\" role=\"button\"></i>"+u.getFirstname()+"</a></li></ul>");
         out.println("<ul class=\"nav navbar-nav navbar-right\"><li><a href=\"/Facebook_intelliJ_war_exploded/LogOut\">Log out</a></li></ul>");
          out.println("</li></ul>");
     }
@@ -87,9 +87,8 @@
             <div class="panel-body">
             <div class="clearfix"></div>
             <ul class="list-group list-unstyled">
-                <li><a href="#">Your Profile</a></li>
+                <li><a href="/Facebook_intelliJ_war_exploded/Profile/">Your Profile</a></li>
                 <li><a href="/Facebook_intelliJ_war_exploded/Index/">Your news feed</a></li>
-                <li><a href="#">Your messages</a></li>
             </ul>
             </div>
             </div>

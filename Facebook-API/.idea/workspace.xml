@@ -7,15 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Facebook/web/views/Profile/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Index/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Profile/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/layout/header.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +69,7 @@
           <entry key="java" value="93" />
           <entry key="js" value="3" />
           <entry key="jsp" value="2" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -85,7 +82,7 @@
           <entry key="JavaScript" value="3" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -93,27 +90,27 @@
           <entry key="dummy" value="13" />
           <entry key="eml" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="11862" />
-          <entry key="xml" value="12" />
+          <entry key="java" value="11893" />
+          <entry key="xml" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="11862" />
+          <entry key="JAVA" value="11893" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="61" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/LikePostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="646">
+              <caret line="38" column="24" selection-end-line="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -145,7 +142,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
+            <state relative-caret-position="563">
               <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -181,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -253,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/access/Test.java" />
         <option value="$PROJECT_DIR$/Facebook-API.eml" />
         <option value="$PROJECT_DIR$/Facebook-API.iml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/access/User.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Post.java" />
@@ -263,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/model/pojo/Friend.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Like.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoUser.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoPost.java" />
         <option value="$PROJECT_DIR$/src/access/WorkAPI.java" />
         <option value="$PROJECT_DIR$/src/access/SchoolingAPI.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" />
@@ -286,6 +281,8 @@
         <option value="$PROJECT_DIR$/src/access/LikePostAPI.java" />
         <option value="$PROJECT_DIR$/src/access/CommentAPI.java" />
         <option value="$PROJECT_DIR$/src/access/LikeCommentAPI.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoPost.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -362,6 +359,17 @@
             </path>
             <path>
               <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -421,7 +429,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Azure Web App.Azure Web App: Facebook-API:Facebook-API">
+  <component name="RunManager" selected="GlassFish Server.Unnamed">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="access.Test" />
       <module name="Facebook-API" />
@@ -449,10 +457,10 @@
       </method>
     </configuration>
     <configuration name="Azure Web App: Facebook-API:Facebook-API" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
-      <option name="OS" value="windows" />
+      <option name="OS" value="linux" />
       <option name="appServicePlanId" value="/subscriptions/05143438-9684-45b8-bc88-7f3d6ac2cad0/resourceGroups/GetDelays/providers/Microsoft.Web/serverfarms/ServicePlan810b78e1-8595" />
       <option name="appServicePlanName" value="" />
-      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingAppServicePlan" value="true" />
       <option name="creatingNew" value="false" />
       <option name="creatingResGrp" value="true" />
       <option name="deployToRoot" value="true" />
@@ -462,16 +470,16 @@
       </option>
       <option name="newSlotConfigurationSource" />
       <option name="newSlotName" />
-      <option name="pricing" value="Free_F1" />
+      <option name="pricing" value="Standard_S1" />
       <option name="region" value="australiaeast" />
       <option name="resourceGroup" value="" />
       <option name="slotName" />
-      <option name="stack" value="TOMCAT" />
-      <option name="subscriptionId" value="05143438-9684-45b8-bc88-7f3d6ac2cad0" />
+      <option name="stack" value="JAVA" />
+      <option name="subscriptionId" value="00fa201e-6a8c-49e9-bf49-bad7c5a7d45e" />
       <option name="targetName" value="Facebook-API_war.war" />
       <option name="targetPath" value="$PROJECT_DIR$/out/artifacts/Facebook_API_war/Facebook-API_war.war" />
-      <option name="version" value="8.5-jre8" />
-      <option name="webAppId" value="/subscriptions/05143438-9684-45b8-bc88-7f3d6ac2cad0/resourceGroups/faceapibook/providers/Microsoft.Web/sites/faceapibook" />
+      <option name="version" value="8-jre8" />
+      <option name="webAppId" value="/subscriptions/00fa201e-6a8c-49e9-bf49-bad7c5a7d45e/resourceGroups/webapifacebook/providers/Microsoft.Web/sites/webapifacebook" />
       <option name="webAppName" value="" />
       <option name="webContainer" value="tomcat 8.5" />
       <method v="2">
@@ -518,12 +526,12 @@
       <workItem from="1546248458836" duration="4879000" />
       <workItem from="1546427359527" duration="19495000" />
       <workItem from="1546597083412" duration="16091000" />
-      <workItem from="1546708311021" duration="1623000" />
+      <workItem from="1546708311021" duration="7152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163785000" />
+    <option name="totallyTimeSpent" value="169314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,13 +674,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/BusinessUser.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -744,16 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/access/LikePostAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/access/LikeCommentAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
@@ -765,16 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -798,13 +779,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -832,6 +806,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/access/LikePostAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="24" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>

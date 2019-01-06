@@ -175,6 +175,37 @@ public class User {
 
     //                          Operations                                  
 
+    public void getUser(){
+        List<Friend> friends=new DaoFriend().getAll();
+        this.FriendList=new ArrayList<>();
+        for (Friend f:friends) {
+            if((f.getAsker().getId()==this.id || f.getReceiver().getId()==this.id) && f.getAccepted()){
+                this.FriendList.add(f);
+            }
+        }
+        List<Post> posts=new DaoPost().getAll();
+        this.posts=new ArrayList<>();
+        for (Post p:posts) {
+            if(p.getUser().getId()==this.id){
+                this.posts.add(p);
+            }
+        }
+        List<Schooling> schoools=new DaoSchooling().getAll();
+        this.schoolings=new ArrayList<>();
+        for (Schooling s:schoools) {
+            if (s.getUser().getId() == this.getId()) {
+                this.schoolings.add(s);
+            }
+        }
+        List<Work> ws=new DaoWork().getAll();
+        this.works=new ArrayList<>();
+        for (Work w:works) {
+            if(w.getUser().getId()==this.id){
+                this.works.add(w);
+            }
+        }
+    }
+    
     public boolean makeAPost(String data, String type) {
         Post p = new Post();
         p.setUser(this);
