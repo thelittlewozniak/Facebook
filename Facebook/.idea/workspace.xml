@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/layout/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,7 +73,7 @@
           <entry key="iml" value="2" />
           <entry key="java" value="107" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="16" />
+          <entry key="jsp" value="17" />
           <entry key="xhtml" value="1" />
           <entry key="xml" value="7" />
         </counts>
@@ -86,7 +84,7 @@
           <entry key="CSS" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="107" />
-          <entry key="JSP" value="16" />
+          <entry key="JSP" value="17" />
           <entry key="JavaScript" value="2" />
           <entry key="XHTML" value="1" />
           <entry key="XML" value="7" />
@@ -96,14 +94,14 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="java" value="9826" />
-          <entry key="jsp" value="6856" />
+          <entry key="jsp" value="6915" />
           <entry key="xml" value="722" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9826" />
-          <entry key="JSP" value="6856" />
+          <entry key="JSP" value="6915" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="722" />
         </counts>
@@ -130,11 +128,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/layout/footer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="224" selection-start-line="25" selection-start-column="224" selection-end-line="25" selection-end-column="224" />
+            <state relative-caret-position="272">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -163,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="29" column="482" selection-start-line="29" selection-start-column="482" selection-end-line="29" selection-end-column="482" />
+            <state relative-caret-position="563">
+              <caret line="68" selection-start-line="8" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -196,15 +203,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/Index/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2521">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -224,7 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pojo/Comment.java" />
         <option value="$PROJECT_DIR$/src/pojo/Like.java" />
         <option value="$PROJECT_DIR$/src/model/DaoLike.java" />
         <option value="$PROJECT_DIR$/src/model/BusinessLayer/CommentBusiness.java" />
@@ -275,6 +272,7 @@
         <option value="$PROJECT_DIR$/web/views/layout/header.jsp" />
         <option value="$PROJECT_DIR$/web/views/Profile/profile.jsp" />
         <option value="$PROJECT_DIR$/web/views/layout/footer.jsp" />
+        <option value="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" />
       </list>
     </option>
   </component>
@@ -361,7 +359,7 @@
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +371,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546784757818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546785034595" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -513,12 +511,12 @@
       <workItem from="1546374181075" duration="4720000" />
       <workItem from="1546424834368" duration="41609000" />
       <workItem from="1546597016125" duration="36115000" />
-      <workItem from="1546708415170" duration="10126000" />
+      <workItem from="1546708415170" duration="10432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137004000" />
+    <option name="totallyTimeSpent" value="137310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,7 +577,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/UserBusiness.java" />
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/WorkBusiness.java" />
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/LikeBusiness.java" />
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/FriendBusiness.java" />
@@ -927,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="482" selection-start-line="29" selection-start-column="482" selection-end-line="29" selection-end-column="482" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/layout/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -943,8 +933,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/layout/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="224" selection-start-line="25" selection-start-column="224" selection-end-line="25" selection-end-column="224" />
+        <state relative-caret-position="272">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="68" selection-start-line="8" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
