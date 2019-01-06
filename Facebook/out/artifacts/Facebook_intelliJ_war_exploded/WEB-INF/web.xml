@@ -75,6 +75,10 @@
         <servlet-name>AddASchool</servlet-name>
         <jsp-file>/views/Profile/AddASchool.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>EditDetails</servlet-name>
+        <jsp-file>/views/Profile/EditDetails.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -146,5 +150,9 @@
     <servlet-mapping>
         <servlet-name>SchoolAdd</servlet-name>
         <url-pattern>/SchoolAdd/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDetails</servlet-name>
+        <url-pattern>/EditDetails/*</url-pattern>
     </servlet-mapping>
 </web-app>
