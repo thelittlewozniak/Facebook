@@ -171,7 +171,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="750">
               <caret line="162" selection-start-line="162" selection-end-line="162" />
             </state>
           </provider>
@@ -519,12 +519,12 @@
       <workItem from="1546248458836" duration="4879000" />
       <workItem from="1546427359527" duration="19495000" />
       <workItem from="1546597083412" duration="16091000" />
-      <workItem from="1546708311021" duration="13458000" />
+      <workItem from="1546708311021" duration="13490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175620000" />
+    <option name="totallyTimeSpent" value="175652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="750">
           <caret line="162" selection-start-line="162" selection-end-line="162" />
         </state>
       </provider>
