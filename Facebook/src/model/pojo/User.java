@@ -389,7 +389,7 @@ public class User {
         List<User> friendofyours = new ArrayList<>();
         List<Post> postofyourfriend = new ArrayList<>();
         for (int i = 0; i < friends.size(); i++) {
-            if ((friends.get(i).getReceiver().getId() == this.id || friends.get(i).getReceiver().getId() == this.id) && friends.get(i).getAccepted()) {
+            if ((friends.get(i).getReceiver().getId() == this.id || friends.get(i).getAsker().getId() == this.id) && friends.get(i).getAccepted()) {
                 friendofyours.add(friends.get(i).getReceiver().getId() == this.id ? friends.get(i).getAsker() : friends.get(i).getReceiver());
             }
         }

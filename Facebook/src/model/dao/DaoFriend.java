@@ -36,7 +36,10 @@ public class DaoFriend extends Dao<Friend> {
 
     @Override
     public boolean delete(Friend obj) {
-        String response = webResource.path("Friend/DeleteFriend?asker=" + obj.getAsker().getId() + "&receiver=" + obj.getReceiver().getId()).accept(MediaType.APPLICATION_JSON).delete(String.class);
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("asker", obj.getAsker().getId());
+        ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver().getId());
+        String response = webResource.path("Friend/DeleteFriend").queryParams(params).accept(MediaType.APPLICATION_JSON).delete(String.class);
         ObjectMapper mapper = new ObjectMapper();
         Boolean done = false;
         try {
@@ -72,7 +75,10 @@ public class DaoFriend extends Dao<Friend> {
     }
 
     public Friend find(int askerId, int receiverId) {
-        String response = webResource.path("Friend/GetFriend?asker=" + askerId + "&receiver=" + receiverId).accept(MediaType.APPLICATION_JSON).get(String.class);
+        MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        ((MultivaluedMapImpl) params).add("asker", askerId);
+        ((MultivaluedMapImpl) params).add("receiver", receiverId);
+        String response = webResource.path("Friend/GetFriend").queryParams(params).accept(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper = new ObjectMapper();
         Friend f = new Friend();
         try {

@@ -8,7 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Profile/ProfileFriend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/dao/DaoFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/src/model/pojo/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +63,7 @@
           <entry key="eml" value="1" />
           <entry key="http" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="97" />
+          <entry key="java" value="98" />
           <entry key="js" value="3" />
           <entry key="jsp" value="2" />
           <entry key="xml" value="6" />
@@ -73,7 +74,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTTP Request" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="97" />
+          <entry key="JAVA" value="98" />
           <entry key="JSP" value="2" />
           <entry key="JavaScript" value="3" />
           <entry key="Manifest" value="1" />
@@ -156,14 +157,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="97">
               <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -185,18 +195,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="750">
               <caret line="162" selection-start-line="162" selection-end-line="162" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -519,12 +517,12 @@
       <workItem from="1546248458836" duration="4879000" />
       <workItem from="1546427359527" duration="19495000" />
       <workItem from="1546597083412" duration="16091000" />
-      <workItem from="1546708311021" duration="17053000" />
+      <workItem from="1546708311021" duration="17676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179215000" />
+    <option name="totallyTimeSpent" value="179838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +537,7 @@
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47131783" visible="true" weight="0.29781267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47131783" visible="true" weight="0.29781267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.5286822" side_tool="true" visible="true" weight="0.29781267" />
       <window_info id="Image Layers" order="3" />
@@ -550,7 +548,7 @@
       <window_info id="Azure Explorer" order="8" sideWeight="0.4992248" weight="0.32978126" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48681995" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48681995" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -837,11 +828,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="97">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
         </state>
       </provider>
     </entry>
