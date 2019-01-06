@@ -47,7 +47,7 @@
                         out.println("<p>"+p.getData()+"<p>");
                         out.println("</div></div>");
                     }
-                    out.println("<h3>Works:</h3><a href=# type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
+                    out.println("<h3>Works:</h3><a href=\"/Facebook_intelliJ_war_exploded/AddAWork\" type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
                     out.println("<br><div class=\"panel panel-default\">");
                     for (Work w:u.getWorks()) {
                         out.println("<div class=\"panel-body\">"+w.getName()+"<div class=\"clearfix\"></div>");

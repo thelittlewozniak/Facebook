@@ -59,6 +59,10 @@
         <servlet-name>ProfileFriend</servlet-name>
         <jsp-file>/views/Profile/ProfileFriend.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>AddAWork</servlet-name>
+        <jsp-file>/views/Profile/AddAWork.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/Index/*</url-pattern>
@@ -114,5 +118,9 @@
     <servlet-mapping>
         <servlet-name>ProfileFriend</servlet-name>
         <url-pattern>/ProfileFriend/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddAWork</servlet-name>
+        <url-pattern>/AddAWork/*</url-pattern>
     </servlet-mapping>
 </web-app>
