@@ -47,7 +47,7 @@
             }
         }
         else{
-            out.println("<a href=# class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
+            out.println("<a href=\"\" class=\"btn btn-primary pull-right\">Ask to be Friend!</a>");
         }
         out.println("<br><br><div class=\"panel panel-default\">");
         out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");

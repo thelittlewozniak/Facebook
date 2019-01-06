@@ -230,9 +230,12 @@ public class User {
         return false;
     }
 
-    public boolean addAFriend() {
-        //TODO
-        return false;
+    public boolean addAFriend(int id) {
+        Friend f=new Friend();
+        f.setAsker(this);
+        f.setAccepted(false);
+        f.setReceiver(new DaoUser().find(id));
+        return f.createADemand();
     }
 
     public List<Friend> friendRequest(){
