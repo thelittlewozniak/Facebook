@@ -24,9 +24,9 @@
 <jsp:include page="/views/layout/header.jsp"/>
 <div class="col-sm-6">
     <%
-                    out.println("<h3>Details:</h3>");
+                    out.println("<a type=\"button\" class=\" pull-right btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/EditDetails\">Edit your details</a><h3>Details:</h3>");
                     out.println("<div class=\"panel panel-default\">");
-                    out.println("<div class=\"panel-body\"><a type=\"button\" href=\"/Facebook_intelliJ_war_exploded/EditDetails\">Edit your details</a><div class=\"clearfix\"></div>");
+                    out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
                     out.println("<p>Firstname:" +u.getFirstname()+"</p><hr><p>Lastname:"+ u.getLastname() + "</p><hr><p> Address:"+u.getAddress()+"</p><hr><p> Birthday: "+u.getBirthday()+"</p><hr><p> active since:"+u.getRegisterDate()+"</p><hr><p>Gender:"+(u.getGender()?"man":"woman")+"</p><hr><p> Relationship:"+(u.getRelationship()?"in a relationship":"single")+"</p><hr><p> Phone number:"+u.getPhoneNumber()+"</p><hr><p> Interested in:"+(u.getInterestedIn()?"men":"woman")+"</p>");
                     out.println("</div></div>");
                     u.getUser();
