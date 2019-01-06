@@ -17,7 +17,7 @@ public class Schooling {
     private String type;
     @JsonDeserialize(using = EditObjectMapper.class)
     private Date beginDate;
-
+    @JsonDeserialize(using = EditObjectMapper.class)
     private Date endDate;
 
     private Boolean graduate;

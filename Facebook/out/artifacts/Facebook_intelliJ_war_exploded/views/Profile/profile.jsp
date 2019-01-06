@@ -55,7 +55,7 @@
                         out.println("</div>");
                     }
                     out.println("</div>");
-                    out.println("<h3>Schools:</h3><a href=# type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
+                    out.println("<h3>Schools:</h3><a href=\"/Facebook_intelliJ_war_exploded/AddASchool\" type=\"button\" class=\"btn btn-primary\"> Add one!</a>");
                     out.println("<br><div class=\"panel panel-default\">");
                     for (Schooling s:u.getSchoolings()) {
                         out.println("<div class=\"panel-body\">"+s.getName()+"<div class=\"clearfix\"></div>");

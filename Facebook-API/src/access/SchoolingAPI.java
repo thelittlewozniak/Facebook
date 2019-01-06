@@ -9,6 +9,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -46,9 +47,10 @@ public class SchoolingAPI extends RestApplication {
         school.setName(name);
         school.setAddress(address);
         school.setType(type);
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date begin=null;
         try{
-            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+            begin=dateFormat.parse(beginDate);
         }
         catch (ParseException e){
             e.printStackTrace();
@@ -56,7 +58,7 @@ public class SchoolingAPI extends RestApplication {
         school.setBeginDate(begin);
         Date end=null;
         try{
-            end=new SimpleDateFormat("dd/MM/yyyy").parse(endDate);
+            end=dateFormat.parse(endDate);
         }
         catch (ParseException e){
             e.printStackTrace();
@@ -93,9 +95,10 @@ public class SchoolingAPI extends RestApplication {
         Connection conn=GetConnection.getInstance().getConnection();
         Schooling school=new Schooling();
         school.setId(Integer.parseInt(schoolingId));
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         Date begin=null;
         try{
-            begin=new SimpleDateFormat("dd/MM/yyyy").parse(beginDate);
+            begin=dateFormat.parse(beginDate);
         }
         catch (ParseException e){
             e.printStackTrace();
@@ -103,7 +106,7 @@ public class SchoolingAPI extends RestApplication {
         school.setBeginDate(begin);
         Date end=null;
         try{
-            end=new SimpleDateFormat("dd/MM/yyyy").parse(endDate);
+            end=dateFormat.parse(endDate);
         }
         catch (ParseException e){
             e.printStackTrace();

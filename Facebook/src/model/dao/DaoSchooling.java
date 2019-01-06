@@ -9,6 +9,8 @@ import model.pojo.Work;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,10 +22,11 @@ public class DaoSchooling extends Dao<Schooling> {
     @Override
     public boolean create(Schooling obj) {
         MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         ((MultivaluedMapImpl) params).add("name", obj.getName());
         ((MultivaluedMapImpl) params).add("address", obj.getAddress());
-        ((MultivaluedMapImpl) params).add("beginDate", obj.getBeginDate());
-        ((MultivaluedMapImpl) params).add("endDate", obj.getEndDate());
+        ((MultivaluedMapImpl) params).add("beginDate", dateFormat.format(obj.getBeginDate()));
+        ((MultivaluedMapImpl) params).add("endDate", dateFormat.format(obj.getEndDate()));
         ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
         ((MultivaluedMapImpl) params).add("type", obj.getType());
@@ -56,9 +59,10 @@ public class DaoSchooling extends Dao<Schooling> {
     @Override
     public boolean update(Schooling obj) {
         MultivaluedMap<String, String> params = new MultivaluedMapImpl();
+        DateFormat dateFormat=new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         ((MultivaluedMapImpl) params).add("schoolingId", obj.getId());
-        ((MultivaluedMapImpl) params).add("beginDate", obj.getBeginDate());
-        ((MultivaluedMapImpl) params).add("endDate", obj.getEndDate());
+        ((MultivaluedMapImpl) params).add("beginDate", dateFormat.format(obj.getBeginDate()));
+        ((MultivaluedMapImpl) params).add("endDate", dateFormat.format(obj.getEndDate()));
         ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
         ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
         String response = webResource.path("Schooling/UpdateSchooling").accept(MediaType.APPLICATION_JSON).type("application/x-www-form-urlencoded").put(String.class, params);
