@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Java EE 6-Java EE 6">
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.transaction.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.jms.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.annotation.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.resource.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.servlet.jsp.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.ejb.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.servlet.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.persistence.jar" />
+    <archive path="C:/Projet github/Facebook/Facebook-API/lib/javax.servlet.jsp.jstl.jar" />
+  </library>
+  <library name="javax.ws.rs">
+    <archive path="C:/Users/natha/Downloads/javax.ws.rs.jar/javax.ws.rs.jar" />
+  </library>
+  <library name="jsr311-api-1.1.1">
+    <archive path="C:/Users/natha/Downloads/jsr311-api-1.1.1.jar" />
+  </library>
+  <library name="ojdbc6">
+    <archive path="C:/Users/natha/Downloads/ojdbc6.jar" />
+  </library>
+</eclipse-userlibraries>
+

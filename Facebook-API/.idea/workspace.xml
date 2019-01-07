@@ -50,9 +50,10 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -105,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/LikePostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="38" column="24" selection-end-line="104" />
+            <state relative-caret-position="374">
+              <caret line="39" column="5" selection-end-line="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoWork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="459">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -135,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="87" selection-start-line="87" selection-end-line="88" />
+            <state relative-caret-position="901">
+              <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/WorkAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="51" selection-start-line="51" selection-end-line="52" />
+            <state relative-caret-position="374">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,8 +172,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="733">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#2936#2937#0" expanded="true" />
+                <element signature="e#2963#2964#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/access/SchoolingAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+            <state relative-caret-position="901">
+              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="2669">
+              <caret line="188" column="1" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -201,8 +208,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -252,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoWork.java" />
         <option value="$PROJECT_DIR$/src/access/FriendAPI.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoLike.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
         <option value="$PROJECT_DIR$/src/access/LikeAPI.java" />
@@ -273,6 +279,7 @@
         <option value="$PROJECT_DIR$/src/access/WorkAPI.java" />
         <option value="$PROJECT_DIR$/src/access/SchoolingAPI.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoPost.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
       </list>
     </option>
   </component>
@@ -309,6 +316,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -325,50 +348,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="access" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546259344623" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546904564668" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -498,11 +483,12 @@
       <workItem from="1546597083412" duration="16091000" />
       <workItem from="1546708311021" duration="17893000" />
       <workItem from="1546843321697" duration="1121000" />
+      <workItem from="1546904244163" duration="819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181176000" />
+    <option name="totallyTimeSpent" value="181995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,11 +501,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46976745" visible="true" weight="0.3011778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46821705" visible="true" weight="0.3045429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.53023255" side_tool="true" visible="true" weight="0.3011778" />
+      <window_info id="Web" order="2" sideWeight="0.5317829" side_tool="true" visible="true" weight="0.3045429" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -528,7 +513,7 @@
       <window_info id="Azure Explorer" order="8" sideWeight="0.4992248" weight="0.32978126" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4862591" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48569825" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +521,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49859786" weight="0.32952183" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5137409" side_tool="true" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5143017" side_tool="true" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4991587" weight="0.32952183" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.49971956" weight="0.32952183" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49411106" weight="0.32952183" />
@@ -734,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/LikePostAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="38" column="24" selection-end-line="104" />
+        <state relative-caret-position="374">
+          <caret line="39" column="5" selection-end-line="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -751,15 +736,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoWork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="459">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/PostAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="87" selection-start-line="87" selection-end-line="88" />
+        <state relative-caret-position="901">
+          <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -768,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/WorkAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="51" selection-start-line="51" selection-end-line="52" />
+        <state relative-caret-position="374">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -779,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/src/access/FriendAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -788,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/access/SchoolingAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+        <state relative-caret-position="901">
+          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -798,22 +783,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        <state relative-caret-position="2669">
+          <caret line="188" column="1" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/Work.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="170">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="733">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#2936#2937#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
