@@ -12,19 +12,23 @@ import java.io.IOException;
 
 @WebServlet(name = "WorkAddServlet")
 public class WorkAddServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
-    }
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
+    doGet(request, response);
+  }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User u = null;
-        HttpSession session = request.getSession();
-        if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
-            u=(User) session.getAttribute("user");
-            u.addAWork(request.getParameter("name"),request.getParameter("address"),request.getParameter("begindate"),request.getParameter("jobtitle"));
-            response.sendRedirect("/Facebook_intelliJ_war_exploded/Profile/");
-        }
-        else
-            response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
-    }
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+      throws IOException {
+    User u = null;
+    HttpSession session = request.getSession();
+    if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
+      u = (User) session.getAttribute("user");
+      u.addAWork(
+          request.getParameter("name"),
+          request.getParameter("address"),
+          request.getParameter("begindate"),
+          request.getParameter("jobtitle"));
+      response.sendRedirect("/Facebook_intelliJ_war_exploded/Profile/");
+    } else response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+  }
 }

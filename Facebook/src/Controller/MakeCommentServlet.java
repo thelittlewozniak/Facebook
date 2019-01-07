@@ -12,24 +12,24 @@ import java.io.IOException;
 
 @WebServlet(name = "MakeCommentServlet")
 public class MakeCommentServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
-    }
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
+    doGet(request, response);
+  }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String data = null;
-        int id = 0;
-        User u = null;
-        HttpSession session = request.getSession();
-        if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
-            data = request.getParameter("data");
-            id = Integer.parseInt(request.getParameter("id"));
-            u = (User) session.getAttribute("user");
-            if (u.makeAComment(data, "string", id))
-                response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
-            else
-                response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
-        } else
-            response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
-    }
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+      throws IOException {
+    String data = null;
+    int id = 0;
+    User u = null;
+    HttpSession session = request.getSession();
+    if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
+      data = request.getParameter("data");
+      id = Integer.parseInt(request.getParameter("id"));
+      u = (User) session.getAttribute("user");
+      if (u.makeAComment(data, "string", id))
+        response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
+      else response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
+    } else response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+  }
 }

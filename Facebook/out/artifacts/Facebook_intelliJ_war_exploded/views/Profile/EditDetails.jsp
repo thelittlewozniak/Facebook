@@ -8,15 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     User u = null;
-    session=request.getSession();
-    if(session!=null){
-        if (session.getAttribute("user")!=null) {
+    session = request.getSession();
+    if (session != null) {
+        if (session.getAttribute("user") != null) {
             u = (User) session.getAttribute("user");
         } else {
             response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
         }
-    }
-    else
+    } else
         response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
 %>
 
@@ -43,7 +42,8 @@
                 </div>
                 <div class="input-group form-group">
                     <label class="control-label pull-left">Are you in a relationship:</label><br>
-                    <label class="radio-inline"><input name="relationship" value="true" type="radio">In a relationship</label>
+                    <label class="radio-inline"><input name="relationship" value="true" type="radio">In a
+                        relationship</label>
                     <label class="radio-inline"><input name="relationship" value="false" checked
                                                        type="radio">Single</label>
                 </div>

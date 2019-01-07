@@ -1,6 +1,6 @@
-<%@ page import="model.pojo.Post" %>
+<%@ page import="model.pojo.User" %>
 <%@ page import="java.util.List" %>
-<%@ page import="model.pojo.User" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: natha
   Date: 1/5/2019
@@ -19,22 +19,22 @@
 %>
 
 
-            <div class="col-sm-6">
-                <%
-                    if (u.searchAUser(request.getParameter("keyword")) != null) {
-                        List<User> users = u.searchAUser(request.getParameter("keyword"));
-                        if (users.size() >= 1) {
-                            for (int i = 0; i < users.size(); i++) {
-                                User user = users.get(i);
-                                out.println("<div class=\"panel panel-default\">");
-                                out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
-                                out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id="+user.getId()+"\">" +user.getFirstname()+" "+ user.getLastname() + "</a><hr><p>"+user.getAddress()+"</p>");
-                                out.println("</div></div>");
-                            }
-                        }
-                    }
-                %>
-            </div>
-            <!-- main col right -->
+<div class="col-sm-6">
+    <%
+        if (u.searchAUser(request.getParameter("keyword")) != null) {
+            List<User> users = u.searchAUser(request.getParameter("keyword"));
+            if (users.size() >= 1) {
+                for (int i = 0; i < users.size(); i++) {
+                    User user = users.get(i);
+                    out.println("<div class=\"panel panel-default\">");
+                    out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
+                    out.println("<a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id=" + user.getId() + "\">" + user.getFirstname() + " " + user.getLastname() + "</a><hr><p>" + user.getAddress() + "</p>");
+                    out.println("</div></div>");
+                }
+            }
+        }
+    %>
+</div>
+<!-- main col right -->
 
 <jsp:include page="/views/layout/footer.jsp"/>

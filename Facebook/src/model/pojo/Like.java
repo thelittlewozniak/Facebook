@@ -1,6 +1,5 @@
 package model.pojo;
 
-
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.DaoLikeComment;
 import model.dao.DaoLikePost;
@@ -9,74 +8,72 @@ import java.util.Date;
 
 public class Like {
 
-    private int id;
-    @JsonDeserialize(using = EditObjectMapper.class)
-    private Date dateLiked;
+  private int id;
 
-    private User user;
+  @JsonDeserialize(using = EditObjectMapper.class)
+  private Date dateLiked;
 
-    private Post post;
+  private User user;
 
-    private Comment comment;
+  private Post post;
 
+  private Comment comment;
 
-    public int getId() {
-        return id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public Date getDateLiked() {
-        return this.dateLiked;
-    }
+  public Date getDateLiked() {
+    return this.dateLiked;
+  }
 
-    public void setDateLiked(Date dateLiked) {
-        this.dateLiked = dateLiked;
-    }
+  public void setDateLiked(Date dateLiked) {
+    this.dateLiked = dateLiked;
+  }
 
-    public User getUser() {
-        return this.user;
-    }
+  public User getUser() {
+    return this.user;
+  }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+  public void setUser(User user) {
+    this.user = user;
+  }
 
-    public Post getPost() {
-        return post;
-    }
+  public Post getPost() {
+    return post;
+  }
 
-    public void setPost(Post post) {
-        this.post = post;
-    }
+  public void setPost(Post post) {
+    this.post = post;
+  }
 
-    public Comment getComment() {
-        return comment;
-    }
+  public Comment getComment() {
+    return comment;
+  }
 
-    public void setComment(Comment comment) {
-        this.comment = comment;
-    }
+  public void setComment(Comment comment) {
+    this.comment = comment;
+  }
 
-    //                          Operations
+  //                          Operations
 
-    public boolean createALikePost() {
-        return new DaoLikePost().create(this);
-    }
+  public boolean createALikePost() {
+    return new DaoLikePost().create(this);
+  }
 
-    public boolean createALikeOnComment() {
-        return new DaoLikeComment().create(this);
-    }
+  public boolean createALikeOnComment() {
+    return new DaoLikeComment().create(this);
+  }
 
-    public boolean deleteALikeOnComment() {
-        return new DaoLikeComment().delete(this);
-    }
+  public boolean deleteALikeOnComment() {
+    return new DaoLikeComment().delete(this);
+  }
 
-    public boolean deleteALikePost() {
-        return new DaoLikePost().delete(this);
-    }
-
-
+  public boolean deleteALikePost() {
+    return new DaoLikePost().delete(this);
+  }
 }

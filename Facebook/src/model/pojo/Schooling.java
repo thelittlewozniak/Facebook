@@ -1,6 +1,5 @@
 package model.pojo;
 
-
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.DaoSchooling;
 
@@ -8,97 +7,99 @@ import java.util.Date;
 
 public class Schooling {
 
-    private int id;
+  private int id;
 
-    private String name;
+  private String name;
 
-    private String address;
+  private String address;
 
-    private String type;
-    @JsonDeserialize(using = EditObjectMapper.class)
-    private Date beginDate;
-    @JsonDeserialize(using = EditObjectMapper.class)
-    private Date endDate;
+  private String type;
 
-    private Boolean graduate;
+  @JsonDeserialize(using = EditObjectMapper.class)
+  private Date beginDate;
 
-    private User user;
+  @JsonDeserialize(using = EditObjectMapper.class)
+  private Date endDate;
 
+  private Boolean graduate;
 
-    public int getId() {
-        return id;
-    }
+  private User user;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return this.name;
+  }
 
-    public String getAddress() {
-        return this.address;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+  public String getAddress() {
+    return this.address;
+  }
 
-    public String getType() {
-        return this.type;
-    }
+  public void setAddress(String address) {
+    this.address = address;
+  }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+  public String getType() {
+    return this.type;
+  }
 
-    public Date getBeginDate() {
-        return this.beginDate;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
-    public void setBeginDate(Date beginDate) {
-        this.beginDate = beginDate;
-    }
+  public Date getBeginDate() {
+    return this.beginDate;
+  }
 
-    public Date getEndDate() {
-        return this.endDate;
-    }
+  public void setBeginDate(Date beginDate) {
+    this.beginDate = beginDate;
+  }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+  public Date getEndDate() {
+    return this.endDate;
+  }
 
-    public Boolean getGraduate() {
-        return this.graduate;
-    }
+  public void setEndDate(Date endDate) {
+    this.endDate = endDate;
+  }
 
-    public void setGraduate(Boolean graduate) {
-        this.graduate = graduate;
-    }
+  public Boolean getGraduate() {
+    return this.graduate;
+  }
 
-    public User getUser() {
-        return this.user;
-    }
+  public void setGraduate(Boolean graduate) {
+    this.graduate = graduate;
+  }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+  public User getUser() {
+    return this.user;
+  }
 
-    //                          Operations
+  public void setUser(User user) {
+    this.user = user;
+  }
 
-    public boolean createASchooling() {
-        return new DaoSchooling().create(this);
-    }
+  //                          Operations
 
-    public boolean deleteASchooling() {
-        return new DaoSchooling().delete(this);
-    }
+  public boolean createASchooling() {
+    return new DaoSchooling().create(this);
+  }
 
-    public boolean updateASchooling(){return new DaoSchooling().update(this); }
+  public boolean deleteASchooling() {
+    return new DaoSchooling().delete(this);
+  }
 
+  public boolean updateASchooling() {
+    return new DaoSchooling().update(this);
+  }
 }

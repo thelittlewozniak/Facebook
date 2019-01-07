@@ -10,13 +10,15 @@ import java.io.IOException;
 
 @WebServlet(name = "LogOutServlet")
 public class LogOutServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
-    }
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
+    doGet(request, response);
+  }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
-        session.invalidate();
-        response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
-    }
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+      throws IOException {
+    HttpSession session = request.getSession(false);
+    session.invalidate();
+    response.sendRedirect("/Facebook_intelliJ_war_exploded/Index/");
+  }
 }

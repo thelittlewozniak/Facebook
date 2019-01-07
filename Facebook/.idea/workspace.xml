@@ -7,8 +7,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Facebook-API/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/CommentAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/CommentAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/FriendAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/FriendAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/LikeCommentAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/LikeCommentAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/LikePostAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/LikePostAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/PostAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/PostAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/RestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/SchoolingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/SchoolingAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/UserAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/access/WorkAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/access/WorkAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoLikeComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoLikeComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoLikePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoLikePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoSchooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoSchooling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/GetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/GetConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Friend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Like.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Schooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Schooling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/FriendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/FriendRequests.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Home/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/EditDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/EditDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/ProfileFriend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Facebook_intelliJ_war_exploded/views/Profile/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AskFriendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AskFriendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DeleteFriendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DeleteFriendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LikeCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LikeCommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LikePostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LikePostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LogOutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MakeCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MakeCommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SchoolAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SchoolAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UnLikeCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UnLikeCommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UnLikePostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UnLikePostServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserEditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserEditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WorkAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WorkAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoLikeComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoLikeComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoLikePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoLikePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoSchooling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Friend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Like.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Schooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Schooling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/pojo/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Work.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Home/FriendRequests.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Home/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Home/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Home/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/EditDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/EditDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/Profile/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/layout/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/layout/header.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,20 +130,22 @@
     <session id="-1732645">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,9 +153,9 @@
           <entry key="class" value="3" />
           <entry key="css" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="131" />
+          <entry key="java" value="135" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="33" />
+          <entry key="jsp" value="36" />
           <entry key="xhtml" value="1" />
           <entry key="xml" value="9" />
         </counts>
@@ -85,8 +165,8 @@
           <entry key="CLASS" value="3" />
           <entry key="CSS" value="2" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="131" />
-          <entry key="JSP" value="33" />
+          <entry key="JAVA" value="135" />
+          <entry key="JSP" value="36" />
           <entry key="JavaScript" value="2" />
           <entry key="XHTML" value="1" />
           <entry key="XML" value="9" />
@@ -95,14 +175,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="11740" />
+          <entry key="java" value="11919" />
           <entry key="jsp" value="8805" />
           <entry key="xml" value="1414" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11740" />
+          <entry key="JAVA" value="11919" />
           <entry key="JSP" value="8805" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="1414" />
@@ -113,59 +193,131 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/Home/search.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="120" selection-start-line="30" selection-start-column="87" selection-end-line="30" selection-end-column="120" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="401" column="13" lean-forward="true" selection-start-line="401" selection-start-column="13" selection-end-line="401" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/pojo/Friend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="17">
+              <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
               <folding>
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#908#909#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#1478#1479#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+                <element signature="e#1788#1789#0" expanded="true" />
+                <element signature="e#1824#1825#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#1947#1948#0" expanded="true" />
+                <element signature="e#1987#1988#0" expanded="true" />
+                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#2089#2090#0" expanded="true" />
+                <element signature="e#2129#2130#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
+                <element signature="e#2226#2227#0" expanded="true" />
+                <element signature="e#2274#2275#0" expanded="true" />
+                <element signature="e#2313#2314#0" expanded="true" />
+                <element signature="e#2352#2353#0" expanded="true" />
+                <element signature="e#2407#2408#0" expanded="true" />
+                <element signature="e#2453#2454#0" expanded="true" />
+                <element signature="e#2487#2488#0" expanded="true" />
+                <element signature="e#2521#2522#0" expanded="true" />
+                <element signature="e#2566#2567#0" expanded="true" />
+                <element signature="e#2602#2603#0" expanded="true" />
+                <element signature="e#2642#2643#0" expanded="true" />
+                <element signature="e#2682#2683#0" expanded="true" />
+                <element signature="e#2739#2740#0" expanded="true" />
+                <element signature="e#2787#2788#0" expanded="true" />
+                <element signature="e#2830#2831#0" expanded="true" />
+                <element signature="e#2868#2869#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
+                <element signature="e#2970#2971#0" expanded="true" />
+                <element signature="e#3006#3007#0" expanded="true" />
+                <element signature="e#3039#3040#0" expanded="true" />
+                <element signature="e#3085#3086#0" expanded="true" />
+                <element signature="e#3119#3120#0" expanded="true" />
+                <element signature="e#3165#3166#0" expanded="true" />
+                <element signature="e#3203#3204#0" expanded="true" />
+                <element signature="e#3264#3265#0" expanded="true" />
+                <element signature="e#3308#3309#0" expanded="true" />
+                <element signature="e#3344#3345#0" expanded="true" />
+                <element signature="e#3377#3378#0" expanded="true" />
+                <element signature="e#3423#3424#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3315">
-              <caret line="195" column="36" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
+            <state relative-caret-position="376">
+              <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+              <folding>
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="121" selection-start-line="46" selection-start-column="121" selection-end-line="46" selection-end-column="121" />
+            <state relative-caret-position="199">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/Profile/EditDetails.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="29" column="81" lean-forward="true" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/DeleteFriendServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="170">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding>
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,7 +326,7 @@
         <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="393" selection-start-line="24" selection-start-column="393" selection-end-line="24" selection-end-column="393" />
+              <caret line="24" column="405" selection-start-line="24" selection-start-column="405" selection-end-line="24" selection-end-column="405" />
             </state>
           </provider>
         </entry>
@@ -182,8 +334,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="79" selection-start-line="19" selection-start-column="8" selection-end-line="31" selection-end-column="79" />
+            <state relative-caret-position="408">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -192,7 +344,7 @@
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -201,7 +353,7 @@
         <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1360">
-              <caret line="93" selection-start-line="91" selection-end-line="93" />
+              <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,8 +380,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoLike.java" />
         <option value="$PROJECT_DIR$/src/Servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/Controller/HomeServlet.java" />
         <option value="$PROJECT_DIR$/web/views/index.jsp" />
@@ -244,7 +394,6 @@
         <option value="$PROJECT_DIR$/src/model/dao/DaoLikePost.java" />
         <option value="$PROJECT_DIR$/src/Controller/MakeCommentServlet.java" />
         <option value="$PROJECT_DIR$/src/Controller/LikeCommentServlet.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Like.java" />
         <option value="$PROJECT_DIR$/src/Controller/UnLikeCommentServlet.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoLikeComment.java" />
@@ -278,7 +427,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoFriend.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/DaoComment.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/Dao.java" />
+        <option value="$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java" />
       </list>
     </option>
   </component>
@@ -316,6 +468,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,31 +486,11 @@
               <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,47 +498,17 @@
               <item name="Facebook" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facebook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546815493643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546904446056" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -412,6 +516,8 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -546,11 +652,13 @@
       <workItem from="1546597016125" duration="36115000" />
       <workItem from="1546708415170" duration="31010000" />
       <workItem from="1546843302304" duration="971000" />
+      <workItem from="1546902281893" duration="1090000" />
+      <workItem from="1546903459662" duration="979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158859000" />
+    <option name="totallyTimeSpent" value="160928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,10 +671,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.485447" visible="true" weight="0.19237241" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48217055" visible="true" weight="0.19685923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.514553" side_tool="true" visible="true" weight="0.19237241" />
+      <window_info id="Web" order="2" sideWeight="0.5178295" side_tool="true" visible="true" weight="0.19685923" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -575,7 +684,7 @@
       <window_info id="Azure Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,6 +700,7 @@
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="15" />
       <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" order="16" />
       <window_info anchor="bottom" id="Azure Activity Log" order="17" />
+      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32952183" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,20 +737,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/Home/Home.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/model/BusinessLayer/PostBusiness.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" column="84" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/Like.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
@@ -662,13 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="26" column="38" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -710,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4335">
@@ -732,13 +814,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/FriendProfileServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/views/layout/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PostServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -847,24 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Profile/EditDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="75" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/Profile/profile.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/layout/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="88" column="49" lean-forward="true" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -928,41 +989,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
+    <entry file="file://$PROJECT_DIR$/web/views/layout/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="393" selection-start-line="24" selection-start-column="393" selection-end-line="24" selection-end-column="393" />
+        <state relative-caret-position="578">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/views/layout/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="79" selection-start-line="19" selection-start-column="8" selection-end-line="31" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="93" selection-start-line="91" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1632">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dao/DaoFriend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/DaoComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Home/FriendRequests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="405" selection-start-line="24" selection-start-column="405" selection-end-line="24" selection-end-column="405" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AcceptFriendServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="401" column="13" lean-forward="true" selection-start-line="401" selection-start-column="13" selection-end-line="401" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
+          <folding>
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1947#1948#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2129#2130#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
+            <element signature="e#2274#2275#0" expanded="true" />
+            <element signature="e#2313#2314#0" expanded="true" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2407#2408#0" expanded="true" />
+            <element signature="e#2453#2454#0" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2521#2522#0" expanded="true" />
+            <element signature="e#2566#2567#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
+            <element signature="e#2642#2643#0" expanded="true" />
+            <element signature="e#2682#2683#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2970#2971#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3085#3086#0" expanded="true" />
+            <element signature="e#3119#3120#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3203#3204#0" expanded="true" />
+            <element signature="e#3264#3265#0" expanded="true" />
+            <element signature="e#3308#3309#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3423#3424#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+          <folding>
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/Profile/EditDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="81" lean-forward="true" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
         </state>
       </provider>
     </entry>

@@ -173,7 +173,7 @@ public class User {
     }
 
 
-    //                          Operations                                  
+    //                          Operations
 
     public void getUser(){
         List<Friend> friends=new DaoFriend().getAll();
@@ -205,7 +205,7 @@ public class User {
             }
         }
     }
-    
+
     public boolean makeAPost(String data, String type) {
         Post p = new Post();
         p.setUser(this);

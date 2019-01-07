@@ -6,35 +6,40 @@
       To change this template use File | Settings | File Templates.
     --%>
         <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-            <div class="col-sm-3">
-            <div class="well">
-            <div class="panel panel-default">
-            <div class="panel-thumbnail"><img src="http://lh3.googleusercontent.com/OS6fHdRPAxpnB2PruNN0cGxC1txcI1zmG9bsZkmuF0AB-0pl0NivFPkTPPbEQ5WY7HGA6GPEZQAuVD_zCv0Y6xLj7mq611g5fFo=s1412-nu" class="img-responsive"></div>
-            <div class="panel-body">
-            <p class="lead">Google is hiring!</p>
-            <p><a href="https://careers.google.com/">Join us!</a></p>
-            </div>
-            </div>
-            <div class="panel panel-default">
-            <div class="panel-thumbnail"><img src="https://research.fb.com/wp-content/uploads/2016/11/og_careers.jpg" class="img-responsive"></div>
-            <div class="panel-body">
-            <p class="lead">Facebook is hiring!</p>
-            <p><a href="https://www.facebook.com/careers/">Join us!</a></p>
-            </div>
-            </div>
-            <div class="panel panel-default">
-            <div class="panel-thumbnail"><img src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/406215_4424998266541_1319596107_n.jpg?_nc_cat=102&_nc_ht=scontent.fbru2-1.fna&oh=1bb7afc388608e8b180992bf598a9852&oe=5CBF6FDC" class="img-responsive"></div>
-            <div class="panel-body">
-            <p class="lead">You want to be like him?</p>
-            <p><a href="https://www.tinder.com/">Join us!</a></p>
-            </div>
-            </div>
-            </div>
-            </div>
+        <div class="col-sm-3">
+        <div class="well">
+        <div class="panel panel-default">
+        <div class="panel-thumbnail"><img
+        src="http://lh3.googleusercontent.com/OS6fHdRPAxpnB2PruNN0cGxC1txcI1zmG9bsZkmuF0AB-0pl0NivFPkTPPbEQ5WY7HGA6GPEZQAuVD_zCv0Y6xLj7mq611g5fFo=s1412-nu"
+        class="img-responsive"></div>
+        <div class="panel-body">
+        <p class="lead">Google is hiring!</p>
+        <p><a href="https://careers.google.com/">Join us!</a></p>
+        </div>
+        </div>
+        <div class="panel panel-default">
+        <div class="panel-thumbnail"><img src="https://research.fb.com/wp-content/uploads/2016/11/og_careers.jpg"
+        class="img-responsive"></div>
+        <div class="panel-body">
+        <p class="lead">Facebook is hiring!</p>
+        <p><a href="https://www.facebook.com/careers/">Join us!</a></p>
+        </div>
+        </div>
+        <div class="panel panel-default">
+        <div class="panel-thumbnail"><img
+        src="https://scontent.fbru2-1.fna.fbcdn.net/v/t1.0-9/406215_4424998266541_1319596107_n.jpg?_nc_cat=102&_nc_ht=scontent.fbru2-1.fna&oh=1bb7afc388608e8b180992bf598a9852&oe=5CBF6FDC"
+        class="img-responsive"></div>
+        <div class="panel-body">
+        <p class="lead">You want to be like him?</p>
+        <p><a href="https://www.tinder.com/">Join us!</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            </div><!--/row-->
+        </div><!--/row-->
 
-            <div class="row">
+        <div class="row">
         <div class="col-sm-6">
         <a href="#">Nathan Pire</a> <small class="text-muted">|</small> <a href="#">Raphael Dispaux</a>
         </div>

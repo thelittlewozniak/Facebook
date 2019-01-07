@@ -1,6 +1,5 @@
 package model.pojo;
 
-
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import model.dao.DaoWork;
 
@@ -8,85 +7,89 @@ import java.util.Date;
 
 public class Work {
 
-    private int id;
+  private int id;
 
-    private String name;
+  private String name;
 
-    private String address;
-    @JsonDeserialize(using = EditObjectMapper.class)
-    private Date beginDate;
-    @JsonDeserialize(using = EditObjectMapper.class)
-    private Date endDate;
+  private String address;
 
-    private String jobTitle;
+  @JsonDeserialize(using = EditObjectMapper.class)
+  private Date beginDate;
 
-    private User user;
+  @JsonDeserialize(using = EditObjectMapper.class)
+  private Date endDate;
 
+  private String jobTitle;
 
-    public int getId() {
-        return id;
-    }
+  private User user;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return this.name;
+  }
 
-    public String getAddress() {
-        return this.address;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+  public String getAddress() {
+    return this.address;
+  }
 
-    public Date getBeginDate() {
-        return this.beginDate;
-    }
+  public void setAddress(String address) {
+    this.address = address;
+  }
 
-    public void setBeginDate(Date beginDate) {
-        this.beginDate = beginDate;
-    }
+  public Date getBeginDate() {
+    return this.beginDate;
+  }
 
-    public Date getEndDate() {
-        return this.endDate;
-    }
+  public void setBeginDate(Date beginDate) {
+    this.beginDate = beginDate;
+  }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+  public Date getEndDate() {
+    return this.endDate;
+  }
 
-    public String getJobTitle() {
-        return this.jobTitle;
-    }
+  public void setEndDate(Date endDate) {
+    this.endDate = endDate;
+  }
 
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
-    }
+  public String getJobTitle() {
+    return this.jobTitle;
+  }
 
-    public User getUser() {
-        return this.user;
-    }
+  public void setJobTitle(String jobTitle) {
+    this.jobTitle = jobTitle;
+  }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+  public User getUser() {
+    return this.user;
+  }
 
-    //                          Operations
+  public void setUser(User user) {
+    this.user = user;
+  }
 
-    public boolean createAWork() {
-        return new DaoWork().create(this);
-    }
+  //                          Operations
 
-    public boolean deleteAWork() { return new DaoWork().delete(this); }
+  public boolean createAWork() {
+    return new DaoWork().create(this);
+  }
 
-    public boolean updateWork(){return new DaoWork().update(this);}
+  public boolean deleteAWork() {
+    return new DaoWork().delete(this);
+  }
 
+  public boolean updateWork() {
+    return new DaoWork().update(this);
+  }
 }
