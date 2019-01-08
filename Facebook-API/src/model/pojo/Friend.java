@@ -31,21 +31,4 @@ public class Friend {
   public void setReceiver(User receiver) {
     this.receiver = receiver;
   }
-
-  //                          Operations
-
-  public Friend createADemand() {
-    // TODO
-    return null;
-  }
-
-  public boolean deleteADemand() {
-    // TODO
-    return false;
-  }
-
-  public boolean acceptADemand() {
-    // TODO
-    return false;
-  }
 }

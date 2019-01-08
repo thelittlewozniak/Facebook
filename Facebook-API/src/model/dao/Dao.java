@@ -3,33 +3,33 @@ package model.dao;
 import java.sql.Connection;
 import java.util.List;
 
-public abstract class Dao<T> {
-  protected Connection connect = null;
+abstract class Dao<T> {
+  final Connection connect;
 
-  public Dao(Connection conn) {
+  Dao(Connection conn) {
     this.connect = conn;
   }
 
   /**
-   * @param obj
+   * @param obj the object of the DAO
    * @return boolean
    */
   public abstract boolean create(T obj);
 
   /**
-   * @param obj
+   * @param obj the object of the DAO
    * @return boolean
    */
   public abstract boolean delete(T obj);
 
   /**
-   * @param obj
+   * @param obj the object of the DAO
    * @return boolean
    */
   public abstract boolean update(T obj);
 
   /**
-   * @param id
+   * @param id the id od the object of the DAO
    * @return T
    */
   public abstract T find(int id);

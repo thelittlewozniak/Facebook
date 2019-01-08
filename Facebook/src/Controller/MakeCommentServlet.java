@@ -2,7 +2,6 @@ package Controller;
 
 import model.pojo.User;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,15 +12,15 @@ import java.io.IOException;
 @WebServlet(name = "MakeCommentServlet")
 public class MakeCommentServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response)
-      throws ServletException, IOException {
+      throws IOException {
     doGet(request, response);
   }
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
-    String data = null;
-    int id = 0;
-    User u = null;
+    String data;
+    int id;
+    User u;
     HttpSession session = request.getSession();
     if (request.getParameter("submit") != null && session.getAttribute("user") != null) {
       data = request.getParameter("data");

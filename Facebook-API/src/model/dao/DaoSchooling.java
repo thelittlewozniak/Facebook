@@ -19,7 +19,6 @@ public class DaoSchooling extends Dao<Schooling> {
   @Override
   public boolean create(Schooling obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call SCHOOLINGPACKAGE.add(?,?,?,?,?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -49,13 +48,6 @@ public class DaoSchooling extends Dao<Schooling> {
           e.printStackTrace();
         }
       }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
     }
   }
 
@@ -78,8 +70,8 @@ public class DaoSchooling extends Dao<Schooling> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -110,8 +102,8 @@ public class DaoSchooling extends Dao<Schooling> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

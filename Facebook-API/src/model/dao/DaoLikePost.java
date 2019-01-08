@@ -19,7 +19,6 @@ public class DaoLikePost extends Dao<Like> {
   @Override
   public boolean create(Like obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call LIKEPACKAGE.ADDLikePost(?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -38,13 +37,6 @@ public class DaoLikePost extends Dao<Like> {
       if (stmt != null) {
         try {
           stmt.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
         } catch (SQLException e) {
           e.printStackTrace();
         }
@@ -70,8 +62,8 @@ public class DaoLikePost extends Dao<Like> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -98,8 +90,8 @@ public class DaoLikePost extends Dao<Like> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

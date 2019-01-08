@@ -9,7 +9,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
   protected void doPost(
       javax.servlet.http.HttpServletRequest request,
       javax.servlet.http.HttpServletResponse response)
-      throws javax.servlet.ServletException, IOException {
+      throws IOException {
     doGet(request, response);
   }
 
@@ -17,8 +17,8 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
       javax.servlet.http.HttpServletRequest request,
       javax.servlet.http.HttpServletResponse response)
       throws IOException {
-    String email = null;
-    String password = null;
+    String email;
+    String password;
     if (request.getParameter("submit") != null) {
       email = request.getParameter("email");
       password = request.getParameter("password");

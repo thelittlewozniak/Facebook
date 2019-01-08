@@ -73,16 +73,4 @@ public class Work {
   public void setUser(User user) {
     this.user = user;
   }
-
-  //                          Operations
-
-  public Work createAWork() {
-    // TODO
-    return null;
-  }
-
-  public boolean deleteAWork() {
-    // TODO
-    return false;
-  }
 }

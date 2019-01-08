@@ -1,7 +1,6 @@
 package model.pojo;
 
 import java.util.Date;
-import java.util.List;
 
 public class User {
 
@@ -28,14 +27,6 @@ public class User {
   private Boolean gender;
 
   private Boolean interestedIn;
-
-  private List<Friend> FriendList;
-
-  private List<Post> posts;
-
-  private List<Schooling> schoolings;
-
-  private List<Work> works;
 
   public int getId() {
     return this.id;
@@ -117,38 +108,6 @@ public class User {
     this.interestedIn = interestedIn;
   }
 
-  public List<Friend> getFriendList() {
-    return this.FriendList;
-  }
-
-  public void setFriendList(List<Friend> FriendList) {
-    this.FriendList = FriendList;
-  }
-
-  public List<Post> getPosts() {
-    return this.posts;
-  }
-
-  public void setPosts(List<Post> posts) {
-    this.posts = posts;
-  }
-
-  public List<Schooling> getSchoolings() {
-    return this.schoolings;
-  }
-
-  public void setSchoolings(List<Schooling> schoolings) {
-    this.schoolings = schoolings;
-  }
-
-  public List<Work> getWorks() {
-    return this.works;
-  }
-
-  public void setWorks(List<Work> works) {
-    this.works = works;
-  }
-
   public String getEmail() {
     return email;
   }
@@ -163,41 +122,5 @@ public class User {
 
   public void setPassword(String password) {
     this.password = password;
-  }
-  //                          Operations
-
-  public boolean makeAPost() {
-    // TODO
-    return false;
-  }
-
-  public boolean makeAComment() {
-    // TODO
-    return false;
-  }
-
-  public boolean acceptAFriend() {
-    // TODO
-    return false;
-  }
-
-  public boolean addAFriend() {
-    // TODO
-    return false;
-  }
-
-  public boolean makeALike() {
-    // TODO
-    return false;
-  }
-
-  public boolean addAWork() {
-    // TODO
-    return false;
-  }
-
-  public boolean addASchool() {
-    // TODO
-    return false;
   }
 }

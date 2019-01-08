@@ -26,7 +26,7 @@ public class DaoWork extends Dao<Work> {
     params.add("address", obj.getAddress());
     params.add("beginDate", dateFormat.format(obj.getBeginDate()));
     params.add("endDate", dateFormat.format(obj.getEndDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
     params.add("jobTitle", obj.getJobTitle());
     String response =
         webResource
@@ -65,10 +65,10 @@ public class DaoWork extends Dao<Work> {
   public boolean update(Work obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-    ((MultivaluedMapImpl) params).add("workid", obj.getId());
+    params.add("workid", String.valueOf(obj.getId()));
     params.add("beginDate", dateFormat.format(obj.getBeginDate()));
     params.add("endDate", dateFormat.format(obj.getEndDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
     params.add("jobTitle", obj.getJobTitle());
     String response =
         webResource

@@ -2,7 +2,6 @@ package Controller;
 
 import model.pojo.User;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,22 +12,22 @@ import java.io.IOException;
 @WebServlet(name = "RegisterServlet")
 public class RegisterServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response)
-      throws ServletException, IOException {
+      throws IOException {
     doGet(request, response);
   }
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
-    String email = null;
-    String password = null;
-    String firstname = null;
-    String lastname = null;
-    String address = null;
-    String birthday = null;
-    String relationShip = null;
-    String phoneNumber = null;
-    String gender = null;
-    String interestedIn = null;
+    String email;
+    String password;
+    String firstname;
+    String lastname;
+    String address;
+    String birthday;
+    String relationShip;
+    String phoneNumber;
+    String gender;
+    String interestedIn;
     if (request.getParameter("submit") != null) {
       email = request.getParameter("email");
       password = request.getParameter("password");

@@ -19,7 +19,6 @@ public class DaoPost extends Dao<Post> {
   @Override
   public boolean create(Post obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call POSTPACKAGE.add(?,?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -39,13 +38,6 @@ public class DaoPost extends Dao<Post> {
       if (stmt != null) {
         try {
           stmt.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
         } catch (SQLException e) {
           e.printStackTrace();
         }
@@ -71,8 +63,8 @@ public class DaoPost extends Dao<Post> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -100,8 +92,8 @@ public class DaoPost extends Dao<Post> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

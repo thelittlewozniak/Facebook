@@ -15,9 +15,7 @@ public class GetConnection {
       conn =
           DriverManager.getConnection(
               "jdbc:oracle:thin:@//char-oracle11.condorcet.be:1521/xe", "nathan3", "Nathan");
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-    } catch (SQLException e) {
+    } catch (ClassNotFoundException | SQLException e) {
       e.printStackTrace();
     }
   }

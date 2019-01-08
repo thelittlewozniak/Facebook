@@ -18,7 +18,6 @@ public class DaoFriend extends Dao<Friend> {
   @Override
   public boolean create(Friend obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call FRIENDSPACKAGE.add(?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -34,13 +33,6 @@ public class DaoFriend extends Dao<Friend> {
       if (stmt != null) {
         try {
           stmt.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
         } catch (SQLException e) {
           e.printStackTrace();
         }
@@ -67,8 +59,8 @@ public class DaoFriend extends Dao<Friend> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -91,8 +83,8 @@ public class DaoFriend extends Dao<Friend> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

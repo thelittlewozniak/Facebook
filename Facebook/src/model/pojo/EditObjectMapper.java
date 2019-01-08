@@ -13,9 +13,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class EditObjectMapper extends JsonDeserializer<Date> {
+class EditObjectMapper extends JsonDeserializer<Date> {
 
-  private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z[UTC]'");
+  private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z[UTC]'");
 
   @Override
   public Date deserialize(

@@ -17,13 +17,15 @@ import java.util.Date;
 
 @Path("Comment")
 public class CommentAPI extends RestApplication {
+  private Response response;
+  private Connection conn;
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetAll")
   public Response getAll() {
-    Connection conn = GetConnection.getInstance().getConnection();
-    Response response =
-        Response.status(Response.Status.OK).entity(new DaoComment(conn).getAll()).build();
+    conn = GetConnection.getInstance().getConnection();
+    response = Response.status(Response.Status.OK).entity(new DaoComment(conn).getAll()).build();
     return response;
   }
 
@@ -31,8 +33,7 @@ public class CommentAPI extends RestApplication {
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetComment")
   public Response getComment(@QueryParam("id") int id) {
-    Response response = null;
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Comment c = new DaoComment(conn).find(id);
     if (c != null) response = Response.status(Response.Status.OK).entity(c).build();
     else response = Response.status(Response.Status.NO_CONTENT).entity(null).build();
@@ -48,7 +49,7 @@ public class CommentAPI extends RestApplication {
       @FormParam("postDate") String postDate,
       @FormParam("user") String userId,
       @FormParam("post") String postId) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Comment c = new Comment();
     c.setData(data);
     c.setType(type);
@@ -63,8 +64,7 @@ public class CommentAPI extends RestApplication {
     c.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
     c.setPost(new DaoPost(conn).find(Integer.parseInt(postId)));
     Boolean test = new DaoComment(conn).create(c);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(test).build();
     return response;
   }
@@ -73,11 +73,10 @@ public class CommentAPI extends RestApplication {
   @Path("DeleteComment")
   @Produces(MediaType.APPLICATION_JSON)
   public Response deleteComment(@QueryParam("id") int id) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Comment c = new DaoComment(conn).find(id);
-    Boolean test = new DaoComment(conn).delete(c);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoComment(conn).delete(c);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
     return response;
   }
@@ -92,7 +91,7 @@ public class CommentAPI extends RestApplication {
       @FormParam("postDate") String postDate,
       @FormParam("user") String userId,
       @FormParam("post") String postId) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Comment c = new Comment();
     c.setId(Integer.parseInt(commentId));
     c.setData(data);
@@ -107,9 +106,8 @@ public class CommentAPI extends RestApplication {
     c.setPostDate(date);
     c.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
     c.setPost(new DaoPost(conn).find(Integer.parseInt(postId)));
-    Boolean test = new DaoComment(conn).update(c);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoComment(conn).update(c);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(null).build();
     return response;
   }

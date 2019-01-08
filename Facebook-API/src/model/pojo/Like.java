@@ -53,16 +53,4 @@ public class Like {
   public void setComment(Comment comment) {
     this.comment = comment;
   }
-
-  //                          Operations
-
-  public Like createAPost() {
-    // TODO
-    return null;
-  }
-
-  public boolean deleteAPost() {
-    // TODO
-    return false;
-  }
 }

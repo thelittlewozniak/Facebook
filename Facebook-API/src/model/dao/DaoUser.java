@@ -19,7 +19,6 @@ public class DaoUser extends Dao<User> {
   @Override
   public boolean create(User obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call USERPACKAGE.add(?,?,?,?,?,?,?,?,?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -56,13 +55,6 @@ public class DaoUser extends Dao<User> {
           e.printStackTrace();
         }
       }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
     }
   }
 
@@ -84,8 +76,8 @@ public class DaoUser extends Dao<User> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -126,8 +118,8 @@ public class DaoUser extends Dao<User> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

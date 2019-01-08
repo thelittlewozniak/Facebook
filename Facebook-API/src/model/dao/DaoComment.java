@@ -19,7 +19,6 @@ public class DaoComment extends Dao<Comment> {
   @Override
   public boolean create(Comment obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call COMMENTPACKAGE.add(?,?,?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -40,13 +39,6 @@ public class DaoComment extends Dao<Comment> {
       if (stmt != null) {
         try {
           stmt.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
         } catch (SQLException e) {
           e.printStackTrace();
         }
@@ -72,8 +64,8 @@ public class DaoComment extends Dao<Comment> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -102,8 +94,8 @@ public class DaoComment extends Dao<Comment> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override

@@ -27,8 +27,8 @@ public class DaoSchooling extends Dao<Schooling> {
     params.add("address", obj.getAddress());
     params.add("beginDate", dateFormat.format(obj.getBeginDate()));
     params.add("endDate", dateFormat.format(obj.getEndDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("graduate", String.valueOf(obj.getGraduate()));
     params.add("type", obj.getType());
     String response =
         webResource
@@ -68,11 +68,11 @@ public class DaoSchooling extends Dao<Schooling> {
   public boolean update(Schooling obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-    ((MultivaluedMapImpl) params).add("schoolingId", obj.getId());
+    params.add("schoolingId", String.valueOf(obj.getId()));
     params.add("beginDate", dateFormat.format(obj.getBeginDate()));
     params.add("endDate", dateFormat.format(obj.getEndDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("graduate", obj.getGraduate());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("graduate", String.valueOf(obj.getGraduate()));
     String response =
         webResource
             .path("Schooling/UpdateSchooling")

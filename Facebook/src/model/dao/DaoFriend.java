@@ -19,9 +19,9 @@ public class DaoFriend extends Dao<Friend> {
   @Override
   public boolean create(Friend obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("asker", obj.getAsker().getId());
-    ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver().getId());
-    ((MultivaluedMapImpl) params).add("accepted", obj.getAccepted());
+    params.add("asker", String.valueOf(obj.getAsker().getId()));
+    params.add("receiver", String.valueOf(obj.getReceiver().getId()));
+    params.add("accepted", String.valueOf(obj.getAccepted()));
     String response =
         webResource
             .path("Friend/CreateFriend")
@@ -41,8 +41,8 @@ public class DaoFriend extends Dao<Friend> {
   @Override
   public boolean delete(Friend obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("asker", obj.getAsker().getId());
-    ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver().getId());
+    params.add("asker", String.valueOf(obj.getAsker().getId()));
+    params.add("receiver", String.valueOf(obj.getReceiver().getId()));
     String response =
         webResource
             .path("Friend/DeleteFriend")
@@ -62,9 +62,9 @@ public class DaoFriend extends Dao<Friend> {
   @Override
   public boolean update(Friend obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("asker", obj.getAsker().getId());
-    ((MultivaluedMapImpl) params).add("receiver", obj.getReceiver().getId());
-    ((MultivaluedMapImpl) params).add("accepted", obj.getAccepted());
+    params.add("asker", String.valueOf(obj.getAsker().getId()));
+    params.add("receiver", String.valueOf(obj.getReceiver().getId()));
+    params.add("accepted", String.valueOf(obj.getAccepted()));
     String response =
         webResource
             .path("Friend/UpdateFriend")
@@ -88,8 +88,8 @@ public class DaoFriend extends Dao<Friend> {
 
   public Friend find(int askerId, int receiverId) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("asker", askerId);
-    ((MultivaluedMapImpl) params).add("receiver", receiverId);
+    params.add("asker", String.valueOf(askerId));
+    params.add("receiver", String.valueOf(receiverId));
     String response =
         webResource
             .path("Friend/GetFriend")

@@ -19,8 +19,8 @@ public class DaoLikePost extends Dao<Like> {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
     params.add("dateLiked", dateFormat.format(obj.getDateLiked()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("post", String.valueOf(obj.getPost().getId()));
     String response =
         webResource
             .path("LikePost/CreateLike")
@@ -40,7 +40,7 @@ public class DaoLikePost extends Dao<Like> {
   @Override
   public boolean delete(Like obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("id", obj.getId());
+    params.add("id", String.valueOf(obj.getId()));
     String response =
         webResource
             .queryParams(params)
@@ -62,8 +62,8 @@ public class DaoLikePost extends Dao<Like> {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
     params.add("dateLiked", dateFormat.format(obj.getDateLiked()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("post", String.valueOf(obj.getPost().getId()));
     String response =
         webResource
             .path("LikePost/UpdateLike")
@@ -83,7 +83,7 @@ public class DaoLikePost extends Dao<Like> {
   @Override
   public Like find(int id) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("id", id);
+    params.add("id", String.valueOf(id));
     String response =
         webResource
             .queryParams(params)

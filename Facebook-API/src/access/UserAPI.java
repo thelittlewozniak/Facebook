@@ -16,13 +16,15 @@ import java.util.Date;
 @Path("User")
 public class UserAPI extends RestApplication {
 
+  private Response response;
+  private Connection conn;
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetAll")
   public Response getAll() {
-    Connection conn = GetConnection.getInstance().getConnection();
-    Response response =
-        Response.status(Response.Status.OK).entity(new DaoUser(conn).getAll()).build();
+    conn = GetConnection.getInstance().getConnection();
+    response = Response.status(Response.Status.OK).entity(new DaoUser(conn).getAll()).build();
     return response;
   }
 
@@ -30,8 +32,7 @@ public class UserAPI extends RestApplication {
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetUser")
   public Response getUser(@QueryParam("id") int id) {
-    Response response = null;
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     User u = new DaoUser(conn).find(id);
     if (u != null) response = Response.status(Response.Status.OK).entity(u).build();
     else response = Response.status(Response.Status.NO_CONTENT).entity(null).build();
@@ -53,7 +54,7 @@ public class UserAPI extends RestApplication {
       @FormParam("phoneNumber") String phoneNumber,
       @FormParam("gender") String gender,
       @FormParam("interestedIn") String interestedIn) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     User u = new User();
     u.setFirstname(firstname);
     u.setLastname(lastname);
@@ -79,8 +80,7 @@ public class UserAPI extends RestApplication {
     u.setPhoneNumber(Integer.parseInt(phoneNumber));
     u.setGender(Boolean.parseBoolean(gender));
     u.setInterestedIn(Boolean.parseBoolean(interestedIn));
-    Boolean test = new DaoUser(conn).create(u);
-    Response response = null;
+    boolean test = new DaoUser(conn).create(u);
     if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(u).build();
     return response;
@@ -90,11 +90,10 @@ public class UserAPI extends RestApplication {
   @Path("DeleteUser")
   @Produces(MediaType.APPLICATION_JSON)
   public Response deleteUser(@QueryParam("id") int id) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     User u = new DaoUser(conn).find(id);
-    Boolean test = new DaoUser(conn).delete(u);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoUser(conn).delete(u);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
     return response;
   }
@@ -115,7 +114,7 @@ public class UserAPI extends RestApplication {
       @FormParam("phoneNumber") String phoneNumber,
       @FormParam("gender") String gender,
       @FormParam("interestedIn") String interestedIn) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     User u = new User();
     u.setId(Integer.parseInt(userid));
     u.setFirstname(firstname);
@@ -141,9 +140,8 @@ public class UserAPI extends RestApplication {
     u.setPhoneNumber(Integer.parseInt(phoneNumber));
     u.setGender(Boolean.parseBoolean(gender));
     u.setInterestedIn(Boolean.parseBoolean(interestedIn));
-    Boolean test = new DaoUser(conn).update(u);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoUser(conn).update(u);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(null).build();
     return response;
   }

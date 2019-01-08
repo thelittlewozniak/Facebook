@@ -22,10 +22,10 @@ public class DaoUser extends Dao<User> {
   public boolean create(User obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-    ((MultivaluedMapImpl) params).add("interestedIn", obj.getInterestedIn());
-    ((MultivaluedMapImpl) params).add("gender", obj.getGender());
-    ((MultivaluedMapImpl) params).add("phoneNumber", obj.getPhoneNumber());
-    ((MultivaluedMapImpl) params).add("relationship", obj.getRelationship());
+    params.add("interestedIn", String.valueOf(obj.getInterestedIn()));
+    params.add("gender", String.valueOf(obj.getGender()));
+    params.add("phoneNumber", String.valueOf(obj.getPhoneNumber()));
+    params.add("relationship", String.valueOf(obj.getRelationship()));
     params.add("registerDate", dateFormat.format(obj.getRegisterDate()));
     params.add("birthday", dateFormat.format(obj.getBirthday()));
     params.add("address", obj.getAddress());
@@ -70,11 +70,11 @@ public class DaoUser extends Dao<User> {
   public boolean update(User obj) {
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("userid", obj.getId());
-    ((MultivaluedMapImpl) params).add("interestedIn", obj.getInterestedIn());
-    ((MultivaluedMapImpl) params).add("gender", obj.getGender());
-    ((MultivaluedMapImpl) params).add("phoneNumber", obj.getPhoneNumber());
-    ((MultivaluedMapImpl) params).add("relationship", obj.getRelationship());
+    params.add("userid", String.valueOf(obj.getId()));
+    params.add("interestedIn", String.valueOf(obj.getInterestedIn()));
+    params.add("gender", String.valueOf(obj.getGender()));
+    params.add("phoneNumber", String.valueOf(obj.getPhoneNumber()));
+    params.add("relationship", String.valueOf(obj.getRelationship()));
     params.add("registerDate", dateFormat.format(obj.getRegisterDate()));
     params.add("birthday", dateFormat.format(obj.getBirthday()));
     params.add("address", obj.getAddress());
@@ -101,7 +101,7 @@ public class DaoUser extends Dao<User> {
   @Override
   public User find(int id) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("id", id);
+    params.add("id", String.valueOf(id));
     String response =
         webResource
             .path("User/GetUser")

@@ -83,16 +83,4 @@ public class Schooling {
   public void setUser(User user) {
     this.user = user;
   }
-
-  //                          Operations
-
-  public Schooling CreateASchooling() {
-    // TODO
-    return null;
-  }
-
-  public boolean DeleteASchooling() {
-    // TODO
-    return false;
-  }
 }

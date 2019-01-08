@@ -25,8 +25,8 @@ public class DaoComment extends Dao<Comment> {
     params.add("data", obj.getData());
     params.add("type", obj.getType());
     params.add("postDate", dateFormat.format(obj.getPostDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("post", String.valueOf(obj.getPost().getId()));
     String response =
         webResource
             .path("Comment/CreateComment")
@@ -67,9 +67,9 @@ public class DaoComment extends Dao<Comment> {
     params.add("data", obj.getData());
     params.add("type", obj.getType());
     params.add("postDate", dateFormat.format(obj.getPostDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
-    ((MultivaluedMapImpl) params).add("post", obj.getPost().getId());
-    ((MultivaluedMapImpl) params).add("commentId", obj.getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
+    params.add("post", String.valueOf(obj.getPost().getId()));
+    params.add("commentId", String.valueOf(obj.getId()));
     String response =
         webResource
             .path("Comment/UpdateComment")
@@ -89,7 +89,7 @@ public class DaoComment extends Dao<Comment> {
   @Override
   public Comment find(int id) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("id", id);
+    params.add("id", String.valueOf(id));
     String response =
         webResource
             .queryParams(params)

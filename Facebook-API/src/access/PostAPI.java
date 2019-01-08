@@ -16,13 +16,15 @@ import java.util.Date;
 
 @Path("Post")
 public class PostAPI extends RestApplication {
+  private Connection conn;
+  private Response response;
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetAll")
   public Response getAll() {
-    Connection conn = GetConnection.getInstance().getConnection();
-    Response response =
-        Response.status(Response.Status.OK).entity(new DaoPost(conn).getAll()).build();
+    conn = GetConnection.getInstance().getConnection();
+    response = Response.status(Response.Status.OK).entity(new DaoPost(conn).getAll()).build();
     return response;
   }
 
@@ -30,8 +32,7 @@ public class PostAPI extends RestApplication {
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetPost")
   public Response getPost(@QueryParam("id") int id) {
-    Response response = null;
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Post p = new DaoPost(conn).find(id);
     if (p != null) response = Response.status(Response.Status.OK).entity(p).build();
     else response = Response.status(Response.Status.NO_CONTENT).entity(null).build();
@@ -46,7 +47,7 @@ public class PostAPI extends RestApplication {
       @FormParam("type") String type,
       @FormParam("postDate") String postDate,
       @FormParam("user") String userId) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Post p = new Post();
     p.setData(data);
     p.setType(type);
@@ -60,8 +61,7 @@ public class PostAPI extends RestApplication {
     p.setPostDate(date);
     p.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
     Boolean test = new DaoPost(conn).create(p);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(test).build();
     return response;
   }
@@ -70,11 +70,10 @@ public class PostAPI extends RestApplication {
   @Path("DeletePost")
   @Produces(MediaType.APPLICATION_JSON)
   public Response deletePost(@QueryParam("id") int id) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Post p = new DaoPost(conn).find(id);
-    Boolean test = new DaoPost(conn).delete(p);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoPost(conn).delete(p);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
     return response;
   }
@@ -88,7 +87,7 @@ public class PostAPI extends RestApplication {
       @FormParam("type") String type,
       @FormParam("postDate") String postDate,
       @FormParam("user") String userId) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Post p = new Post();
     p.setId(Integer.parseInt(postid));
     p.setData(data);
@@ -102,9 +101,8 @@ public class PostAPI extends RestApplication {
     }
     p.setPostDate(date);
     p.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
-    Boolean test = new DaoPost(conn).update(p);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoPost(conn).update(p);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(null).build();
     return response;
   }

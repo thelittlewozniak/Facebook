@@ -17,12 +17,15 @@ import java.util.Date;
 
 @Path("LikeComment")
 public class LikeCommentAPI extends RestApplication {
+  private Response response;
+  private Connection conn;
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("GetAll")
   public Response getAll() {
-    Connection conn = GetConnection.getInstance().getConnection();
-    Response response =
+    conn = GetConnection.getInstance().getConnection();
+    response =
         Response.status(Response.Status.OK).entity(new DaoLikeComment(conn).getAll()).build();
     return response;
   }
@@ -31,8 +34,7 @@ public class LikeCommentAPI extends RestApplication {
   @Produces(MediaType.APPLICATION_JSON)
   @Path("getLike")
   public Response getLike(@QueryParam("id") int id) {
-    Response response = null;
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Like l = new DaoLikeComment(conn).find(id);
     if (l != null) response = Response.status(Response.Status.OK).entity(l).build();
     else response = Response.status(Response.Status.NO_CONTENT).entity(null).build();
@@ -46,7 +48,7 @@ public class LikeCommentAPI extends RestApplication {
       @FormParam("dateLiked") String dateLike,
       @FormParam("user") String userId,
       @FormParam("comment") String commentid) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Like l = new Like();
     l.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
     Date date = null;
@@ -59,8 +61,7 @@ public class LikeCommentAPI extends RestApplication {
     l.setDateLiked(date);
     l.setComment(new DaoComment(conn).find(Integer.parseInt(commentid)));
     Boolean test = new DaoLikeComment(conn).create(l);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(test).build();
     return response;
   }
@@ -69,11 +70,10 @@ public class LikeCommentAPI extends RestApplication {
   @Path("DeleteLike")
   @Produces(MediaType.APPLICATION_JSON)
   public Response deleteLike(@QueryParam("id") int id) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Like l = new DaoLikeComment(conn).find(id);
-    Boolean test = new DaoLikeComment(conn).delete(l);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoLikeComment(conn).delete(l);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(null).build();
     return response;
   }
@@ -86,7 +86,7 @@ public class LikeCommentAPI extends RestApplication {
       @FormParam("dateLiked") String dateLike,
       @FormParam("user") String userId,
       @FormParam("comment") String commentid) {
-    Connection conn = GetConnection.getInstance().getConnection();
+    conn = GetConnection.getInstance().getConnection();
     Like l = new Like();
     l.setId(Integer.parseInt(idLike));
     l.setUser(new DaoUser(conn).find(Integer.parseInt(userId)));
@@ -99,9 +99,8 @@ public class LikeCommentAPI extends RestApplication {
     }
     l.setDateLiked(date);
     l.setComment(new DaoComment(conn).find(Integer.parseInt(commentid)));
-    Boolean test = new DaoLikeComment(conn).update(l);
-    Response response = null;
-    if (test) response = Response.status(Response.Status.OK).entity(test).build();
+    boolean test = new DaoLikeComment(conn).update(l);
+    if (test) response = Response.status(Response.Status.OK).entity(true).build();
     else response = Response.status(Response.Status.BAD_REQUEST).entity(null).build();
     return response;
   }

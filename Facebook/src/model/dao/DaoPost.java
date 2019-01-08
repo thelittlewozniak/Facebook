@@ -25,7 +25,7 @@ public class DaoPost extends Dao<Post> {
     params.add("data", obj.getData());
     params.add("type", obj.getType());
     params.add("postDate", dateFormat.format(obj.getPostDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
     String response =
         webResource
             .path("Post/CreatePost")
@@ -63,11 +63,11 @@ public class DaoPost extends Dao<Post> {
   public boolean update(Post obj) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-    ((MultivaluedMapImpl) params).add("postid", obj.getId());
+    params.add("postid", String.valueOf(obj.getId()));
     params.add("data", obj.getData());
     params.add("type", obj.getType());
     params.add("postDate", dateFormat.format(obj.getPostDate()));
-    ((MultivaluedMapImpl) params).add("user", obj.getUser().getId());
+    params.add("user", String.valueOf(obj.getUser().getId()));
     String response =
         webResource
             .path("Post/UpdatePost")
@@ -87,7 +87,7 @@ public class DaoPost extends Dao<Post> {
   @Override
   public Post find(int id) {
     MultivaluedMap<String, String> params = new MultivaluedMapImpl();
-    ((MultivaluedMapImpl) params).add("id", id);
+    params.add("id", String.valueOf(id));
     String response =
         webResource
             .queryParams(params)

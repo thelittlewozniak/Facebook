@@ -19,7 +19,6 @@ public class DaoWork extends Dao<Work> {
   @Override
   public boolean create(Work obj) {
     CallableStatement stmt = null;
-    ResultSet resultSet = null;
     try {
       stmt = connect.prepareCall("{? = call WORKPACKAGE.add(?,?,?,?,?,?)}");
       stmt.registerOutParameter(1, OracleTypes.NUMBER);
@@ -48,13 +47,6 @@ public class DaoWork extends Dao<Work> {
           e.printStackTrace();
         }
       }
-      if (resultSet != null) {
-        try {
-          resultSet.close();
-        } catch (SQLException e) {
-          e.printStackTrace();
-        }
-      }
     }
   }
 
@@ -77,8 +69,8 @@ public class DaoWork extends Dao<Work> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
@@ -109,8 +101,8 @@ public class DaoWork extends Dao<Work> {
           e.printStackTrace();
         }
       }
-      return true;
     }
+    return true;
   }
 
   @Override
