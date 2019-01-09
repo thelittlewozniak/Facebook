@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/runConfigurations/Unnamed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/runConfigurations/Unnamed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/dao/DaoPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/src/model/pojo/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/glassfish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/glassfish.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/pojo/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/pojo/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Home/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/Profile/ProfileFriend.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,14 +96,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="12297" />
+          <entry key="java" value="12370" />
           <entry key="jsp" value="8817" />
           <entry key="xml" value="1414" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12297" />
+          <entry key="JAVA" value="12370" />
           <entry key="JSP" value="8817" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="1414" />
@@ -153,8 +143,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4675">
-              <caret line="346" column="37" selection-start-line="346" selection-start-column="37" selection-end-line="346" selection-end-column="37" />
+            <state relative-caret-position="196">
+              <caret line="404" column="44" lean-forward="true" selection-start-line="404" selection-start-column="44" selection-end-line="404" selection-end-column="44" />
+              <folding>
+                <element signature="e#11049#11050#0" expanded="true" />
+                <element signature="e#11092#11093#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,7 +250,6 @@
         <option value="$PROJECT_DIR$/src/model/pojo/Friend.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/model/pojo/EditObjectMapper.java" />
-        <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/Controller/LogOutServlet.java" />
         <option value="$PROJECT_DIR$/web/views/Index/index.jsp" />
         <option value="$PROJECT_DIR$/src/model/dao/Dao.java" />
@@ -287,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/model/pojo/Comment.java" />
         <option value="$PROJECT_DIR$/src/model/pojo/Post.java" />
         <option value="$PROJECT_DIR$/web/views/Home/index.jsp" />
+        <option value="$PROJECT_DIR$/src/model/pojo/User.java" />
       </list>
     </option>
   </component>
@@ -384,7 +378,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547072968718" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547073469092" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.6.2.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -530,12 +524,12 @@
       <workItem from="1546967667971" duration="4318000" />
       <workItem from="1547026604897" duration="194000" />
       <workItem from="1547028379132" duration="1836000" />
-      <workItem from="1547031039981" duration="5658000" />
+      <workItem from="1547031039981" duration="6089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170865000" />
+    <option name="totallyTimeSpent" value="171296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +555,7 @@
       <window_info id="Azure Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49971956" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58496916" visible="true" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58496916" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -955,8 +949,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4675">
-          <caret line="346" column="37" selection-start-line="346" selection-start-column="37" selection-end-line="346" selection-end-column="37" />
+        <state relative-caret-position="196">
+          <caret line="404" column="44" lean-forward="true" selection-start-line="404" selection-start-column="44" selection-end-line="404" selection-end-column="44" />
+          <folding>
+            <element signature="e#11049#11050#0" expanded="true" />
+            <element signature="e#11092#11093#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
