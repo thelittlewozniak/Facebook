@@ -1,11 +1,7 @@
 package model.pojo;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import model.dao.DaoComment;
-import model.dao.DaoLikePost;
 import model.dao.DaoPost;
-
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -86,23 +82,6 @@ public class Post {
 
   public boolean createAPost() {
     return new DaoPost().create(this);
-  }
-
-  public void getAPost() {
-    List<Like> ls = new DaoLikePost().getAll();
-    this.likes = new ArrayList<>();
-    for (int i = 0; i < ls.size(); i++) {
-      if (ls.get(i).getPost().getId() == this.id) {
-        this.likes.add(ls.get(i));
-      }
-    }
-    this.comments = new ArrayList<>();
-    List<Comment> cs = new DaoComment().getAll();
-    for (int i = 0; i < cs.size(); i++) {
-      if (cs.get(i).getPost().getId() == this.id) {
-        this.comments.add(cs.get(i));
-      }
-    }
   }
 
   public boolean deleteAPost() {

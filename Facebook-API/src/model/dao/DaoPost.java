@@ -1,6 +1,9 @@
 package model.dao;
 
+import model.pojo.Comment;
+import model.pojo.Like;
 import model.pojo.Post;
+import model.pojo.User;
 import oracle.jdbc.internal.OracleTypes;
 
 import java.sql.CallableStatement;
@@ -10,6 +13,7 @@ import java.sql.SQLException;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DaoPost extends Dao<Post> {
   public DaoPost(Connection conn) {
@@ -147,13 +151,21 @@ public class DaoPost extends Dao<Post> {
       stmt.execute();
       resultSet = (ResultSet) stmt.getObject(1);
       if (resultSet != null) {
+        List<Like> likes=new DaoLikePost(connect).getAll();
+        List<Comment> comments=new DaoComment(connect).getAll();
+        List<User> users=new DaoUser(connect).getAll();
         while (resultSet.next()) {
           Post p = new Post();
           p.setId(resultSet.getInt("idpost"));
           p.setData(resultSet.getString("data"));
           p.setType(resultSet.getString(3));
           p.setPostDate(resultSet.getTimestamp(4));
-          p.setUser(new DaoUser(connect).find(resultSet.getInt(5)));
+          for (int i = 0; i < users.size(); i++) {
+            if(users.get(i).getId()==resultSet.getInt(5))
+              p.setUser(users.get(i));
+          }
+          p.setLikes(likes.stream().filter(l->l.getPost().getId()==p.getId()).collect(Collectors.toList()));
+          p.setComments(comments.stream().filter(c->c.getPost().getId()==p.getId()).collect(Collectors.toList()));
           posts.add(p);
         }
       }

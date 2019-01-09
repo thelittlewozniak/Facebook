@@ -41,12 +41,11 @@
         </form>
     </div>
     <%
-        if (u.getPostOfYourFriends() != null) {
-            List<Post> posts = u.getPostOfYourFriends();
+        List<Post> posts = u.getPostOfYourFriends();
+        if (posts != null) {
             if (posts.size() >= 1) {
-                for (int i = 0; i < u.getPostOfYourFriends().size(); i++) {
-                    Post p = u.getPostOfYourFriends().get(i);
-                    p.getAPost();
+                for (int i = 0; i < posts.size(); i++) {
+                    Post p = posts.get(i);
                     out.println("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"/Facebook_intelliJ_war_exploded/ProfileFriend?id=" + p.getUser().getId() + "\" class=\"pull-right\">" + p.getUser().getFirstname() + " " + p.getUser().getLastname() + "</a> " + p.getPostDate() + "</div>");
                     out.println("<div class=\"panel-body\"><div class=\"clearfix\"></div>");
                     out.println("<p>" + p.getData() + "</p>");
@@ -62,7 +61,6 @@
                     if (p.getComments().size() > 0) {
                         for (int j = 0; j < p.getComments().size(); j++) {
                             Comment comment = p.getComments().get(j);
-                            comment.getAComment();
                             int test = 0;
                             for (int k = 0; k < comment.getLikes().size(); k++) {
                                 if (comment.getLikes().get(k).getUser().getId() == u.getId())

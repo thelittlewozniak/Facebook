@@ -1,6 +1,7 @@
 package model.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class Comment {
 
@@ -11,6 +12,8 @@ public class Comment {
   private String type;
 
   private Date postDate;
+
+  private List<Like> likes;
 
   private Post post;
 
@@ -46,6 +49,14 @@ public class Comment {
 
   public void setPostDate(Date postDate) {
     this.postDate = postDate;
+  }
+
+  public List<Like> getLikes() {
+    return this.likes;
+  }
+
+  public void setLikes(List<Like> likes) {
+    this.likes = likes;
   }
 
   public Post getPost() {

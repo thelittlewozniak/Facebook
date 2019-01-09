@@ -1,6 +1,7 @@
 package model.dao;
 
 import model.pojo.Comment;
+import model.pojo.Like;
 import oracle.jdbc.internal.OracleTypes;
 
 import java.sql.CallableStatement;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DaoComment extends Dao<Comment> {
   public DaoComment(Connection conn) {
@@ -150,6 +152,7 @@ public class DaoComment extends Dao<Comment> {
       stmt.execute();
       resultSet = (ResultSet) stmt.getObject(1);
       if (resultSet != null) {
+        List<Like> likes=new DaoLikeComment(connect).getAll();
         while (resultSet.next()) {
           Comment c = new Comment();
           c.setId(resultSet.getInt(1));
@@ -158,6 +161,7 @@ public class DaoComment extends Dao<Comment> {
           c.setPostDate(resultSet.getTimestamp(4));
           c.setPost(new DaoPost(connect).find(resultSet.getInt(5)));
           c.setUser(new DaoUser(connect).find(resultSet.getInt(6)));
+          c.setLikes(likes.stream().filter(comm->comm.getComment().getId()==c.getId()).collect(Collectors.toList()));
           comments.add(c);
         }
       }

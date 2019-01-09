@@ -1,4 +1,4 @@
-<%@ page import="model.pojo.User" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: natha
   Date: 12/12/2018
@@ -15,7 +15,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    User u = null;
     if (session.getAttribute("user") != null) {
         response.sendRedirect("/Facebook_intelliJ_war_exploded/Activity/");
     }
