@@ -75,12 +75,15 @@
                     }
                     out.println("<form action=\"/Facebook_intelliJ_war_exploded/MakeAComment/\" method=\"post\"><div class=\"input-group\"><div class=\"input-group-btn\">");
                     if (p.getLikes().size() > 0) {
+                        int test=0;
                         for (int j = 0; j < p.getLikes().size(); j++) {
                             if (p.getLikes().get(j).getUser().getId() == u.getId())
-                                out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/UnLikeAPost?id=" + p.getLikes().get(j).getId() + "\">UnLike it!</a>");
-                            else
-                                out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id=" + p.getId() + "\">Like it!</a>");
+                                test=p.getLikes().get(j).getId();
                         }
+                        if(test!=0)
+                            out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/UnLikeAPost?id=" + test + "\">UnLike it!</a>");
+                        else
+                            out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id=" + p.getId() + "\">Like it!</a>");
                     } else
                         out.println("<a type=\"button\" class=\"btn btn-primary\" href=\"/Facebook_intelliJ_war_exploded/LikeAPost?id=" + p.getId() + "\">Like it!</a>");
                     out.println("<button type=\"submit\" name=\"submit\" value=\"submit\" class=\"btn btn-default\">Send-it!</i></button></div><input type=\"hidden\" value=\"" + p.getId() + "\" name=\"id\"><input class=\"form-control\" placeholder=\"Add a comment..\" type=\"text\" name=\"data\"></div></form></div>");
