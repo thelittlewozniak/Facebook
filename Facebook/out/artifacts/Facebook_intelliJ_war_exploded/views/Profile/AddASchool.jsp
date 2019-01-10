@@ -10,7 +10,7 @@
 <div class="col-sm-6">
     <div class="well">
         <form class="form" action="/Facebook_intelliJ_war_exploded/SchoolAdd/" method="post">
-            <h4>Add a work</h4>
+            <h4>Add a school</h4>
             <div class="input-group text-center">
                 <div class="input-group-lg form-group">
                     <label class="control-label pull-left">Enter your company name:</label>
