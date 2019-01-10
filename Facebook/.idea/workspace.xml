@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2161f021-cb6c-4fc3-84f3-448c1dbfb36d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook-API/Facebook-API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook-API/Facebook-API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3349">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            <state relative-caret-position="221">
+              <caret line="321" lean-forward="true" selection-start-line="321" selection-end-line="321" />
             </state>
           </provider>
         </entry>
@@ -299,7 +301,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -526,7 +528,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177754000" />
+    <option name="totallyTimeSpent" value="178099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -934,8 +936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3349">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="221">
+          <caret line="321" lean-forward="true" selection-start-line="321" selection-end-line="321" />
         </state>
       </provider>
     </entry>
