@@ -143,13 +143,13 @@
                                             <div class="input-group-lg form-group">
                                                 <label class="control-label pull-left">Enter your password:</label>
                                                 <input class="form-control input-lg pull-right"
-                                                       placeholder="Enter your email address"
+                                                       placeholder="Enter your password"
                                                        type="password" name="password">
                                             </div>
                                             <div class="input-group-lg form-group">
                                                 <label class="control-label pull-left">Re-enter your password:</label>
                                                 <input class="form-control input-lg pull-right"
-                                                       placeholder="Enter your email address"
+                                                       placeholder="Enter your password again"
                                                        type="password">
                                             </div>
                                             <div class="input-group-lg form-group">

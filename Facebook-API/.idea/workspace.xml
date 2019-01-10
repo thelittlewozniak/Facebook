@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b63114b-8e6f-48d2-b341-16601b9c3349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Home/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Facebook/web/views/Index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Facebook/web/views/Index/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -334,6 +333,12 @@
               <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facebook-API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facebook-API" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -500,12 +505,12 @@
       <workItem from="1546967668758" duration="7160000" />
       <workItem from="1547029588812" duration="1212000" />
       <workItem from="1547031008182" duration="7911000" />
-      <workItem from="1547111594450" duration="1887000" />
+      <workItem from="1547111594450" duration="2196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199346000" />
+    <option name="totallyTimeSpent" value="199655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,8 +523,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4635659" visible="true" weight="0.31463826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4635659" visible="true" weight="0.31463826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.5364341" side_tool="true" visible="true" weight="0.31463826" />
       <window_info id="Image Layers" order="3" />
@@ -530,7 +536,7 @@
       <window_info id="Azure Explorer" order="8" sideWeight="0.4992248" weight="0.32978126" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48233315" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48233315" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49859786" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
