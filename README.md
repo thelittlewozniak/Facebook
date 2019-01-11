@@ -1,6 +1,6 @@
 ## Synopsis
-This is a school project where we need to do an API with CRUD. This API needs to discuss with the database in PL/SQL. After that, we need to do a client to use all of this in Java EE.
-To be more exciting, my friend and I wanted to remake Facebook.
+This is a school project where we need to do an API with CRUD. This API have to interact with the database in PL/SQL. In addition, we have to develop a Java EE client wich will be using that API.
+My coworker and I attempted to make a new Facebook to make things more appealing.
 
 ## Motivation
 
